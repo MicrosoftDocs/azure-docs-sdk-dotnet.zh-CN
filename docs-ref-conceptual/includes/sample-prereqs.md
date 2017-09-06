@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> <span data-ttu-id="f30fe-101">请务必阅读[说明](../dotnet-sdk-azure-sample-readme.md)中所述的先决条件和安装步骤。</span><span class="sxs-lookup"><span data-stu-id="f30fe-101">Ensure you have read the [instructions](../dotnet-sdk-azure-sample-readme.md) for prerequisites and installation steps.</span></span>
