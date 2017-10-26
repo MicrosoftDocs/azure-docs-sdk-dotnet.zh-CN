@@ -1,12 +1,47 @@
 {
   "need_generate_pdf": false,
-  "need_generate_intellisense": false,
+  "need_preview_pull_request": false, 
+  "branches_to_filter": [
+    "live"
+  ], 
+  "enable_incremental_build": true, 
+  "SplitTOC": "api/toc.yml", 
+  "JoinTOCPlugin": [
+    {
+      "ReferenceTOC": "api/toc.yml", 
+      "ReferenceTOCUrl": "/dotnet/api/azure_ref_toc/toc.json", 
+      "TopLevelTOC": "docs-ref-toc/top_level_toc.yml", 
+      "ConceptualTOCUrl": "/dotnet/azure/toc.json", 
+      "ConceptualTOC": "docs-ref-conceptual/toc.yml", 
+      "ContainerPageMetadata": {
+        "langs": [
+          "csharp"
+        ]
+      }, 
+      "OutputFolder": "api/overview/azure", 
+      "HideEmptyNode": true
+    }
+  ], 
   "docsets_to_publish": [
     {
-      "docset_name": "azuredotnet",
-      "build_source_folder": ".",
+      "customized_tasks": {
+        "docset_postbuild": [
+           "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+         ], 
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1", 
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1", 
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1", 
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+        ]
+      }, 
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ], 
       "build_output_subfolder": ".",
-      "locale": "zh-CN",
+      "locale": "zh-CN", 
+      "docset_name": "azuredotnet", 
+      "open_to_public_contributors": true, 
       "monikers": [
         "appinsights-2.3.0-beta3",
         "azure-dotnet",
@@ -126,7 +161,10 @@
         "servicefabricsvcswcf-2.6.204",
         "servicefabricsvcswcf-2.7.0-preview5718"
       ],
-      "open_to_public_contributors": true,
+      "version": 0, 
+      "build_source_folder": ".", 
+      "template_folder": "_themes", 
+      "build_entry_point": "docs", 
       "type_mapping": {
         "APIConnector": "Content",
         "RestApi": "Content",
@@ -134,32 +172,17 @@
         "UniversalReference": "Content",
         "ManagedReference": "Content",
         "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
+      }
     }
   ],
-  "notification_subscribers": [],
-  "branches_to_filter": [
-    "live"
-  ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet.zh-CN",
   "git_repository_branch_open_to_public_contributors": "live",
-  "continue_with_document_error": true,
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs-sdk-dotnet.zh-CN",
   "dependent_repositories": [
     {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN", 
+      "branch_mapping": {}, 
       "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "azure-storage-net",
-      "url": "https://github.com/Azure/azure-storage-net",
-      "branch": "master",
-      "branch_mapping": {}
+      "path_to_root": "_themes"
     },
     {
       "path_to_root": "_repo.en-us",
@@ -169,31 +192,22 @@
         "live": "live",
         "master": "master"
       }
-    }
-  ],
-  "need_generate_pdf_url_template": false,
-  "toc_path_need_to_split": "api/toc.yml",
-  "JoinTOCPlugin": [
+   },
     {
-      "ReferenceTOC": "api/toc.yml",
-      "ReferenceTOCUrl": "/dotnet/api/azure_ref_toc/toc.json",
-      "TopLevelTOC": "docs-ref-toc/top_level_toc.yml",
-      "ConceptualTOCUrl": "/dotnet/azure/toc.json",
-      "ConceptualTOC": "docs-ref-conceptual/toc.yml",
-      "ContainerPageMetadata": {
-        "langs": [
-          "csharp"
-        ]
-      },
-      "OutputFolder": "api/overview/azure",
-      "HideEmptyNode": true
+      "path_to_root": "azure-storage-net",
+      "url": "https://github.com/Azure/azure-storage-net",
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
+  "notification_subscribers": [], 
+  "need_generate_intellisense": false, 
   "ECMA2Yaml": {
     "OutputYamlFolder": "api",
     "SourceXmlFolder": "xml",
     "Flatten": true
   },
+  "skip_source_output_uploading": false, 
   "DiffFolder": [
     "api"
   ],
@@ -218,13 +232,7 @@
       "version": "latest",
       "id": "memberpage.plugins",
       "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
-    },
-    {
-      "path_to_root": "_dependentPackages/splitToc",
-      "target_framework": "net45",
-      "version": "latest",
-      "id": "SplitToc",
-      "nuget_feed": "https://www.myget.org/F/op/api/v2"
     }
-  ]
+  ], 
+  "need_generate_pdf_url_template": false
 }
