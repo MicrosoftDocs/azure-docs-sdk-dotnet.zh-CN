@@ -4,33 +4,33 @@ description: "获取有关使用 .NET 创建和更新 Azure 虚拟机的示例�
 keywords: "Azure, .NET, SDK, API, 虚拟机"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 08/01/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: ba83dda06e7e8ee11f25a4324edc6f4cd90090c2
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 5b74cb5921318848bc70acad08880d73a0904d37
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
-# <a name="azure-virtual-machine-management-samples-for-net"></a><span data-ttu-id="b8bf6-104">用于 .NET 的 Azure 虚拟机管理示例</span><span class="sxs-lookup"><span data-stu-id="b8bf6-104">Azure virtual machine management samples for .NET</span></span>
+# <a name="azure-virtual-machine-management-samples-for-net"></a><span data-ttu-id="cb96d-104">用于 .NET 的 Azure 虚拟机管理示例</span><span class="sxs-lookup"><span data-stu-id="cb96d-104">Azure virtual machine management samples for .NET</span></span>
 
-<span data-ttu-id="b8bf6-105">本文提供了可用于创建和配置 Azure 虚拟机的源代码的链接。</span><span class="sxs-lookup"><span data-stu-id="b8bf6-105">This article links to source you can use to create and configure Azure virtual machines.</span></span>
+<span data-ttu-id="cb96d-105">本文提供了可用于创建和配置 Azure 虚拟机的源代码的链接。</span><span class="sxs-lookup"><span data-stu-id="cb96d-105">This article links to source you can use to create and configure Azure virtual machines.</span></span>
 
-## <a name="manage-virtual-machines"></a><span data-ttu-id="b8bf6-106">管理虚拟机</span><span class="sxs-lookup"><span data-stu-id="b8bf6-106">Manage virtual machines</span></span>
+## <a name="manage-virtual-machines"></a><span data-ttu-id="cb96d-106">管理虚拟机</span><span class="sxs-lookup"><span data-stu-id="cb96d-106">Manage virtual machines</span></span>
 
-<span data-ttu-id="b8bf6-107">创建、修改、启动、停止和删除虚拟机。</span><span class="sxs-lookup"><span data-stu-id="b8bf6-107">Create, modify, start, stop, and delete virtual machines.</span></span>
+<span data-ttu-id="cb96d-107">创建、修改、启动、停止和删除虚拟机。</span><span class="sxs-lookup"><span data-stu-id="cb96d-107">Create, modify, start, stop, and delete virtual machines.</span></span>
 
-* [<span data-ttu-id="b8bf6-108">通过 VHD 使用自定义映像创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="b8bf6-108">Create Virtual Machine using Custom Image from VHD</span></span>](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-custom-image-from-VHD)
-* [<span data-ttu-id="b8bf6-109">通过快照使用专用 VHD 创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="b8bf6-109">Create a virtual machine using specialized VHD from a snapshot</span></span>](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot)
-* [<span data-ttu-id="b8bf6-110">在同一网络中并行创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="b8bf6-110">Create virtual machines in parallel in the same network</span></span>](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machines-with-network-in-parallel)
-* [<span data-ttu-id="b8bf6-111">跨多个 Azure 区域并行创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="b8bf6-111">Create virtual machines across multiple Azure regions in parallel</span></span>](https://github.com/Azure-Samples/compute-dotnet-create-virtual-machines-across-regions-in-parallel)
-* [<span data-ttu-id="b8bf6-112">管理包含子网的虚拟网络</span><span class="sxs-lookup"><span data-stu-id="b8bf6-112">Manage virtual networks with subnets</span></span>](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)
-* [<span data-ttu-id="b8bf6-113">创建包含负载均衡器的虚拟机规模集</span><span class="sxs-lookup"><span data-stu-id="b8bf6-113">Create a virtual machine scale set with a load balancer</span></span>](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machine-scale-sets)
+* [<span data-ttu-id="cb96d-108">通过 VHD 使用自定义映像创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="cb96d-108">Create Virtual Machine using Custom Image from VHD</span></span>](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-custom-image-from-VHD)
+* [<span data-ttu-id="cb96d-109">通过快照使用专用 VHD 创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="cb96d-109">Create a virtual machine using specialized VHD from a snapshot</span></span>](https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot)
+* [<span data-ttu-id="cb96d-110">在同一网络中并行创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="cb96d-110">Create virtual machines in parallel in the same network</span></span>](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machines-with-network-in-parallel)
+* [<span data-ttu-id="cb96d-111">跨多个 Azure 区域并行创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="cb96d-111">Create virtual machines across multiple Azure regions in parallel</span></span>](https://github.com/Azure-Samples/compute-dotnet-create-virtual-machines-across-regions-in-parallel)
+* [<span data-ttu-id="cb96d-112">管理包含子网的虚拟网络</span><span class="sxs-lookup"><span data-stu-id="cb96d-112">Manage virtual networks with subnets</span></span>](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)
+* [<span data-ttu-id="cb96d-113">创建包含负载均衡器的虚拟机规模集</span><span class="sxs-lookup"><span data-stu-id="cb96d-113">Create a virtual machine scale set with a load balancer</span></span>](https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machine-scale-sets)
 
 [!include[More samples](includes/more-samples.md)]
