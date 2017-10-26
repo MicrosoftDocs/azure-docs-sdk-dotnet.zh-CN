@@ -4,19 +4,19 @@ description: "获取有关使用用于 .NET 的 Azure 管理库创建和更新�
 keywords: "Azure, .NET, SDK, API, 示例, 例子"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: ffda7cca724962e6f953432c5cab04485ddabb03
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: cf5195bbc64ae39917355e3b775afa0c46604c4a
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-management-libraries-for-net-sample-instructions"></a>用于 .NET 的 Azure 管理库的示例说明
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/28/2017
 * [Visual Studio 2017](https://www.visualstudio.com/vs/) 或 [.NET Core SDK](https://www.microsoft.com/net/download/core)
 * [Microsoft Azure 订阅](https://azure.microsoft.com/free/)
 * [Git 命令行客户端](https://git-scm.com/)
-* [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
+* [Azure PowerShell](/powershell/azure/install-azurerm-ps)
 
 ## <a name="authentication-for-all-samples"></a>对所有示例进行身份验证
 

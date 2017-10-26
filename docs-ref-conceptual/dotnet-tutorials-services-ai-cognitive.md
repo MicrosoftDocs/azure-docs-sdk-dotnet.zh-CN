@@ -2,18 +2,20 @@
 title: "Azure 中的 AI 和认知服务的 .NET 教程 | Microsoft Docs"
 description: "使用 Microsoft Azure 服务将 AI 和认知服务添加到 .NET 应用。"
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 14d2bdade351a53f2ca0cd694eeaffc24378b351
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: a63f2b51db76b023cc8f2c3378fa73ed1432e195
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-ai-and-cognitive-service-tutorials-using-net"></a>使用 .NET 介绍 Azure AI 和认知服务的教程
 

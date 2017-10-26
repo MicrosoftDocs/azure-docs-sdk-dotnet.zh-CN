@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 1defed888972ae2f9d60d57bc34c518df9b5867c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-net-for-azure-developers"></a>面向 Azure 开发人员的 .NET 入门
 
@@ -74,7 +74,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. 按 **F5** 还原项目的 NuGet 包，生成项目，并在本地运行项目。
 
-Web 应用程序应在浏览器中本地运行。  可以通过单击“新建”将新项添加到待办事项列表。  可以看到，在应用程序中输入的数据正存储到 CosmosDB 帐户中。  可以[在 Azure 门户中查看数据](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-view-json-document-explorer)。
+Web 应用程序应在浏览器中本地运行。  可以通过单击“新建”将新项添加到待办事项列表。  可以看到，在应用程序中输入的数据正存储到 CosmosDB 帐户中。  可以[在 Azure 门户中查看数据](/azure/documentdb/documentdb-view-json-document-explorer)。
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>将应用程序部署为 Azure Web 应用
 
