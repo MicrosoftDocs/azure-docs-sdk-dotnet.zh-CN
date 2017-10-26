@@ -4,18 +4,19 @@ description: "用于 .NET 的 Azure Service Fabric 库参考"
 keywords: Azure, .NET, SDK, API, Service Fabric
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 10/13/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-fabric
-ms.openlocfilehash: c15da57ef44663ad0463ba76ffa3b6832774240f
-ms.sourcegitcommit: a235826f194e938b094be3ed03d86f7e85bb4da6
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: f4b54933d31a4e1fc4c390baa57469cc1c02783a
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a>用于 .NET 的 Azure Service Fabric 库
 
@@ -130,7 +131,7 @@ dotnet add package Microsoft.Azure.Management.ServiceFabric
 
 ## <a name="samples"></a>示例
 
-* [使用 FabricClient 部署和删除应用程序](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-remove-applications-fabricclient)
+* [使用 FabricClient 部署和删除应用程序](/azure/service-fabric/service-fabric-deploy-remove-applications-fabricclient)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

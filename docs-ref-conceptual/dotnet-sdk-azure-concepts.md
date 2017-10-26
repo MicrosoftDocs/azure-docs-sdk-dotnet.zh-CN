@@ -4,19 +4,19 @@ description:
 keywords: "Azure, .NET, SDK, API, 模式, 概念, fluent, 日志记录"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: b2e6849f06c36de18471e55c468e984f4205f646
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>用于 .NET 的 Azure 管理库的 Fluent 概念
 
@@ -68,7 +68,7 @@ foreach(var vm in vmList)
 
 ## <a name="actionable-verbs"></a>可操作的谓词
 
-名称中包含谓词的资源集合方法在 Azure 中立即执行。 这些方法以同步方式工作，在完成之前会阻塞当前线程中的执行。 
+名称中包含谓词的资源集合方法在 Azure 中立即执行。 这些方法以同步方式工作，在完成之前会阻止当前线程中的执行。 
 
 | Verb   |  示例用法 |
 |--------|---------------|
