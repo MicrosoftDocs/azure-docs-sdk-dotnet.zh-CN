@@ -1,24 +1,28 @@
 ---
-title: "用于 .NET 的 Azure 恢复服务库"
-description: "用于 .NET 的 Azure 恢复服务库参考"
-keywords: "Azure, .NET, SDK, API, 恢复服务"
+title: "用于 .NET 的 Azure 恢复服务和备份库"
+description: "用于 .NET 的 Azure 恢复服务和备份库参考"
+keywords: "Azure, .NET, SDK, API, 恢复服务, 备份"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/14/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: f77d8e783690b86b28d98494bb398c3f38914ce5
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: recovery-services
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 3b399827f187fc2cb59c8698a555e63d08cee6c7
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
-# <a name="azure-recovery-services-libraries-for-net"></a>用于 .NET 的 Azure 恢复服务库
+# <a name="azure-recovery-services-and-backup-libraries-for-net"></a>用于 .NET 的 Azure 恢复服务和备份库
 
+## <a name="overview"></a>概述
+
+Azure 恢复服务是一套数据恢复服务，包括 [Azure 备份](/azure/backup/)和 [Azure Site Recovery](/azure/site-recovery/)。
 
 ## <a name="management-library"></a>管理库
 
@@ -28,16 +32,31 @@ ms.lasthandoff: 08/28/2017
 
 ```powershell
 Install-Package Microsoft.Azure.Management.RecoveryServices
+Install-Package Microsoft.Azure.Management.RecoveryServices.Backup
 ```
+
+#### <a name="net-core-cli"></a>.NET Core CLI
 
 ```bash
 dotnet add package Microsoft.Azure.Management.RecoveryServices
+dotnet add package Microsoft.Azure.Management.RecoveryServices.Backup
 ```
 
 > [!div class="nextstepaction"]
 > [了解管理 API](/dotnet/api/overview/azure/recoveryservices/management)
 
 
+## <a name="code-example"></a>代码示例
+
+以下代码示例使用管理库来触发备份。
+
+```csharp
+RecoveryServicesBackupManagementClient client = new RecoveryServicesBackupManagementClient(credentials);
+TriggerBackupRequest triggerBackupRequest = new TriggerBackupRequest();
+BaseRecoveryServicesJobResponse resp =
+    await client.Backups.TriggerBackupAsync(resourceGroupName, resourceName, null,
+        fabricName, containerName, protectedItemName, triggerBackupRequest);
+```
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
