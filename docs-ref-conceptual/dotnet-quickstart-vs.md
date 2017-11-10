@@ -1,6 +1,6 @@
 ---
-title: "面向 Azure 开发人员的 .NET"
-description: "面向 Azure 开发人员的 .NET"
+title: "从 Visual Studio 部署到 Azure"
+description: "本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。"
 keywords: "Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库"
 author: camsoper
 manager: douge
@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-for-azure-developers"></a>面向 Azure 开发人员的 .NET 入门
+# <a name="deploy-to-azure-from-visual-studio"></a>从 Visual Studio 部署到 Azure
 
 本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。  完成本教程后，ASP.NET MVC Core 中会生成一个基于 Web 的待办事项应用程序，该应用程序以 Azure Web 应用的形式托管，并使用 Azure CosmosDB 作为数据存储。
 

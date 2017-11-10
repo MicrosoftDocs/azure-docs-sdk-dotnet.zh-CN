@@ -1,6 +1,6 @@
 ---
-title: "面向 Azure 开发人员的 .NET"
-description: "面向 Azure 开发人员的 .NET"
+title: "使用 .NET Core 从命令行部署到 Azure"
+description: "本文介绍如何使用命令行工具将 ASP.NET Core 应用程序部署到 Azure 应用服务。"
 keywords: "Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库"
 author: camsoper
 manager: douge
@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 14374182ee0511e942940797465858b94ec08876
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-cli-tools-for-azure-developers"></a>面向 Azure 开发人员的 .NET CLI 工具入门
+# <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>使用 .NET Core 从命令行部署到 Azure
 
 本教程逐步讲解如何使用 .NET Core 生成和部署 Microsoft Azure 应用程序。  完成本教程后，ASP.NET MVC Core 中会生成一个基于 Web 的待办事项应用程序，该应用程序以 Azure Web 应用的形式托管，并使用 Azure CosmosDB 作为数据存储。
 
