@@ -1,0 +1,67 @@
+- name: Azure
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+    - name: 面向 .NET 开发人员的 Azure
+      tocHref: /dotnet/
+      topicHref: /dotnet/azure/index
+      items:
+        - name: 概述
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: 工具
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: 库
+          tocHref: /dotnet/azure/dotnet-sdk-azure-install
+          topicHref: /dotnet/azure/dotnet-sdk-azure-install
+        - name: 身份验证
+          tocHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+          topicHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+        - name: 快速入门
+          items:
+            - name: 入门
+              tocHref: /dotnet/azure/dotnet-sdk-azure-get-started
+              topicHref: /dotnet/azure/dotnet-sdk-azure-get-started
+            - name: Web 应用
+              tocHref: /azure/app-service-web/app-service-web-get-started-dotnet
+              topicHref: /azure/app-service-web/app-service-web-get-started-dotnet
+            - name: SQL 数据库
+              tocHref: /azure/sql-database/sql-database-connect-query-dotnet
+              topicHref: /azure/sql-database/sql-database-connect-query-dotnet
+            - name: CosmosDB
+              tocHref: /azure/cosmos-db/documentdb-dotnet-application
+              topicHref: /azure/cosmos-db/documentdb-dotnet-application
+        - name: 教程
+          items:
+            - name: Azure 存储
+              tocHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+              topicHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+            - name: Redis 缓存
+              tocHref: /azure/redis-cache/cache-web-app-howto
+              topicHref: /azure/redis-cache/cache-web-app-howto
+        - name: 操作说明
+          items:
+            - name: 使用 Visual Studio 进行部署
+              tocHref: /dotnet/azure/dotnet-quickstart-vs
+              topicHref: /dotnet/azure/dotnet-quickstart-vs
+            - name: 使用命令行工具进行部署
+              tocHref: /dotnet/azure/dotnet-quickstart-xplat
+              topicHref: /dotnet/azure/dotnet-quickstart-xplat
+        - name: 示例
+          items:
+            - name: 说明
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+            - name: 虚拟机
+              tocHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+            - name: Web 应用
+              tocHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+            - name: SQL 数据库
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+        - name: 关键概念
+          tocHref: /dotnet/azure/dotnet-sdk-azure-concepts
+          topicHref: /dotnet/azure/dotnet-sdk-azure-concepts

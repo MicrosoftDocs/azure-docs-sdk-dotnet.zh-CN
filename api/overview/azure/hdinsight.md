@@ -1,0 +1,124 @@
+---
+title: "用于 .NET 的 Azure HDInsight 库"
+description: "用于 .NET 的 Azure HDInsight 库参考"
+keywords: Azure, .NET, SDK, API, HDInsight
+author: camsoper
+ms.author: casoper
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: hd-insight
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: da9023ab4e6106754d48acb31cda58cdb358f5cb
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/23/2017
+---
+# <a name="azure-hdinsight-libraries-for-net"></a><span data-ttu-id="1d543-104">用于 .NET 的 Azure HDInsight 库</span><span class="sxs-lookup"><span data-stu-id="1d543-104">Azure HDInsight libraries for .NET</span></span>
+
+## <a name="overview"></a><span data-ttu-id="1d543-105">概述</span><span class="sxs-lookup"><span data-stu-id="1d543-105">Overview</span></span>
+
+<span data-ttu-id="1d543-106">HDInsight 服务 .NET SDK 提供相关的类来创建、配置、提交和监视 Azure HDInsight 服务所管理的 Hadoop 作业。</span><span class="sxs-lookup"><span data-stu-id="1d543-106">The HDInsight Service .NET SDK provides classes that relate to the creation, configuration, submission, and monitoring of Hadoop jobs managed by an Azure HDInsight Service.</span></span> <span data-ttu-id="1d543-107">此外，它还提供相应的类用于通过 HDInsight 服务管理 Azure 订阅，以及配置与 Azure 订阅所管理的 HDInsight 群集相关联的群集、存储帐户和其他资产。</span><span class="sxs-lookup"><span data-stu-id="1d543-107">In addition, it provides classes to manage Azure subscriptions using the HDInsight Service and to configure the clusters, storage accounts, and other assets associated with the HDInsight clusters that are managed by an Azure subscription.</span></span>
+
+## <a name="management-libraries"></a><span data-ttu-id="1d543-108">管理库</span><span class="sxs-lookup"><span data-stu-id="1d543-108">Management libraries</span></span>
+
+### <a name="jobs"></a><span data-ttu-id="1d543-109">作业</span><span class="sxs-lookup"><span data-stu-id="1d543-109">Jobs</span></span>
+
+<span data-ttu-id="1d543-110">使用 Azure HDInsight 客户端 SDK 可创建、管理和监视 Hadoop 群集上的作业。</span><span class="sxs-lookup"><span data-stu-id="1d543-110">Use the Azure HDInsight client SDK to create, manage, and monitor jobs on a Hadoop cluster.</span></span> 
+
+<span data-ttu-id="1d543-111">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job)。</span><span class="sxs-lookup"><span data-stu-id="1d543-111">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="1d543-112">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="1d543-112">Visual Studio Package Manager</span></span>
+
+```powershell
+Install-Package Microsoft.Azure.Management.HDInsight.Job
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.HDInsight.Job
+```
+
+#### <a name="code-example"></a><span data-ttu-id="1d543-113">代码示例</span><span class="sxs-lookup"><span data-stu-id="1d543-113">Code Example</span></span>
+
+<span data-ttu-id="1d543-114">此示例在 Hadoop 群集中运行 Hive 作业。</span><span class="sxs-lookup"><span data-stu-id="1d543-114">This example runs a Hive job in a Hadoop cluster.</span></span>
+
+```csharp
+HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
+
+Dictionary<string, string> defines = new Dictionary<string, string> {
+    { "hive.execution.engine", "tez" },
+    { "hive.exec.reducers.max", "1" }
+};
+List<string> arguments = new List<string> { { "argA" }, { "argB" } };
+HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
+{
+    Query = "SHOW TABLES",
+    Defines = defines,
+    Arguments = arguments
+};
+
+JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
+```
+
+### <a name="hdinsight"></a><span data-ttu-id="1d543-115">HDInsight</span><span class="sxs-lookup"><span data-stu-id="1d543-115">HDInsight</span></span>
+
+<span data-ttu-id="1d543-116">使用 Azure HDInsight 管理 SDK 可创建、管理、启动、停止和缩放 Hadoop 群集。</span><span class="sxs-lookup"><span data-stu-id="1d543-116">Use the Azure HDInsight management SDK to create, manage, start, stop, and scale Hadoop clusters.</span></span>
+
+<span data-ttu-id="1d543-117">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight)。</span><span class="sxs-lookup"><span data-stu-id="1d543-117">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="1d543-118">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="1d543-118">Visual Studio Package Manager</span></span>
+
+```powershell
+Install-Package Microsoft.Azure.Management.HDInsight
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.HDInsight
+```
+
+#### <a name="code-example"></a><span data-ttu-id="1d543-119">代码示例</span><span class="sxs-lookup"><span data-stu-id="1d543-119">Code Example</span></span>
+
+<span data-ttu-id="1d543-120">此示例使用现有的 Azure Blob 存储创建 HDInsight 双节点 Linux Hadoop 群集。</span><span class="sxs-lookup"><span data-stu-id="1d543-120">This example creates an HDInsight two node Linux Hadoop cluster with an existing Azure Blob Storage.</span></span>
+
+```csharp
+HDInsightManagementClient managementClient = new HDInsightManagementClient(authToken);
+// Set parameters for the new cluster
+ClusterCreateParameters parameters = new ClusterCreateParameters
+{
+    ClusterSizeInNodes = 2,
+    UserName = "admin",
+    Password = "<Enter HTTP User Password>",
+    ClusterType = "Hadoop",
+    OSType = OSType.Linux,
+    Version = "3.5",
+    // Use an Azure storage account as the default storage
+    DefaultStorageInfo = new AzureStorageInfo("<StorageAccount>", "<StorageKey>", "<BlobContainerName>"),
+    Location = "EAST US 2",
+    SshUserName = "sshuser",
+    SshPassword = "<Enter SSH User Password>",
+};
+
+// Create the cluster
+managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName>", parameters);
+```
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="1d543-121">了解管理 API</span><span class="sxs-lookup"><span data-stu-id="1d543-121">Explore the management APIs</span></span>](/dotnet/api/overview/azure/hdinsights/management)
+
+
+## <a name="samples"></a><span data-ttu-id="1d543-122">示例</span><span class="sxs-lookup"><span data-stu-id="1d543-122">Samples</span></span>
+
+- [<span data-ttu-id="1d543-123">群集创建</span><span class="sxs-lookup"><span data-stu-id="1d543-123">Cluster creation</span></span>](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-dotnet-sdk)
+- [<span data-ttu-id="1d543-124">群集管理</span><span class="sxs-lookup"><span data-stu-id="1d543-124">Cluster management</span></span>](https://docs.microsoft.com/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)
+- [<span data-ttu-id="1d543-125">运行 Hive 作业</span><span class="sxs-lookup"><span data-stu-id="1d543-125">Run Hive jobs</span></span>](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
+- [<span data-ttu-id="1d543-126">运行 Pig 作业</span><span class="sxs-lookup"><span data-stu-id="1d543-126">Run Pig jobs</span></span>](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
+- [<span data-ttu-id="1d543-127">更多作业</span><span class="sxs-lookup"><span data-stu-id="1d543-127">More jobs</span></span>](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
+
+<span data-ttu-id="1d543-128">查看 Azure SQL 数据库示例的[完整列表](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=hdinsight)。</span><span class="sxs-lookup"><span data-stu-id="1d543-128">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=hdinsight) of Azure SQL Database samples.</span></span>
+
+[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

@@ -1,0 +1,3 @@
+## <a name="more-samples"></a><span data-ttu-id="b16ae-101">更多示例</span><span class="sxs-lookup"><span data-stu-id="b16ae-101">More samples</span></span>
+
+<span data-ttu-id="b16ae-102">可在 [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code) 上找到用于 .NET 的 Azure 管理库示例的完整集合。</span><span class="sxs-lookup"><span data-stu-id="b16ae-102">The full collection of samples for the Azure Management Libraries for .NET can be found on [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span></span>
