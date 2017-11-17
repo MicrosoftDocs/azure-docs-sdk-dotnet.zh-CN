@@ -77,6 +77,10 @@ sections:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: 使用 Service Fabric 创建 .NET 微服务应用
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vs-team-services.svg'
+            title: 创建适用于 .NET 的 CI/CD 管道
+            href: 'https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore'
   - title: Azure 上的 .NET 入门
     items:
       - type: markdown
