@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 11/17/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 890c00caeca06bf863425c7159d7833c4db8df38
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 9f29e53e7f202e48ade12e28f08487bbacd2833c
+ms.sourcegitcommit: 9cc5f8da9e9a15ba07fd67fe8b9a2d4ee6b57c73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-cosmosdb-libraries-for-net"></a>用于 .NET 的 Azure CosmosDB 库
 
@@ -24,9 +24,11 @@ ms.lasthandoff: 10/26/2017
 
 [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是分布式的可缩放数据存储，支持多种不同类型的数据库。
 
+[CosmosDB 入门](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet)。
+
 ## <a name="client-library"></a>客户端库
 
-使用 CosmosDB .NET 客户端库在 CosmosDB 数据存储中访问和存储数据。
+使用 CosmosDB .NET 客户端库在现有 CosmosDB 数据存储中访问和存储数据。  若要自动创建新的 CosmosDB 帐户，请使用 Azure 门户、CLI 或 PowerShell。
 
 直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)。
 
@@ -44,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>代码示例
 
-此示例连接到现有的 CosmosDB DocumentDB API 数据库，从集合中读取文档，并将文档反序列化为 `Item` 对象。
+此示例连接到现有的 CosmosDB DocumentDB API 数据库，从集合中读取文档，并将文档反序列化为 `Item` 对象。   
 
 ```csharp
 /* Include this "using" directive...
@@ -53,8 +55,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-// "Item" is a class defined elsewhere...
-Item item = client.ReadDocumentAsync<Item>(documentUri).ToString()).Result;
+SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString()).Result;
 ```
 
 > [!div class="nextstepaction"]

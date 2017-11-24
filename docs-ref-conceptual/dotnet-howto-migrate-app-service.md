@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 1e2274c428fedc8c65627a99ae7be8a15c85e610
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 8ad1bcd11a823c1b6f7e592a5990dd6f7ed06e97
+ms.sourcegitcommit: ccc95adb96cf7d56ebce5e09bedf10c2d48f5e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-azure-app-service"></a>将 ASP.NET Web 应用程序迁移到 Azure 应用服务
 
@@ -57,4 +57,4 @@ ms.lasthandoff: 11/15/2017
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [将 ASP.NET Web 应用程序迁移到 Azure 虚拟机](dotnet-howto-migrate-to-vm.md)
+> [将 ASP.NET Web 应用程序迁移到 Azure 应用服务](https://aka.ms/azure-webapp-migrate)
