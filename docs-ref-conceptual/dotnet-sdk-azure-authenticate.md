@@ -78,7 +78,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 
 <span data-ttu-id="d9f41-112">其他库要求应用程序使用[服务主体](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)运行，该服务主体授权应用程序使用授予的凭据来运行。</span><span class="sxs-lookup"><span data-stu-id="d9f41-112">Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials.</span></span> <span data-ttu-id="d9f41-113">此配置类似于管理库的下列基于对象的身份验证步骤。</span><span class="sxs-lookup"><span data-stu-id="d9f41-113">This configuration is similar to the object-based authentication steps for the management library listed below.</span></span>
 
-## <span data-ttu-id="d9f41-114"><a name="mgmt-auth"></a>用于 .NET 的 Azure 管理库身份验证</span><span class="sxs-lookup"><span data-stu-id="d9f41-114"><a name="mgmt-auth"></a>Azure management libraries for .NET authentication</span></span>
+## <a name="mgmt-auth"></a><span data-ttu-id="d9f41-114">用于 .NET 的 Azure 管理库身份验证</span><span class="sxs-lookup"><span data-stu-id="d9f41-114">Azure management libraries for .NET authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
@@ -116,7 +116,7 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
-### <span data-ttu-id="d9f41-124"><a name="mgmt-file"></a>基于文件的身份验证</span><span class="sxs-lookup"><span data-stu-id="d9f41-124"><a name="mgmt-file"></a>File-based authentication</span></span>
+### <a name="mgmt-file"></a><span data-ttu-id="d9f41-124">基于文件的身份验证</span><span class="sxs-lookup"><span data-stu-id="d9f41-124">File-based authentication</span></span>
 
 <span data-ttu-id="d9f41-125">使用基于文件的身份验证可将服务主体凭据放入纯文本文件，并在文件系统中对其进行保护。</span><span class="sxs-lookup"><span data-stu-id="d9f41-125">File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.</span></span>
 
