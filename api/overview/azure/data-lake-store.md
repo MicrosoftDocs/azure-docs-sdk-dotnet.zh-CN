@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2b1c51575872b12a94eb44c7c082996bb879bcc9
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>用于 .NET 的 Azure Data Lake Store 库
 
@@ -25,6 +25,39 @@ ms.lasthandoff: 10/26/2017
 Azure Data Lake Store 是一个企业范围的超大规模存储库，适用于大数据分析工作负荷。 使用 Azure Data Lake 可以在单个位置捕获任何大小、类型和引入速度的数据进行操作和探索分析。
 
 有关详细信息，请参阅 [Azure Data Lake Store 概述](/azure/data-lake-store/data-lake-store-overview)。
+
+## <a name="client-library"></a>客户端库
+
+使用客户端库可在 Data Lake Store 上执行文件系统操作，如在 Data Lake Store 帐户中创建文件夹，上传文件，以及下载文件。  有关将 Data Lake Store 与 .NET 一起使用的完整教程，请参阅[使用 .NET SDK 在 Azure Data Lake Store 上执行的文件系统操作](/azure/data-lake-store/data-lake-store-data-operations-net-sdk)。
+
+直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store)。
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio 包管理器
+
+```powershell
+Install-Package Microsoft.Azure.DataLake.Store
+```
+
+```bash
+dotnet add package Microsoft.Azure.DataLake.Store
+```
+### <a name="authentication"></a>身份验证
+
+* 有关应用程序的最终用户身份验证，请参阅[使用 .NET SDK 通过 Data Lake Store 进行最终用户身份验证](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)。
+* 有关应用程序的服务到服务身份验证，请参阅[使用 .NET SDK 通过 Data Lake Store 进行服务到服务身份验证](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)。
+
+### <a name="code-example"></a>代码示例
+
+以下代码片段创建了 Data Lake Store filesystem 客户端对象，用于向服务发出请求。
+
+```csharp
+// Create client objects
+AdlsClient client = AdlsClient.CreateClient(_adlsAccountName, adlCreds);
+```
+
+> [!div class="nextstepaction"]
+> [了解客户端 API](/dotnet/api/overview/azure/datalakestore/client)
+
 
 ## <a name="management-library"></a>管理库
 
@@ -42,30 +75,9 @@ Install-Package Microsoft.Azure.Management.DataLake.Store
 dotnet add package Microsoft.Azure.Management.DataLake.Store
 ```
 
-### <a name="code-example"></a>代码示例
-
-此示例对分析帐户和存储进行身份验证，并创建用于管理的客户端。
-
-```csharp
-/*
-using AdlClient
-using AdlClient.Models 
-*/
-
-// Setup authentication 
-Authentication auth = new Authentication("microsoft.onmicrosoft.com"); // change this to YOUR tenant
-auth.Authenticate();
-
-// Identify the accounts
-StoreAccountRef adls_account = new StoreAccountRef(subscriptionId, resourceGroup, userName);
-
-// Create the clients
-AzureClient az = new AzureClient(auth);
-StoreClient adls = new StoreClient(auth, adls_account);
-```
-
 > [!div class="nextstepaction"]
-> [了解管理 API](/dotnet/api/overview/azure/datalakestore/management)
+> [了解客户端 API](/dotnet/api/overview/azure/datalakestore/management)
+
 
 ## <a name="samples"></a>示例
 

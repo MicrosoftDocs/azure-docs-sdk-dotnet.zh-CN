@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: notification-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 6fe4e3f25aa420322478dc7c10aecd055a70f5c8
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 9fd49ccc8d02eff09a8a53e6f1b9baa6a7a59082
+ms.sourcegitcommit: 33732307162ddf6f272b0e9cc7f74eb8e6fdda1b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>用于 .NET 的 Azure 通知中心库
 
@@ -25,6 +25,9 @@ Azure 通知中心提供易用的多平台扩展式推送引擎。 使用单个�
 ## <a name="client-library"></a>客户端库
 
 直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs)。
+
+> [!NOTE]
+> [NuGet 包的新预览版](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1)现在支持 .NET Standard，以允许将 .NET Core 用于通知中心的后端使用
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 包管理器
 
