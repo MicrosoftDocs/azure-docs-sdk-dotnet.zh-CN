@@ -10,8 +10,8 @@
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
         - name: SQL 数据库
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-        - name: CosmosDB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
+        - name: Cosmos DB
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
         - name: Blob 存储
@@ -25,7 +25,7 @@
       items:
         - name: 使用 Azure SQL 数据库创建 ASP.NET Web 应用
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-        - name: 使用 CosmosDB 创建 ASP.NET Web 应用
+        - name: 使用 Cosmos DB 创建 ASP.NET Web 应用
           href: /azure/documentdb/documentdb-dotnet-application
         - name: 创建和部署 Web API
           href: /azure/app-service-api/app-service-api-dotnet-get-started
@@ -35,8 +35,8 @@
           href: /azure/sql-database/sql-database-connect-query-dotnet
         - name: 连接和查询 PostgreSQL
           href: /azure/postgresql/connect-csharp
-        - name: CosmosDB DocumentDB API 入门
-          href: /azure/cosmos-db/documentdb-dotnetcore-get-started
+        - name: Cosmos DB SQL API 入门
+          href: /azure/cosmos-db/sql-api-get-started
     - name: 如何
       items:
         - name: 迁移
