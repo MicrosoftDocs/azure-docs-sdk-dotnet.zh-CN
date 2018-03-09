@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 9f54fb6aca934f07c6ae23a4ae40dc29fa48ec8b
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 356a86e8fa70512b6f31c6e237173a74d1c6f60a
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-app-service-libraries-for-net"></a>用于 .NET 的 Azure 应用服务库
 
@@ -66,10 +66,10 @@ IWebApp app1 = azure.WebApps
 
 ### <a name="samples"></a>示例
 
-* [使用用于 Azure 的 .NET SDK 管理 Web 应用](https://azure.microsoft.com/en-us/resources/samples/app-service-web-dotnet-manage/)
-* [Azure 应用服务的 ASP.NET 示例](https://azure.microsoft.com/en-us/resources/samples/app-service-web-dotnet-get-started/)
+* [使用用于 Azure 的 .NET SDK 管理 Web 应用](https://azure.microsoft.com/resources/samples/app-service-web-dotnet-manage/)
+* [Azure 应用服务的 ASP.NET 示例](https://azure.microsoft.com/resources/samples/app-service-web-dotnet-get-started/)
 
-查看 Azure 应用服务示例的[完整列表](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=app%20service)。
+查看 Azure 应用服务示例的[完整列表](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=app%20service)。
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

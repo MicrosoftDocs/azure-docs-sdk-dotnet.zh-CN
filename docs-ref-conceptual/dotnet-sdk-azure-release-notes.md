@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 714bd05653c6b41b21b95581b1115b0bfa1956ed
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 19008714ee38ae00195b08c05fee5bf943da759f
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>发行说明 
 
@@ -49,14 +48,14 @@ ms.lasthandoff: 10/23/2017
     <td valign="top"></td>
   </tr>
   <tr>
-    <td>联网</td>
+    <td>网络</td>
     <td>虚拟网络<br>网络接口<br>IP 地址<br>路由表<br>网络安全组<br>DNS<br>流量管理器</td>
     <td valign="top">负载均衡器<br>应用程序网关数</td>
     <td valign="top"></td>
   </tr>
   <tr>
     <td>其他服务</td>
-    <td>资源管理器<br>Key Vault<br>Redis<br>CDN<br>批处理</td>
+    <td>资源管理器<br>Key Vault<br>Redis<br>CDN<br>Batch</td>
     <td valign="top">应用服务 - Web 应用<br>函数<br>服务总线</td>
     <td valign="top">监视<br>Graph RBAC<br>DocumentDB<br>计划程序</td>
   </tr>

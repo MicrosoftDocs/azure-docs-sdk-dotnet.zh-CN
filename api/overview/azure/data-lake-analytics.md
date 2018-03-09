@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-analytics
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa99608ec5568450a90cc2b93c3f1c5d0e38bfb1
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 063513d8c523330276cdfc222d3ca00a9629f63a
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-data-lake-analytics-libraries-for-net"></a>用于 .NET 的 Azure Data Lake Analytics 库
 
@@ -67,7 +67,7 @@ AnalyticsClient adla = new AnalyticsClient(auth, adla_account);
 > [了解管理 API](/dotnet/api/overview/azure/datalakeanalytics/management)
 
 ## <a name="samples"></a>示例
-* [Azure Data Lake .NET 客户端示例](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+* [Azure Data Lake .NET 客户端示例](https://azure.microsoft.com/resources/samples/data-lake-dotnet-client/)
 
 详细了解可在应用中使用的[示例 .NET 代码](https://azure.microsoft.com/resources/samples/?platform=dotnet)。
 
