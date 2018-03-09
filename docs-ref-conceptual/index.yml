@@ -1,122 +1,125 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: 面向 .NET 开发人员的 Azure
+title: "面向 .NET 开发人员的 Azure"
 metadata:
   document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
-  title: 面向 .NET 开发人员的 Azure - 教程和 API 参考
-  description: 使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发应用。
-  keywords: 'Azure, .NET, SDK, API, NuGet'
+  title: "面向 .NET 开发人员的 Azure - 教程和 API 参考"
+  description: "使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发应用。"
+  keywords: Azure, .NET, SDK, API, NuGet
   author: camsoper
   ms.author: casoper
   manager: douge
   ms.date: 07/13/2017
-  ms.topic: article
+  ms.topic: landing-page
   featureFlags:
-    - clicktale
-  ms.prod: azure
+  - clicktale
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
+  ms.openlocfilehash: 297b6fbef2ed626667dccb72b1a30dd278ab5fb5
+  ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/05/2018
 sections:
-  - items:
-      - type: markdown
-        text: |
-          使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发应用。
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-            html: <p>将第一个 .NET 应用部署到 Azure</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
-            title: 入门
-          - href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet&view=azure-dotnet'
-            html: <p>使用 .NET 的 Azure 代码示例</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_code-samples.svg'
-            title: 代码示例
-          - href: 'https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet'
-            html: <p>开发人员工具</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_download-install.svg'
-            title: SDK 和工具
-          - href: 'https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet'
-            html: <p>用于 .NET 的 NuGet 包</p>
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
-            title: API 参考
-  - title: 5 分钟快速入门
+- items:
+  - type: markdown
+    text: "使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发应用。\n"
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
     items:
-      - type: paragraph
-        text: 了解如何使用 Azure 服务生成 .NET 应用。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg'
-            title: 将第一个 .NET 应用部署到 Azure
-            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-          - image:
-              src: 'https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg'
-            title: 创建 .NET 无服务器函数
-            href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
-          - image:
-              src: 'https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg'
-            title: 将 .NET 应用连接到 Azure SQL 数据库
-            href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-          - image:
-              src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
-            title: 使用 Cosmos DB 生成 .NET 应用
-            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
-          - image:
-              src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
-            title: 使用 Service Fabric 创建 .NET 微服务应用
-            href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vs-team-services.svg'
-            title: 创建适用于 .NET 的 CI/CD 管道
-            href: 'https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore'
-  - title: Azure 上的 .NET 入门
+    - href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      html: "<p>将第一个 .NET 应用部署到 Azure</p>"
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
+      title: "入门"
+    - href: https://azure.microsoft.com/resources/samples/?platform=dotnet&view=azure-dotnet
+      html: "<p>使用 .NET 的 Azure 代码示例</p>"
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_code-samples.svg
+      title: "代码示例"
+    - href: https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet
+      html: "<p>开发人员工具</p>"
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_download-install.svg
+      title: "SDK 和工具"
+    - href: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet
+      html: "<p>用于 .NET 的 NuGet 包</p>"
+      image:
+        src: https://docs.microsoft.com/en-us/media/common/i_api-reference.svg
+      title: "API 参考"
+- title: "5 分钟快速入门"
+  items:
+  - type: paragraph
+    text: "了解如何使用 Azure 服务生成 .NET 应用。"
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
     items:
-      - type: markdown
-        text: '<iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>'
-  - title: Pluralsight 上的免费 .NET 和 Azure 培训视频
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
+      title: "将第一个 .NET 应用部署到 Azure"
+      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
+      title: "创建 .NET 无服务器函数"
+      href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
+      title: "将 .NET 应用连接到 Azure SQL 数据库"
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
+      title: "使用 Cosmos DB 生成 .NET 应用"
+      href: https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
+      title: "使用 Service Fabric 创建 .NET 微服务应用"
+      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+    - image:
+        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+      title: "创建适用于 .NET 的 CI/CD 管道"
+      href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore
+- title: "Azure 上的 .NET 入门"
+  items:
+  - type: markdown
+    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
+- title: "Pluralsight 上的免费 .NET 和 Azure 培训视频"
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
     items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02'
-            image:
-              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
-            title: 在 Azure 上使用 .NET 进行开发
-  - title: 示例
+    - href: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
+      image:
+        src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
+      title: "在 Azure 上使用 .NET 进行开发"
+- title: "示例"
+  items:
+  - type: list
+    style: unordered
     items:
-      - type: list
-        style: unordered
-        items:
-          - html: '<a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">使用 Cosmos DB 和 Mongo DB API 开发 .NET 应用</a>'
-          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">.NET 中的 Azure 客户端加密入门</a>'
-          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">.NET 中的 Azure 表存储入门</a>'
-          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">使用 .NET 的 Azure Blob 存储</a>'
-          - html: '<a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Azure Redis 缓存入门</a>'
-  - title: 分步教程
+    - html: "<a href=\"https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/\">使用 Cosmos DB 和 Mongo DB API 开发 .NET 应用</a>"
+    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/\">.NET 中的 Azure 客户端加密入门</a>"
+    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ \">.NET 中的 Azure 表存储入门</a>"
+    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/\">使用 .NET 的 Azure Blob 存储</a>"
+    - html: "<a href=\"https://azure.microsoft.com/resources/samples/redis-cache-getting-started/\">Azure Redis 缓存入门</a>"
+- title: "分步教程"
+  items:
+  - type: paragraph
+    text: "了解如何在 .NET 应用中使用 Azure 服务和工具。"
+  - type: list
+    style: unordered
     items:
-      - type: paragraph
-        text: 了解如何在 .NET 应用中使用 Azure 服务和工具。
-      - type: list
-        style: unordered
-        items:
-          - html: '<a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">使用 Azure SQL 数据库创建 ASP.NET Web 应用</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application">使用 CosmosDB 创建 ASP.NET Web 应用</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">在 Azure 中创建和部署 Web API</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes 和 Windows 容器入门</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">连接和查询 Azure SQL 数据库</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">连接和查询 Azure Database for PostgreSQL</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">.NET Core 中的 CosmosDB DocumentDB API 入门</a>'
+    - html: "<a href=\"https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase\">使用 Azure SQL 数据库创建 ASP.NET Web 应用</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application\">使用 CosmosDB 创建 ASP.NET Web 应用</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started\">在 Azure 中创建和部署 Web API</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough\">Kubernetes 和 Windows 容器入门</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet\">连接和查询 Azure SQL 数据库</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/postgresql/connect-csharp\">连接和查询 Azure Database for PostgreSQL</a>"
+    - html: "<a href=\"https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started\">.NET Core 中的 CosmosDB DocumentDB API 入门</a>"
