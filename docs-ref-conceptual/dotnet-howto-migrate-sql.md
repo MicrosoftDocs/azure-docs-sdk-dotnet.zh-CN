@@ -11,24 +11,45 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter
-ms.openlocfilehash: 967f034fcd2c2487f6a5709d243ce25fc9b6e85e
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="migrate-a-sql-server-database-to-azure"></a>将 SQL Server 数据库迁移到 Azure
+## <a name="migrate-a-sql-server-database-to-azure"></a>将 SQL Server 数据库迁移到 Azure
+
+本短文提供了用于将 SQL Server 数据库迁移到 Azure 的两个选项的简要概述。
 
 Azure 提供两个主要选项用于迁移生产 SQL Server 数据库：
 
-1. [Azure VM 中的 SQL Server](https://azure.microsoft.com/services/virtual-machines/sql-server/)：在 Azure 中运行的 Windows 虚拟机上安装和托管的 SQL Server 实例，也称为基础结构即服务 (IaaS)。
-2. [Azure SQL 数据库](https://azure.microsoft.com/services/sql-database/)：完全托管的 SQL 数据库 Azure 服务，也称为平台即服务 (PaaS)。
+1. [Azure VM 中的 SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview)：在 Azure 中运行的 Windows 虚拟机上安装和托管的 SQL Server 实例，也称为基础结构即服务 (IaaS)。
+2. [Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)：完全托管的 SQL 数据库 Azure 服务，也称为平台即服务 (PaaS)。
 
 两者各有利弊，在迁移之前需要进行评估。
 
+## <a name="get-started"></a>入门
+
+以下迁移指南将十分有用，具体取决于你使用哪个服务：
+
+* [将 SQL Server 数据库迁移到 Azure VM 中的 SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
+* [将 SQL Server 数据库迁移至 Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-migrate-your-sql-server-database)
+
+此外，以下概念性内容的链接将帮助你更好地理解 VM：
+
+* [Azure 虚拟机中 SQL Server 的高可用性和灾难恢复](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
+* [Azure 虚拟机中 SQL Server 的性能最佳实践](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
+* [Azure 虚拟机中的 SQL Server 的应用程序模式和开发策略](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
+
+以下链接有助于更好地了解 Azure SQL 数据库：
+
+* [创建和管理 Azure SQL 数据库服务器与数据库](https://docs.microsoft.com/azure/sql-database/sql-database-servers-databases)
+* [数据库事务单位 (DTU) 和弹性数据库事务单位 (eDTU)](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)
+* [Azure SQL 数据库资源限制](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits)
+
 ## <a name="choosing-iaas-or-paas"></a>选择 IaaS 或 PaaS
 
-首先，应确定是 IaaS 还是 PaaS 更适合自己。
+当评估数据库要迁移到的位置时，应确定是 IaaS 还是 PaaS 更适合你。
 
 **对于以下情况，应选择 Azure VM 中的 SQL Server：**
 
@@ -52,26 +73,7 @@ Azure 提供两个主要选项用于迁移生产 SQL Server 数据库：
 | 管理数据库大小 | 支持为每个 SQL Server 实例最多配置 64TB 存储。 | 支持 4TB 存储，超过此限制后，需要横向分区。 |
 | 管理成本 | 必须管理 SQL Server 许可成本、Windows Server 许可成本和 VM 成本（基于核心数、RAM 和存储）。 | 必须管理服务成本（基于 [eDTU 或 DTU](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)、存储，以及数据库数目（如果使用弹性池））。  此外，必须管理任何 SLA 的成本。 |
 
-若要详细了解两者之间的差异，请参阅[选择云 SQL Server 选项：Azure SQL 数据库或 Azure VM 中的 SQL Server](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)。
-
-## <a name="get-started"></a>入门
-
-下一步是迁移数据库。  可根据所做的选择参阅以下迁移指南：
-
-* [将 SQL Server 数据库迁移到 Azure VM 中的 SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)
-* [将 SQL Server 数据库迁移至 Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-migrate-your-sql-server-database)
-
-此外，以下链接有助于更好地了解 VM：
-
-* [Azure 虚拟机中 SQL Server 的高可用性和灾难恢复](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr)
-* [Azure 虚拟机中 SQL Server 的性能最佳实践](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance)
-* [Azure 虚拟机中的 SQL Server 的应用程序模式和开发策略](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-app-patterns-dev-strategies)
-
-以下链接有助于更好地了解 Azure SQL 数据库：
-
-* [创建和管理 Azure SQL 数据库服务器与数据库](https://docs.microsoft.com/azure/sql-database/sql-database-servers-databases)
-* [数据库事务单位 (DTU) 和弹性数据库事务单位 (eDTU)](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu)
-* [Azure SQL 数据库资源限制](https://docs.microsoft.com/azure/sql-database/sql-database-resource-limits)
+若要了解有关两者之间的差异的详细信息，请阅读“选择云 SQL Server 选项：[Azure SQL 数据库或 Azure VM 上的 SQL Server](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)”。
 
 ## <a name="faq"></a>常见问题
 
@@ -86,7 +88,7 @@ Azure 提供两个主要选项用于迁移生产 SQL Server 数据库：
 * **是否可以估算成本？**
 
     是的。  可以使用 [Azure 定价计算器](https://azure.microsoft.com/pricing/calculator/)估算所有 Azure 服务（包括 VM 和数据库服务）的成本。
-
+    
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
