@@ -1,6 +1,6 @@
 ---
-title: "Azure 中的 AI 和认知服务的 .NET 教程 | Microsoft Docs"
-description: "使用 Microsoft Azure 服务将 AI 和认知服务添加到 .NET 应用。"
+title: Azure 中的 AI 和认知服务的 .NET 教程 | Microsoft Docs
+description: 使用 Microsoft Azure 服务将 AI 和认知服务添加到 .NET 应用。
 author: camsoper
 ms.author: casoper
 manager: wpickett

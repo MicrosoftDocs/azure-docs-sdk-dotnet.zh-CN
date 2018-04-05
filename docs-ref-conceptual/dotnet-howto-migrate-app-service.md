@@ -1,7 +1,7 @@
 ---
-title: "将 ASP.NET Web 应用程序迁移到 Azure 应用服务"
-description: "了解如何将 ASP.NET Web 应用程序从本地迁移到 Azure 应用服务。"
-keywords: "Azure .NET, ASP.NET, 应用服务, Web 应用, 迁移"
+title: 将 ASP.NET Web 应用程序迁移到 Azure 应用服务
+description: 了解如何将 ASP.NET Web 应用程序从本地迁移到 Azure 应用服务。
+keywords: Azure .NET, ASP.NET, 应用服务, Web 应用, 迁移
 author: camsoper
 manager: wpickett
 ms.author: casoper

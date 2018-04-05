@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 应用服务库"
-description: "用于 .NET 的 Azure 应用服务库参考"
-keywords: "Azure, .NET, SDK, API, web 应用, 应用服务, 移动, asp.net"
+title: 用于 .NET 的 Azure 应用服务库
+description: 用于 .NET 的 Azure 应用服务库参考
+keywords: Azure, .NET, SDK, API, web 应用, 应用服务, 移动, asp.net
 author: camsoper
 ms.author: casoper
 manager: wpickett

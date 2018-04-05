@@ -1,6 +1,6 @@
 ---
-title: "有关在 Azure 中生成 Web 和移动 .NET 应用的教程"
-description: "有关使用 Azure 服务生成 Web 和移动 .NET 应用并在其中添加功能的教程。"
+title: 有关在 Azure 中生成 Web 和移动 .NET 应用的教程
+description: 有关使用 Azure 服务生成 Web 和移动 .NET 应用并在其中添加功能的教程。
 author: camsoper
 ms.author: casoper
 manager: wpickett

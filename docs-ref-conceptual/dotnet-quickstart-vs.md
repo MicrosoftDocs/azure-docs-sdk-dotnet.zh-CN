@@ -1,7 +1,7 @@
 ---
-title: "从 Visual Studio 部署到 Azure"
-description: "本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。"
-keywords: "Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库"
+title: 从 Visual Studio 部署到 Azure
+description: 本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。
+keywords: Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库
 author: camsoper
 manager: douge
 ms.author: casoper

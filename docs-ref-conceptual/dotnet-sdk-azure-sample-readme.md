@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 管理库的示例说明"
-description: "获取有关使用用于 .NET 的 Azure 管理库创建和更新资源的示例代码。"
-keywords: "Azure, .NET, SDK, API, 示例, 例子"
+title: 用于 .NET 的 Azure 管理库的示例说明
+description: 获取有关使用用于 .NET 的 Azure 管理库创建和更新资源的示例代码。
+keywords: Azure, .NET, SDK, API, 示例, 例子
 author: camsoper
 ms.author: casoper
 manager: wpickett

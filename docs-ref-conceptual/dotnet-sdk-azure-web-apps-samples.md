@@ -1,7 +1,7 @@
 ---
-title: "使用 .NET 生成 Azure Web 和移动应用的示例代码"
-description: "获取有关创建和更新 Azure Web 应用 .NET 的示例代码"
-keywords: "Azure, .NET, SDK, API, SQL, 数据库"
+title: 使用 .NET 生成 Azure Web 和移动应用的示例代码
+description: 获取有关创建和更新 Azure Web 应用 .NET 的示例代码
+keywords: Azure, .NET, SDK, API, SQL, 数据库
 author: camsoper
 ms.author: casoper
 manager: wpickett

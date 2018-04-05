@@ -1,6 +1,6 @@
 ---
-title: "有关在 Azure 上的 .NET 应用中使用存储的教程"
-description: "在 Azure 上运行的 .NET 应用程序中保存对象和使用文件"
+title: 有关在 Azure 上的 .NET 应用中使用存储的教程
+description: 在 Azure 上运行的 .NET 应用程序中保存对象和使用文件
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,6 +1,6 @@
 ---
-title: "有关在 Azure 中管理和监视 .NET 应用的教程"
-description: "监视 Azure 中运行的 .NET 应用程序的运行状况和性能并检测遥测数据，以保存有关用户如何使用应用的信息。"
+title: 有关在 Azure 中管理和监视 .NET 应用的教程
+description: 监视 Azure 中运行的 .NET 应用程序的运行状况和性能并检测遥测数据，以保存有关用户如何使用应用的信息。
 author: camsoper
 ms.author: casoper
 manager: wpickett

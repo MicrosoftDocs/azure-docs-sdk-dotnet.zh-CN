@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET 存储 API"
-description: "用于 .NET 的 Azure 存储库参考"
-keywords: "Azure, .NET, SDK, API, 存储, blob"
+title: Azure .NET 存储 API
+description: 用于 .NET 的 Azure 存储库参考
+keywords: Azure, .NET, SDK, API, 存储, blob
 author: camsoper
 ms.author: casoper
 manager: wpickett

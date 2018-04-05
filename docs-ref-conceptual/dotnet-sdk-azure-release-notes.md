@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 管理库发行说明 | Microsoft Docs"
-description: "了解用于 .NET 的 Azure 管理库的新增功能，并留意其中的重大更改。"
-keywords: "Azure, .NET, API, 参考, 说明, 更新, 弃用"
+title: 用于 .NET 的 Azure 管理库发行说明 | Microsoft Docs
+description: 了解用于 .NET 的 Azure 管理库的新增功能，并留意其中的重大更改。
+keywords: Azure, .NET, API, 参考, 说明, 更新, 弃用
 author: camsoper
 ms.author: casoper
 manager: wpickett

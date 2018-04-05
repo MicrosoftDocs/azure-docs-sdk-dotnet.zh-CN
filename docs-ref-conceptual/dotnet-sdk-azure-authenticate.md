@@ -1,7 +1,7 @@
 ---
-title: "使用用于 .NET 的 Azure 库进行身份验证"
-description: "在用于 .NET 的 Azure 库中进行身份验证"
-keywords: "Azure, .NET, SDK, API, 身份验证, active directory, 服务主体"
+title: 使用用于 .NET 的 Azure 库进行身份验证
+description: 在用于 .NET 的 Azure 库中进行身份验证
+keywords: Azure, .NET, SDK, API, 身份验证, active directory, 服务主体
 author: camsoper
 ms.author: casoper
 manager: wpickett

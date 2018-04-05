@@ -1,6 +1,6 @@
 ---
-title: "有关在 Azure 上的 .NET 中使用消息传送和 IoT 的教程 | Microsoft Docs"
-description: "使用 .NET 和 Azure 服务在云应用程序之间以及设备与云之间发送消息。"
+title: 有关在 Azure 上的 .NET 中使用消息传送和 IoT 的教程 | Microsoft Docs
+description: 使用 .NET 和 Azure 服务在云应用程序之间以及设备与云之间发送消息。
 author: camsoper
 ms.author: casoper
 manager: wpickett
