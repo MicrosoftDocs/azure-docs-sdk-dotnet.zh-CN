@@ -1,6 +1,6 @@
 ---
-title: "有关在 Azure 中部署容器的 .NET 教程"
-description: "在 Azure 上的 Docker 容器中部署 .NET 应用程序，并使用 DC/OS、Mesos 或 Kubernetes 对其进行缩放。"
+title: 有关在 Azure 中部署容器的 .NET 教程
+description: 在 Azure 上的 Docker 容器中部署 .NET 应用程序，并使用 DC/OS、Mesos 或 Kubernetes 对其进行缩放。
 author: camsoper
 ms.author: casoper
 manager: wpickett

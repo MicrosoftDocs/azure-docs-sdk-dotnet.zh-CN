@@ -1,6 +1,6 @@
 ---
-title: "有关保护 Azure 应用的 .NET 教程"
-description: "有关 Azure 上运行的 .NET 应用的应用程序安全和标识管理的教程。"
+title: 有关保护 Azure 应用的 .NET 教程
+description: 有关 Azure 上运行的 .NET 应用的应用程序安全和标识管理的教程。
 author: camsoper
 ms.author: casoper
 manager: wpickett

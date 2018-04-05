@@ -1,6 +1,6 @@
 ---
-title: "Azure 中的数据分析的 .NET 教程 | Microsoft Docs"
-description: "使用 Microsoft Azure 服务开发数据分析应用程序。"
+title: Azure 中的数据分析的 .NET 教程 | Microsoft Docs
+description: 使用 Microsoft Azure 服务开发数据分析应用程序。
 author: camsoper
 ms.author: casoper
 manager: wpickett

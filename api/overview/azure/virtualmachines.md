@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 计算库"
-description: "用于 .NET 的 Azure 计算库参考"
-keywords: "Azure, .NET, SDK, API, VM, 虚拟机, 计算"
+title: 用于 .NET 的 Azure 计算库
+description: 用于 .NET 的 Azure 计算库参考
+keywords: Azure, .NET, SDK, API, VM, 虚拟机, 计算
 author: camsoper
 ms.author: casoper
 manager: wpickett

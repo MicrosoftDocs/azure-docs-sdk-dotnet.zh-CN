@@ -1,6 +1,6 @@
 ---
-title: "用于 Visual Studio 2015 的 Azure 工具"
-description: "获取工具以开始使用 Visual Studio 2015 中的 Azure .NET 库。"
+title: 用于 Visual Studio 2015 的 Azure 工具
+description: 获取工具以开始使用 Visual Studio 2015 中的 Azure .NET 库。
 keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
 author: camsoper
 ms.author: casoper

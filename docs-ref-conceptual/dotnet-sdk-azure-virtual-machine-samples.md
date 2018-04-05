@@ -1,7 +1,7 @@
 ---
-title: "演示使用 .NET 进行 Azure 虚拟机管理的示例代码"
-description: "获取有关使用 .NET 创建和更新 Azure 虚拟机的示例代码"
-keywords: "Azure, .NET, SDK, API, 虚拟机"
+title: 演示使用 .NET 进行 Azure 虚拟机管理的示例代码
+description: 获取有关使用 .NET 创建和更新 Azure 虚拟机的示例代码
+keywords: Azure, .NET, SDK, API, 虚拟机
 author: camsoper
 ms.author: casoper
 manager: wpickett

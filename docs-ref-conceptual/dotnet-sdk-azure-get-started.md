@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET API 入门"
-description: "结合自己的 Azure 订阅开始了解用于 .NET 的 Azure 库的基本用法。"
-keywords: "Azure, .NET, SDK, API, 身份验证, 入门"
+title: Azure .NET API 入门
+description: 结合自己的 Azure 订阅开始了解用于 .NET 的 Azure 库的基本用法。
+keywords: Azure, .NET, SDK, API, 身份验证, 入门
 author: camsoper
 ms.author: casoper
 manager: wpickett

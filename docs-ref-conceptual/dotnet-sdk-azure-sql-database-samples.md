@@ -1,7 +1,7 @@
 ---
-title: "有关在 .NET 中使用 Azure 数据库的示例代码"
-description: "获取有关在 .NET 中使用 Azure 数据库创建应用程序的示例代码"
-keywords: "Azure, .NET, SDK, API, SQL, 数据库"
+title: 有关在 .NET 中使用 Azure 数据库的示例代码
+description: 获取有关在 .NET 中使用 Azure 数据库创建应用程序的示例代码
+keywords: Azure, .NET, SDK, API, SQL, 数据库
 author: camsoper
 ms.author: casoper
 manager: wpickett

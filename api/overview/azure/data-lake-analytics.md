@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure Data Lake Analytics 库"
-description: "用于 .NET 的 Azure Data Lake Analytics 库参考"
+title: 用于 .NET 的 Azure Data Lake Analytics 库
+description: 用于 .NET 的 Azure Data Lake Analytics 库参考
 keywords: Azure, .NET, SDK, API, Data Lake Analytics
 author: camsoper
 ms.author: casoper

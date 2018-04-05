@@ -1,6 +1,6 @@
 ---
-title: "有关使用 Azure 数据库的 .NET 教程"
-description: "有关连接和使用 .NET 应用程序中的 Azure 数据库的教程。"
+title: 有关使用 Azure 数据库的 .NET 教程
+description: 有关连接和使用 .NET 应用程序中的 Azure 数据库的教程。
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 管理库用法概念和模式"
-description: 
-keywords: "Azure, .NET, SDK, API, 模式, 概念, fluent, 日志记录"
+title: 用于 .NET 的 Azure 管理库用法概念和模式
+description: ''
+keywords: Azure, .NET, SDK, API, 模式, 概念, fluent, 日志记录
 author: camsoper
 ms.author: casoper
 manager: wpickett

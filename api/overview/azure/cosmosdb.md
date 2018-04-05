@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure CosmosDB 库"
-description: "用于 .NET 的 Azure CosmosDB 库参考"
+title: 用于 .NET 的 Azure CosmosDB 库
+description: 用于 .NET 的 Azure CosmosDB 库参考
 keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper
