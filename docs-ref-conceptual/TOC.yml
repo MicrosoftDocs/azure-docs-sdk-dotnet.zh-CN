@@ -78,14 +78,4 @@
         - name: 监视 + 管理
           href: dotnet-tutorials-services-monitoring.md
     - name: .NET 代码示例
-      items:
-        - name: 照片库 - Web 应用和存储
-          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
-        - name: Web 应用
-          href: dotnet-sdk-azure-web-apps-samples.md
-        - name: 数据库
-          href: dotnet-sdk-azure-sql-database-samples.md
-        - name: 虚拟机
-          href: dotnet-sdk-azure-virtual-machine-samples.md
-        - name: 所有 .NET 示例
-          href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
+      href: dotnet-samples.md
