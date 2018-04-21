@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 服务总线库"
-description: "用于 .NET 的 Azure 服务总线库参考"
-keywords: "Azure, .NET, SDK, API, 服务总线"
+title: 用于 .NET 的 Azure 服务总线库
+description: 用于 .NET 的 Azure 服务总线库参考
+keywords: Azure, .NET, SDK, API, 服务总线
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>用于 .NET 的 Azure 服务总线库
 
@@ -26,12 +26,12 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="client-library"></a>客户端库
 
-直接从 Visual Studio [包管理器控制台][PackageManager]安装 [NuGet 包](https://www.nuget.org/packages/WindowsAzure.ServiceBus)。
+直接从 Visual Studio [包管理器控制台][PackageManager]安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus)。
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 包管理器
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
 ### <a name="code-example"></a>代码示例
@@ -39,11 +39,13 @@ Install-Package WindowsAzure.ServiceBus
 此示例向服务总线队列发送消息。
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]

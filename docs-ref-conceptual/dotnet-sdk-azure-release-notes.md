@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 19008714ee38ae00195b08c05fee5bf943da759f
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="release-notes"></a>发行说明 
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/05/2018
     <td>其他服务</td>
     <td>资源管理器<br>Key Vault<br>Redis<br>CDN<br>Batch</td>
     <td valign="top">应用服务 - Web 应用<br>函数<br>服务总线</td>
-    <td valign="top">监视<br>Graph RBAC<br>DocumentDB<br>计划程序</td>
+    <td valign="top">监视<br>Graph RBAC<br>Azure Cosmos DB<br>计划程序</td>
   </tr>
   <tr>
     <td>基本</td>
