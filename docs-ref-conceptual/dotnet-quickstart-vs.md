@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>从 Visual Studio 部署到 Azure
 
-本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。  完成本教程后，ASP.NET MVC Core 中会生成一个基于 Web 的待办事项应用程序，该应用程序以 Azure Web 应用的形式托管，并使用 Azure CosmosDB 作为数据存储。
+本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。  完成本教程后，ASP.NET MVC Core 中会生成一个基于 Web 的待办事项应用程序，该应用程序以 Azure Web 应用的形式托管，并将 Azure Cosmos DB 用于数据存储。
 
 ## <a name="prerequisites"></a>先决条件
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Microsoft Azure 订阅](https://azure.microsoft.com/free/)
 
-## <a name="create-a-cosmosdb-account"></a>创建 CosmosDB 帐户
+## <a name="create-an-azure-cosmos-db-account"></a>创建 Azure Cosmos DB 帐户
 
-CosmosDB 在本教程中用作数据存储，因此需要创建一个帐户。  在本地或 Cloud Shell 中运行此脚本，以创建 Azure CosmosDB DocumentDB API 帐户。  在以下代码块上单击“试用”按钮，启动 [Azure Cloud Shell](/azure/cloud-shell/) 并将脚本块复制/粘贴到 shell 中。
+Azure Cosmos DB 在本教程中用于数据存储，因此需要创建一个帐户。  在本地或 Cloud Shell 中运行此脚本，以创建 Azure Cosmos DB SQL API 帐户。  在以下代码块上单击“试用”按钮，启动 [Azure Cloud Shell](/azure/cloud-shell/) 并将脚本块复制/粘贴到 shell 中。
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -37,7 +37,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -53,7 +53,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ## <a name="downloading-and-running-the-application"></a>下载并运行应用程序
 
-让我们获取用于本演练的示例代码，并将其挂接到 CosmosDB 帐户。
+让我们获取用于本演练的示例代码，并将其挂接到 Azure Cosmos DB 帐户。
 
 1. 下载示例代码。  可以[从 GitHub 获取示例代码](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)；如果已安装 [git 命令行客户端](https://git-scm.com/)，请使用以下命令将其克隆到本地计算机：
 
@@ -73,11 +73,11 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. 按 **F5** 还原项目的 NuGet 包，生成项目，并在本地运行项目。
 
-Web 应用程序应在浏览器中本地运行。  可以通过单击“新建”将新项添加到待办事项列表。  可以看到，在应用程序中输入的数据正存储到 CosmosDB 帐户中。  可以[在 Azure 门户中查看数据](/azure/documentdb/documentdb-view-json-document-explorer)。
+Web 应用程序应在浏览器中本地运行。  可以通过单击“新建”将新项添加到待办事项列表。  可以看到，在应用程序中输入的数据正存储到 Azure Cosmos DB 帐户中。  可以通过从左侧菜单中选择 Azure Cosmos DB，选择帐户，然后选择“数据资源管理器”，在 [Azure 门户](https://portal.azure.com)中查看数据。
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>将应用程序部署为 Azure Web 应用
 
-现已成功生成一个使用 Cosmos DB 等 Azure 服务的应用程序。  接下来，将 Web 应用程序部署到云中。
+现在已成功生成一个使用 Azure Cosmos DB 等 Azure 服务的应用程序。  接下来，将 Web 应用程序部署到云中。
 
 > [!IMPORTANT]
 > 请务必使用与 Azure 订阅关联的同一帐户登录到 Visual Studio。
@@ -99,7 +99,7 @@ Web 应用程序应在浏览器中本地运行。  可以通过单击“新建�
 
 ## <a name="clean-up"></a>清理
 
-测试完应用并检查代码和资源后，可以通过删除资源组来删除 Web 应用和 CosmosDB 帐户。 在 Cloud Shell 中。
+测试完应用并检查代码和资源后，可以通过在 Cloud Shell 中删除资源组来删除 Web 应用和 Azure Cosmos DB 帐户。
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial

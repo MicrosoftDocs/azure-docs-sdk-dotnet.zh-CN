@@ -1,7 +1,7 @@
 ---
-title: 用于 .NET 的 Azure CosmosDB 库
-description: 用于 .NET 的 Azure CosmosDB 库参考
-keywords: Azure, .NET, SDK, API, CosmosDB
+title: 用于 .NET 的 Azure Cosmos DB 库
+description: 用于 .NET 的 Azure Cosmos DB 库参考
+keywords: Azure, .NET, SDK, API, Cosmos DB
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -12,23 +12,23 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4791e00c18d00fbed13bdf2c626a24fed2ff2863
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: fa9bc7497ac189f18ee0ba14d72d4cdb23a05f0b
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/14/2018
 ---
-# <a name="azure-cosmosdb-libraries-for-net"></a>用于 .NET 的 Azure CosmosDB 库
+# <a name="azure-cosmos-db-libraries-for-net"></a>用于 .NET 的 Azure Cosmos DB 库
 
 ## <a name="overview"></a>概述
 
-[Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是分布式的可缩放数据存储，支持多种不同类型的数据库。
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是分布式的可缩放数据存储，支持多种不同类型的数据库。
 
-[CosmosDB 入门](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet)。
+[Cosmos DB 入门](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)。
 
 ## <a name="client-library"></a>客户端库
 
-使用 CosmosDB .NET 客户端库在现有 CosmosDB 数据存储中访问和存储数据。  若要自动创建新的 CosmosDB 帐户，请使用 Azure 门户、CLI 或 PowerShell。
+使用 Azure Cosmos DB .NET 客户端库在现有 Azure Cosmos DB 数据存储中访问和存储数据。  若要自动创建新的 Azure Cosmos DB 帐户，请使用 Azure 门户、CLI 或 PowerShell。
 
 直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)。
 
@@ -46,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>代码示例
 
-此示例连接到现有的 CosmosDB DocumentDB API 数据库，从集合中读取文档，并将文档反序列化为 `Item` 对象。   
+此示例连接到现有的Azure Cosmos DB SQL API 数据库，从集合中读取文档，并将文档反序列化为 `Item` 对象。   
 
 ```csharp
 /* Include this "using" directive...

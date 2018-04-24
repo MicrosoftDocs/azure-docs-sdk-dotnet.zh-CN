@@ -10,11 +10,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 31023bc25b73c0d02f768aeb357d7c7b5ccf88d0
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: f03f1cc7e2d973aa270f99f7ca29c9cb4d6fd720
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>有关对 Azure 数据库使用 .NET 的教程
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 03/05/2018
 | [使用 .NET 连接和查询数据][1] | 使用 ADO.NET 连接到 Azure SQL 数据库，并使用 Transact-SQL 语句在数据库中查询、插入、更新和删除数据 | 
 | **Azure Database for PostgreSQL** ||
 | [使用 .NET 连接和查询数据][2] | 使用 SQL 语句在数据库中查询、插入、更新和删除数据。 | 
-| **Cosmos DB** ||
-| [Cosmos DB API 入门][4] | 使用 Cosmos DB API 创建简单的控制台应用程序。 | 
-| [使用 CosmosDB 创建 ASP.NET Web 应用][3] | 使用 CosmosDB 的 DocumentDB NoSQL 数据库创建 Web 应用程序 | 
+| **Azure Cosmos DB** ||
+| [Azure Cosmos DB SQL API 入门][4] | 使用 SQL API 创建简单的控制台应用程序。 | 
+| [使用 Azure Cosmos DB SQL API 创建 ASP.NET Web 应用][3] | 使用 Azure Cosmos DB SQL API 创建 Web 应用程序。 | 
 | **Redis 缓存** | |
 | [如何使用 Azure Redis 缓存][6] | 开始使用 Azure Redis 缓存。 |
 | [使用 Redis 缓存创建 Web 应用][5] | 使用 Visual Studio 2017 创建 ASP.NET Web 应用程序并将其部署到 Azure 应用服务中的 Web 应用。  | 
@@ -40,8 +40,8 @@ ms.lasthandoff: 03/05/2018
 
 [1]: /azure/sql-database/sql-database-connect-query-dotnet
 [2]: /azure/postgresql/connect-csharp
-[3]: /azure/cosmos-db/documentdb-dotnet-application
-[4]: /azure/cosmos-db/documentdb-dotnetcore-get-started
+[3]: /azure/cosmos-db/sql-api-dotnet-application
+[4]: /azure/cosmos-db/sql-api-get-started
 [5]: /azure/redis-cache/cache-web-app-howto
 [6]: /azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache
 [7]: /azure/redis-cache/cache-aspnet-session-state-provider
