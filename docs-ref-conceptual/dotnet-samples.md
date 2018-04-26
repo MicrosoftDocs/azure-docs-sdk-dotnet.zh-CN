@@ -11,14 +11,14 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 57804c34f8ccef022b875821acd63a5ce1ec6d1f
-ms.sourcegitcommit: dfa372c929831a2b6218f9f9393eb0f55efd54a6
+ms.openlocfilehash: 85d792859a345cd4e4101aa88a2dcce68bc791b0
+ms.sourcegitcommit: 7b6128836d7657af2be53dcf40c1841cd8fda957
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="azure-code-samples-for-net"></a>用于 .NET 的 Azure 代码示例
-这些是我们建议在通过 .NET 开始使用 Azure 时使用的最受欢迎示例。 也可以浏览[完整的示例集合](https://azure.microsoft.com/resources/samples/?platform=dotnet&sort=2)。
+这些是我们建议在通过 .NET 开始使用 Azure 时使用的最受欢迎样本、教程和示例。
 
 <div id="main" class="v2">
     <div class="container">
@@ -140,3 +140,5 @@ ms.lasthandoff: 04/16/2018
         </ul>
     </div>
 </div>
+
+也可以浏览[完整的示例集合](https://azure.microsoft.com/resources/samples/?platform=dotnet&sort=2)。
