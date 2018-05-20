@@ -1,6 +1,6 @@
 ---
-title: 用于 .NET 的 Azure 代码示例
-description: 用于 .NET 和 Azure 的代码示例。
+title: 用于 .NET 的 Azure C# 代码示例
+description: 用于 .NET 和 Azure 的 C# 代码示例。
 layout: LandingPage
 ms.topic: reference
 author: camsoper
@@ -11,14 +11,15 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 85d792859a345cd4e4101aa88a2dcce68bc791b0
-ms.sourcegitcommit: 7b6128836d7657af2be53dcf40c1841cd8fda957
+ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
+ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="azure-code-samples-for-net"></a>用于 .NET 的 Azure 代码示例
-这些是我们建议在通过 .NET 开始使用 Azure 时使用的最受欢迎样本、教程和示例。
+# <a name="azure-c-code-samples-for-net"></a>用于 .NET 的 Azure C# 代码示例
+
+这些是我们建议在通过 C# 和 .NET 开始使用 Azure 时使用的最受欢迎样本、教程和示例。
 
 <div id="main" class="v2">
     <div class="container">
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>基本网站</h3>
-                                    <p>演示如何创建一个可以在 SQL 后端中存储信息的简单网站。</p>
+                                    <p>了解如何创建一个可以在 SQL 后端中存储信息的简单 ASP.NET Core 网站。</p>
                                 </div>
                             </div>
                         </a>
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function">
+                        <a href="https://github.com/JeremyLikness/ShortLink">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>从 GitHub 触发事件</h3>
-                                    <p>演示如何使用 Azure Functions 和 Webhook 基于 GitHub 操作触发事件。</p>
+                                    <h3>URL 缩短器</h3>
+                                    <p>了解如何使用无服务器 Azure Functions 触发操作。</p>
                                 </div>
                             </div>
                         </a>
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>照片库</h3>
-                                    <p>演示如何创建网页，其中用户可以通过 Azure Web 应用和 Azure blob 存储将图片上传到云中。</p>
+                                    <p>了解如何使用 Azure Blob 存储向云中上传以及从云中下载和访问图像文件。</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app">
+                        <a href="https://github.com/Azure-Samples/service-fabric-dotnet-quickstart">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>投票应用</h3>
-                                    <p>演示如何使用 Kubernetes 和 Docker 容器创建简单的投票应用程序。</p>
+                                    <p>了解如何使用 Azure Service Fabric 在分布式应用中创建可靠的微服务。</p>
                                 </div>
                             </div>
                         </a>
@@ -129,8 +130,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>探索 Cosmos DB</h3>
-                                    <p>借助 .NET Core 和 Mongo 演示 CosmosDB 基本功能。</p>
+                                    <h3>云数据库</h3>
+                                    <p>了解如何使用 Cosmos DB 在现代云数据库中执行基本搜索、创建和编辑。</p>
                                 </div>
                             </div>
                         </a>
