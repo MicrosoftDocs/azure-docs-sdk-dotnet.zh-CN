@@ -16,16 +16,17 @@ metadata:
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
-  ms.openlocfilehash: b2f97eee78d6e4e5b71b036c3550e0532ff7962d
-  ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+  ms.openlocfilehash: 0df719af621462048f432589f4235b220721c591
+  ms.sourcegitcommit: 4ec8ceb3a22c209c9c620dd0982cfbc08d21006c
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/11/2018
+  ms.lasthandoff: 06/05/2018
+  ms.locfileid: "34761375"
 sections:
 - items:
   - type: markdown
     text: >
-      使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发应用。
+      使用以下资源来查找面向 .NET 开发人员的极佳教程和工具，以便在 Azure 中开始开发支持云的应用。
 - items:
   - type: list
     style: cards
@@ -63,8 +64,8 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: 将第一个 .NET 应用部署到 Azure
-      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      title: 使用 SQL Azure 数据库生成 ASP.NET 应用
+      href: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
       title: 创建 .NET 无服务器函数
@@ -82,13 +83,13 @@ sections:
       title: 使用 Service Fabric 创建 .NET 微服务应用
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
     - image:
-        src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
-      title: 创建适用于 .NET 的 CI/CD 管道
-      href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore
+        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
+      title: 使用 C# 和文本分析 API 分析语言
+      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
 - title: Azure 上的 .NET 入门
   items:
   - type: markdown
-    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
+    text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Create-a-NET-app-in-Azure-Quickstart/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
 - title: Pluralsight 上的免费 .NET 和 Azure 培训视频
   items:
   - type: list
@@ -100,16 +101,6 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
       title: 在 Azure 上使用 .NET 和 C# 进行开发
-- title: 示例
-  items:
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">使用 Cosmos DB 和 Mongo DB API 开发 .NET 应用</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">.NET 中的 Azure 客户端加密入门</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">.NET 中的 Azure 表存储入门</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">使用 .NET 的 Azure Blob 存储</a>
-    - html: <a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Azure Redis 缓存入门</a>
 - title: 分步教程
   items:
   - type: paragraph
