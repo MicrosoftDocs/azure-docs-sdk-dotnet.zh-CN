@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728528"
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a><span data-ttu-id="519c1-104">用于 .NET 的 Azure 虚拟机库</span><span class="sxs-lookup"><span data-stu-id="519c1-104">Azure virtual machine libraries for .NET</span></span>
 

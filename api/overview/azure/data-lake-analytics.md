@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728408"
 ---
 # <a name="azure-data-lake-analytics-libraries-for-net"></a><span data-ttu-id="c405f-104">用于 .NET 的 Azure Data Lake Analytics 库</span><span class="sxs-lookup"><span data-stu-id="c405f-104">Azure Data Lake Analytics libraries for .NET</span></span>
 

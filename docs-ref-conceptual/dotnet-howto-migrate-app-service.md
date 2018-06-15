@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728418"
 ---
 # <a name="migrate-an-aspnet-web-application-to-azure-app-service"></a><span data-ttu-id="f256c-104">将 ASP.NET Web 应用程序迁移到 Azure 应用服务</span><span class="sxs-lookup"><span data-stu-id="f256c-104">Migrate an ASP.NET web application to Azure App Service</span></span>
 

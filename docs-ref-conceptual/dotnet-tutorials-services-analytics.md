@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752899"
 ---
 # <a name="data-analytics-tutorials-with-net-on-azure"></a><span data-ttu-id="3fd5c-103">有关使用 Azure 上的 .NET 进行数据分析的教程</span><span class="sxs-lookup"><span data-stu-id="3fd5c-103">Data analytics tutorials with .NET on Azure</span></span>
 
