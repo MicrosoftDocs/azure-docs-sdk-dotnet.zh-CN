@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752859"
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>用于 .NET 的 Azure 管理库的 Fluent 概念
 

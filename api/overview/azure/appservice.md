@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728508"
 ---
 # <a name="azure-app-service-libraries-for-net"></a>用于 .NET 的 Azure 应用服务库
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752729"
 ---
 # <a name="tutorials-for-working-with-storage-in-your-net-apps-on-azure"></a>有关在 Azure 上的 .NET 应用中使用存储的教程。
 
