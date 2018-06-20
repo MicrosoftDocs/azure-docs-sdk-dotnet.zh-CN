@@ -17,6 +17,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005804"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a><span data-ttu-id="450fb-104">用于 .NET 的 Azure Cosmos DB 库</span><span class="sxs-lookup"><span data-stu-id="450fb-104">Azure Cosmos DB libraries for .NET</span></span>
 

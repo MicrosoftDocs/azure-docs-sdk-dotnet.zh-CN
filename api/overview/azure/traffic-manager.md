@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 流量管理器库"
-description: "用于 .NET 的 Azure 流量管理器库参考"
-keywords: "Azure, .NET, SDK, API, 流量管理器"
+title: 用于 .NET 的 Azure 流量管理器库
+description: 用于 .NET 的 Azure 流量管理器库参考
+keywords: Azure, .NET, SDK, API, 流量管理器
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566090"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a><span data-ttu-id="f79ff-104">用于 .NET 的 Azure 流量管理器库</span><span class="sxs-lookup"><span data-stu-id="f79ff-104">Azure Traffic Manager libraries for .NET</span></span>
 

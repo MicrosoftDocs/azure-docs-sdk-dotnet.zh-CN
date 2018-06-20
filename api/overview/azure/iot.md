@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure IoT 库"
-description: "用于 .NET 的 Azure IoT 库参考"
+title: 用于 .NET 的 Azure IoT 库
+description: 用于 .NET 的 Azure IoT 库参考
 keywords: Azure, .NET, SDK, API, IoT
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487480"
 ---
 # <a name="azure-iot-libraries-for-net"></a><span data-ttu-id="1b9eb-104">用于 .NET 的 Azure IoT 库</span><span class="sxs-lookup"><span data-stu-id="1b9eb-104">Azure IoT libraries for .NET</span></span>
 

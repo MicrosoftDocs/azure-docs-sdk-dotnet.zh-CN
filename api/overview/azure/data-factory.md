@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 数据工厂库"
-description: "用于 .NET 的 Azure 数据工厂库参考"
-keywords: "Azure, .NET, SDK, API, 数据工厂"
+title: 用于 .NET 的 Azure 数据工厂库
+description: 用于 .NET 的 Azure 数据工厂库参考
+keywords: Azure, .NET, SDK, API, 数据工厂
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487140"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="14950-104">用于 .NET 的 Azure 数据工厂库</span><span class="sxs-lookup"><span data-stu-id="14950-104">Azure Data Factory libraries for .NET</span></span>
 

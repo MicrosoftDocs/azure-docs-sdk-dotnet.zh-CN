@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure Data Lake Store 库"
-description: "用于 .NET 的 Azure Data Lake Store 库参考"
+title: 用于 .NET 的 Azure Data Lake Store 库
+description: 用于 .NET 的 Azure Data Lake Store 库参考
 keywords: Azure, .NET, SDK, API, Data Lake Store
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588470"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a><span data-ttu-id="d6ddc-104">用于 .NET 的 Azure Data Lake Store 库</span><span class="sxs-lookup"><span data-stu-id="d6ddc-104">Azure Data Lake Store libraries for .NET</span></span>
 

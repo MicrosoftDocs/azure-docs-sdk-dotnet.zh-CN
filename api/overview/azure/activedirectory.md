@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure Active Directory 库"
-description: "用于 .NET 的 Azure Active Directory 库参考"
+title: 用于 .NET 的 Azure Active Directory 库
+description: 用于 .NET 的 Azure Active Directory 库参考
 keywords: Azure, .NET, SDK, API, AAD, Active Directory
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23565988"
 ---
 # <a name="azure-active-directory-libraries-for-net"></a><span data-ttu-id="0f231-104">用于 .NET 的 Azure Active Directory 库</span><span class="sxs-lookup"><span data-stu-id="0f231-104">Azure Active Directory libraries for .NET</span></span>
 

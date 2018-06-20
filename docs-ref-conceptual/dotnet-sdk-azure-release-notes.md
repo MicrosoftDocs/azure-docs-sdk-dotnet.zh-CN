@@ -16,6 +16,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005904"
 ---
 # <a name="release-notes"></a><span data-ttu-id="45cb5-104">发行说明</span><span class="sxs-lookup"><span data-stu-id="45cb5-104">Release Notes</span></span> 
 

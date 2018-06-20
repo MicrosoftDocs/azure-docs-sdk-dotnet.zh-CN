@@ -1,7 +1,7 @@
 ---
-title: "选择正确的 Azure 托管选项"
-description: "了解 ASP.NET Web 应用程序适合使用哪个 Azure 迁移路径。"
-keywords: "Azure .NET, ASP.NET, 应用服务, VM, 虚拟机, Web 应用, 迁移"
+title: 选择正确的 Azure 托管选项
+description: 了解 ASP.NET Web 应用程序适合使用哪个 Azure 迁移路径。
+keywords: Azure .NET, ASP.NET, 应用服务, VM, 虚拟机, Web 应用, 迁移
 author: CESARDELATORRE
 manager: wpickett
 ms.author: cesardl
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588460"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a><span data-ttu-id="15bd7-104">选择正确的 Azure 托管选项</span><span class="sxs-lookup"><span data-stu-id="15bd7-104">Choose the right Azure hosting option</span></span>
 

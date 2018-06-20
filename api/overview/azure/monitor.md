@@ -1,6 +1,6 @@
 ---
-title: "适用于 .NET 的 Azure Monitor 库"
-description: "适用于 .NET 的 Azure Monitor 库参考"
+title: 适用于 .NET 的 Azure Monitor 库
+description: 适用于 .NET 的 Azure Monitor 库参考
 keywords: Azure, .NET, SDK, API, Monitor
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639635"
 ---
 # <a name="azure-monitor-libraries-for-net"></a><span data-ttu-id="d8ca0-104">适用于 .NET 的 Azure Monitor 库</span><span class="sxs-lookup"><span data-stu-id="d8ca0-104">Azure Monitor libraries for .NET</span></span>
 

@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 计费库"
-description: "用于 .NET 的 Azure 计费库参考"
-keywords: "Azure, .NET, SDK, API, 计费"
+title: 用于 .NET 的 Azure 计费库
+description: 用于 .NET 的 Azure 计费库参考
+keywords: Azure, .NET, SDK, API, 计费
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566078"
 ---
 # <a name="azure-billing-libraries-for-net"></a><span data-ttu-id="3ff4a-104">用于 .NET 的 Azure 计费库</span><span class="sxs-lookup"><span data-stu-id="3ff4a-104">Azure Billing libraries for .NET</span></span>
 

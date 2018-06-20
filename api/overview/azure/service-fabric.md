@@ -1,6 +1,6 @@
 ---
-title: "用于 .NET 的 Azure Service Fabric 库"
-description: "用于 .NET 的 Azure Service Fabric 库参考"
+title: 用于 .NET 的 Azure Service Fabric 库
+description: 用于 .NET 的 Azure Service Fabric 库参考
 keywords: Azure, .NET, SDK, API, Service Fabric
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566089"
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a><span data-ttu-id="a6299-104">用于 .NET 的 Azure Service Fabric 库</span><span class="sxs-lookup"><span data-stu-id="a6299-104">Azure Service Fabric libraries for .NET</span></span>
 
