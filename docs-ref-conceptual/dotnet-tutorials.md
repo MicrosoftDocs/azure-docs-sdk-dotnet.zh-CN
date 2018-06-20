@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005864"
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>有关在 Azure 中生成 .NET 应用的教程
 

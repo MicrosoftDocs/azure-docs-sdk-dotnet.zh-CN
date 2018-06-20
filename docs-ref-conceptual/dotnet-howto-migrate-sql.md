@@ -1,7 +1,7 @@
 ---
-title: "将 SQL Server 数据库迁移到 Azure"
-description: "了解如何将 SQL Server 数据库从本地 SQL Server 迁移到 Azure。"
-keywords: "Azure .NET, ASP.NET, SQL, SQL Server, SQL 数据库, 迁移"
+title: 将 SQL Server 数据库迁移到 Azure
+description: 了解如何将 SQL Server 数据库从本地 SQL Server 迁移到 Azure。
+keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL 数据库, 迁移
 author: camsoper
 manager: wpickett
 ms.author: casoper
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728488"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>将 SQL Server 数据库迁移到 Azure
 

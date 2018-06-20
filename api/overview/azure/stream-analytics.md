@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 流分析库"
-description: "用于 .NET 的 Azure 流分析库参考"
-keywords: "Azure, .NET, SDK, API, 流分析"
+title: 用于 .NET 的 Azure 流分析库
+description: 用于 .NET 的 Azure 流分析库参考
+keywords: Azure, .NET, SDK, API, 流分析
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487130"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a>用于 .NET 的 Azure 流分析库
 

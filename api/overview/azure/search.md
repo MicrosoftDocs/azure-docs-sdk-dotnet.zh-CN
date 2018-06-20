@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure 搜索库"
-description: "用于 .NET 的 Azure 搜索库参考"
-keywords: "Azure, .NET, SDK, API, 搜索"
+title: 用于 .NET 的 Azure 搜索库
+description: 用于 .NET 的 Azure 搜索库参考
+keywords: Azure, .NET, SDK, API, 搜索
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566298"
 ---
 # <a name="azure-search-libraries-for-net"></a>用于 .NET 的 Azure 搜索库
 

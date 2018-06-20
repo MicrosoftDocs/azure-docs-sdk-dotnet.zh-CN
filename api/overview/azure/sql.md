@@ -1,7 +1,7 @@
 ---
-title: "用于 .NET 的 Azure SQL 数据库 API"
-description: "用于 .NET 的 Azure SQL 数据库库参考"
-keywords: "Azure, .NET, SDK, API, SQL, SQL 数据库"
+title: 用于 .NET 的 Azure SQL 数据库 API
+description: 用于 .NET 的 Azure SQL 数据库库参考
+keywords: Azure, .NET, SDK, API, SQL, SQL 数据库
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/15/2017
+ms.locfileid: "24533102"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>用于 .NET 的 Azure SQL 数据库 API
 

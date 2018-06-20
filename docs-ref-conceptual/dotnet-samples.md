@@ -16,6 +16,7 @@ ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34051957"
 ---
 # <a name="azure-c-code-samples-for-net"></a>用于 .NET 的 Azure C# 代码示例
 

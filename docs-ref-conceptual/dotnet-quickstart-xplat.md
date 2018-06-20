@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005874"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>使用 .NET Core 从命令行部署到 Azure
 
