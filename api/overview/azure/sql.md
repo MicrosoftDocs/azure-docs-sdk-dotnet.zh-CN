@@ -7,47 +7,45 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3aba3c77935e0f00c7396b4cafa06be32ae2a50d
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2017
-ms.locfileid: "24533102"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065887"
 ---
-# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="de79a-104">用于 .NET 的 Azure SQL 数据库 API</span><span class="sxs-lookup"><span data-stu-id="de79a-104">Azure SQL Database APIs for .NET</span></span>
+# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="1aca6-104">用于 .NET 的 Azure SQL 数据库 API</span><span class="sxs-lookup"><span data-stu-id="1aca6-104">Azure SQL Database APIs for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="de79a-105">概述</span><span class="sxs-lookup"><span data-stu-id="de79a-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="1aca6-105">概述</span><span class="sxs-lookup"><span data-stu-id="1aca6-105">Overview</span></span>
 
-<span data-ttu-id="de79a-106">[Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)是使用 Microsoft SQL Server 引擎的数据库服务，支持关系型数据、表数据、JSON 数据、空间数据和 XML 数据。</span><span class="sxs-lookup"><span data-stu-id="de79a-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
+<span data-ttu-id="1aca6-106">[Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)是使用 Microsoft SQL Server 引擎的数据库服务，支持关系型数据、表数据、JSON 数据、空间数据和 XML 数据。</span><span class="sxs-lookup"><span data-stu-id="1aca6-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
 
-<span data-ttu-id="de79a-107">若要详细了解如何在 .NET 中使用 SQL 数据库，请参阅[使用 .NET 和 Visual Studio 来连接和查询 Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)。</span><span class="sxs-lookup"><span data-stu-id="de79a-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
+<span data-ttu-id="1aca6-107">若要详细了解如何在 .NET 中使用 SQL 数据库，请参阅[使用 .NET 和 Visual Studio 来连接和查询 Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)。</span><span class="sxs-lookup"><span data-stu-id="1aca6-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="de79a-108">客户端库</span><span class="sxs-lookup"><span data-stu-id="de79a-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="1aca6-108">客户端库</span><span class="sxs-lookup"><span data-stu-id="1aca6-108">Client library</span></span>
 
-<span data-ttu-id="de79a-109">使用 .NET SQL 客户端库可以连接到数据库并在其中进行身份验证，以及执行即席 T-SQL 语句和存储过程。</span><span class="sxs-lookup"><span data-stu-id="de79a-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
+<span data-ttu-id="1aca6-109">使用 .NET SQL 客户端库可以连接到数据库并在其中进行身份验证，以及执行即席 T-SQL 语句和存储过程。</span><span class="sxs-lookup"><span data-stu-id="1aca6-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
 
-<span data-ttu-id="de79a-110">直接从 Visual Studio [包管理器控制台](https://docs.microsoft.com/nuget/tools/package-manager-console)或使用 [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) 安装 [NuGet 包]( https://www.nuget.org/packages/System.Data.SqlClient)。</span><span class="sxs-lookup"><span data-stu-id="de79a-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="1aca6-110">直接从 Visual Studio [包管理器控制台](https://docs.microsoft.com/nuget/tools/package-manager-console)或使用 [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) 安装 [NuGet 包]( https://www.nuget.org/packages/System.Data.SqlClient)。</span><span class="sxs-lookup"><span data-stu-id="1aca6-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="de79a-111">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="de79a-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="1aca6-111">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="1aca6-111">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package System.Data.SqlClient
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="de79a-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="de79a-112">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="1aca6-112">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="1aca6-112">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package System.Data.SqlClient
 ```
 
-### <a name="code-example"></a><span data-ttu-id="de79a-113">代码示例</span><span class="sxs-lookup"><span data-stu-id="de79a-113">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="1aca6-113">代码示例</span><span class="sxs-lookup"><span data-stu-id="1aca6-113">Code Example</span></span>
 
-<span data-ttu-id="de79a-114">此示例连接到数据库并从表中读取行。</span><span class="sxs-lookup"><span data-stu-id="de79a-114">This example connects to a database and reads rows from a table.</span></span>
+<span data-ttu-id="1aca6-114">此示例连接到数据库并从表中读取行。</span><span class="sxs-lookup"><span data-stu-id="1aca6-114">This example connects to a database and reads rows from a table.</span></span>
 
 ```csharp
 /* Include this 'using' directive...
@@ -78,29 +76,29 @@ using (SqlConnection conn = new SqlConnection(connectionString))
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="de79a-115">了解客户端 API</span><span class="sxs-lookup"><span data-stu-id="de79a-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
+> [<span data-ttu-id="1aca6-115">了解客户端 API</span><span class="sxs-lookup"><span data-stu-id="1aca6-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
 
-## <a name="management-library"></a><span data-ttu-id="de79a-116">管理库</span><span class="sxs-lookup"><span data-stu-id="de79a-116">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="1aca6-116">管理库</span><span class="sxs-lookup"><span data-stu-id="1aca6-116">Management library</span></span>
 
-<span data-ttu-id="de79a-117">使用 Azure SQL 数据库管理库可创建、管理和缩放 Azure SQL 数据库服务器实例。</span><span class="sxs-lookup"><span data-stu-id="de79a-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
+<span data-ttu-id="1aca6-117">使用 Azure SQL 数据库管理库可创建、管理和缩放 Azure SQL 数据库服务器实例。</span><span class="sxs-lookup"><span data-stu-id="1aca6-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
 
-<span data-ttu-id="de79a-118">直接从 Visual Studio [包管理器控制台](https://docs.microsoft.com/nuget/tools/package-manager-console)或使用 [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/)。</span><span class="sxs-lookup"><span data-stu-id="de79a-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="1aca6-118">直接从 Visual Studio [包管理器控制台](https://docs.microsoft.com/nuget/tools/package-manager-console)或使用 [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package) 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/)。</span><span class="sxs-lookup"><span data-stu-id="1aca6-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="de79a-119">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="de79a-119">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="1aca6-119">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="1aca6-119">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Sql.Fluent
 ``` 
 
-#### <a name="net-core-command-line"></a><span data-ttu-id="de79a-120">.NET Core 命令行</span><span class="sxs-lookup"><span data-stu-id="de79a-120">.NET Core command line</span></span>
+#### <a name="net-core-command-line"></a><span data-ttu-id="1aca6-120">.NET Core 命令行</span><span class="sxs-lookup"><span data-stu-id="1aca6-120">.NET Core command line</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.Sql.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="de79a-121">代码示例</span><span class="sxs-lookup"><span data-stu-id="de79a-121">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="1aca6-121">代码示例</span><span class="sxs-lookup"><span data-stu-id="1aca6-121">Code Example</span></span>
 
-<span data-ttu-id="de79a-122">此示例创建新的 SQL 数据库服务器实例，然后在该实例上创建新数据库。</span><span class="sxs-lookup"><span data-stu-id="de79a-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
+<span data-ttu-id="1aca6-122">此示例创建新的 SQL 数据库服务器实例，然后在该实例上创建新数据库。</span><span class="sxs-lookup"><span data-stu-id="1aca6-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
 
 ```csharp
 /* Include these 'using' directives...
@@ -125,12 +123,12 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="de79a-123">了解管理 API</span><span class="sxs-lookup"><span data-stu-id="de79a-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
+> [<span data-ttu-id="1aca6-123">了解管理 API</span><span class="sxs-lookup"><span data-stu-id="1aca6-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
 
-## <a name="samples"></a><span data-ttu-id="de79a-124">示例</span><span class="sxs-lookup"><span data-stu-id="de79a-124">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="1aca6-124">示例</span><span class="sxs-lookup"><span data-stu-id="1aca6-124">Samples</span></span>
 
-- [<span data-ttu-id="de79a-125">ADO.NET 代码示例</span><span class="sxs-lookup"><span data-stu-id="de79a-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
-- [<span data-ttu-id="de79a-126">用于 .NET 的 Azure 管理库的 SQL 数据库示例</span><span class="sxs-lookup"><span data-stu-id="de79a-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
+- [<span data-ttu-id="1aca6-125">ADO.NET 代码示例</span><span class="sxs-lookup"><span data-stu-id="1aca6-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
+- [<span data-ttu-id="1aca6-126">用于 .NET 的 Azure 管理库的 SQL 数据库示例</span><span class="sxs-lookup"><span data-stu-id="1aca6-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-<span data-ttu-id="de79a-127">查看 Azure SQL 数据库示例的[完整列表](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database)。</span><span class="sxs-lookup"><span data-stu-id="de79a-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
+<span data-ttu-id="1aca6-127">查看 Azure SQL 数据库示例的[完整列表](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database)。</span><span class="sxs-lookup"><span data-stu-id="1aca6-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
 
