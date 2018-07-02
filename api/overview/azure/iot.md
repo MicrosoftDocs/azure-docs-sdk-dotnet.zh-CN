@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: iot-hub
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 0fa4121becd0d5bd646077a9644a651903c43348
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487480"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065267"
 ---
 # <a name="azure-iot-libraries-for-net"></a>用于 .NET 的 Azure IoT 库
 

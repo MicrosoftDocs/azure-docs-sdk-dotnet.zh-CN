@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "29752670"
 ---
 # <a name="tools-for-net-azure-developers"></a>面向 .NET Azure 开发人员的工具
@@ -30,7 +30,7 @@ ms.locfileid: "29752670"
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
-Visual Studio 2017 针对 Azure 开发提供内置支持。
+        Visual Studio 2017 针对 Azure 开发提供内置支持。
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ Visual Studio 2017 针对 Azure 开发提供内置支持。
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
-Visual Studio for Mac 提供所需的一切功能用于进行 Azure 开发。
+        Visual Studio for Mac 提供所需的一切功能用于进行 Azure 开发。
     </td>
   </tr>
 </table>

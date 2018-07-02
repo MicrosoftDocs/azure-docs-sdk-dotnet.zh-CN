@@ -7,23 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9fe96fcdc94d3d27445f462c5220def9f2966da
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 5f36b826861071b263fac8bc22f8802ebb6505d1
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566368"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065317"
 ---
 # <a name="azure-resource-manager-libraries-for-net"></a>用于 .NET 的 Azure 资源管理器库
 
 ## <a name="overview"></a>概述
 
-那么，可以使用 Azure Resource Manager 以组的方式处理解决方案中的资源。  有关资源管理器的详细信息，请参阅 [Azure 资源管理器概述](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)。
+那么，可以使用 Azure 资源管理器以组的方式处理解决方案中的资源。  有关资源管理器的详细信息，请参阅 [Azure 资源管理器概述](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)。
 
 ## <a name="management-library"></a>管理库
 

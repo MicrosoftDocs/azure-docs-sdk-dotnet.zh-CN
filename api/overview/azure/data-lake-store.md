@@ -7,23 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: f1b014c4835784ed8ecfa1e3b4bfd62a6ebf9562
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588470"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065627"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>用于 .NET 的 Azure Data Lake Store 库
 
 ## <a name="overview"></a>概述
 
-Azure Data Lake Store 是一个企业范围的超大规模存储库，适用于大数据分析工作负荷。 使用 Azure Data Lake 可以在单个位置捕获任何大小、类型和引入速度的数据进行操作和探索分析。
+Azure Data Lake Store 是一个企业范围的超大规模存储库，适用于大数据分析工作负载。 使用 Azure Data Lake 可以在单个位置捕获任何大小、类型和引入速度的数据进行操作和探索分析。
 
 有关详细信息，请参阅 [Azure Data Lake Store 概述](/azure/data-lake-store/data-lake-store-overview)。
 

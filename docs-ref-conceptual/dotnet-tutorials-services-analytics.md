@@ -11,10 +11,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: d843e605bf64fb475efe8fc1bba6a112ddca4d96
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "29752899"
 ---
 # <a name="data-analytics-tutorials-with-net-on-azure"></a>有关使用 Azure 上的 .NET 进行数据分析的教程

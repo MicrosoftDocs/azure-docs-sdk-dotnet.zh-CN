@@ -7,25 +7,23 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: cdn
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: afc63f943fcac3afd9afb7d85f6e699079829244
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566328"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065817"
 ---
 # <a name="azure-cdn-libraries-for-net"></a>用于 .NET 的 Azure CDN 库
 
 ## <a name="overview"></a>概述
 
-Azure 内容交付网络 (CDN) 将静态 Web 内容缓存在按特定策略布置好的位置，以便提供最大的吞吐量，方便将内容交付给用户。 CDN 为开发人员提供了一个全局解决方案，通过在世界各地的物理节点缓存内容来交付高带宽内容。
+Azure 内容分发网络 (CDN) 将静态 Web 内容缓存在按特定策略布置好的位置，以便提供最大的吞吐量，方便将内容分发给用户。 CDN 将内容缓存在世界各地的物理节点，从而为开发人员提供交付高带宽内容的全球解决方案。
 
-若要详细了解 Azure CDN，请参阅 [Azure 内容交付网络概述](https://docs.microsoft.com/azure/cdn/cdn-overview)。
+若要详细了解 Azure CDN，请参阅 [Azure 内容分发网络概述](https://docs.microsoft.com/azure/cdn/cdn-overview)。
 
 
 ## <a name="management-library"></a>管理库
