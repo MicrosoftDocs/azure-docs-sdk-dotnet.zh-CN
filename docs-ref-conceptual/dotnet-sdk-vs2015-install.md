@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: 5046781a16b5b330b95c4ad36e8a8187126fef4e
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 1c2e1fd031ad012d6888fcde3cd325f7e8e49e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 07/09/2018
 ms.locfileid: "29752809"
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>用于 Visual Studio 2015 的 Azure 工具
@@ -32,7 +32,7 @@ ms.locfileid: "29752809"
 
 3. 在下一屏幕中，单击“我接受”。  Web PI 会开始下载并安装所选的组件。
 
-4. 安装完成后，会显示确认屏幕。  单击“完成” 。  现在可以关闭 Web 平台安装程序。
+4. 安装完成后，会显示确认屏幕。  单击“完成”。  现在可以关闭 Web 平台安装程序。
 
 ## <a name="verifying-the-installation"></a>验证安装
 
