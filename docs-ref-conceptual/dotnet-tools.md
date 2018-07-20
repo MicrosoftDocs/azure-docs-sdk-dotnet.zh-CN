@@ -1,26 +1,26 @@
 ---
-title: 面向 Azure .NET 开发人员的工具
-description: 获取工具以通过 Windows、Linux 或 Mac 环境开始使用 Azure .NET 库。
+title: 面向 Azure .NET 和 .NET Core 开发人员的工具
+description: 获取工具以通过 Windows、Linux 和 Mac 环境开始使用 Azure .NET 库。
 keywords: Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: 9c9d25e8f065408f81ed8b1fdb25817196f7e053
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752670"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135695"
 ---
-# <a name="tools-for-net-azure-developers"></a>面向 .NET Azure 开发人员的工具
+# <a name="tools-for-net-and-net-core-azure-developers"></a>面向 .NET 和 .NET Core Azure 开发人员的工具
 
-针对任何操作系统，我们都会提供一套极佳的工具来帮助在 Azure 中使用 .NET 进行开发。
+针对任何操作系统，我们都会提供一套出色的工具来帮助在 Azure 中使用 .NET、.NET Core、ASP.NET 和 ASP.NET Core 进行开发。
 
 ## <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -44,7 +44,6 @@ ms.locfileid: "29752670"
 > [!div class="nextstepaction"]
 > [下载 Visual Studio 2017](https://www.visualstudio.com/downloads/)
 
-
 ### <a name="step-2-install-the-two-azure-workloads"></a>步骤 2：安装两个 Azure 工作负荷
 
 启动 Visual Studio 2017 安装程序后，请确保检查 Azure 和 ASP.NET Web 开发工作负荷。
@@ -53,8 +52,7 @@ ms.locfileid: "29752670"
 
 ### <a name="step-3-develop-with-net-on-azure"></a>步骤 3：在 Azure 上使用 .NET 进行开发
 
-首先[在 Azure 上部署第一个 .NET 应用](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)。
-
+首先，[在 Azure 应用服务中部署第一个 ASP.NET Core Web 应用](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)。
 
 ## <a name="macostabmacos"></a>[macOS](#tab/macos)
 <table>
@@ -67,7 +65,6 @@ ms.locfileid: "29752670"
     </td>
   </tr>
 </table>
-
 
 ### <a name="step-1-download-visual-studio-for-mac"></a>步骤 1：下载 Visual Studio for Mac
 
@@ -82,16 +79,16 @@ ms.locfileid: "29752670"
 
 <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
 
-### <a name="step-1-download-net-core-sdk"></a>步骤 1：下载 .NET Core SDK
+### <a name="step-1-download-the-net-core-sdk"></a>步骤 1：下载 .NET Core SDK
 
-用于 .NET 应用的 Core SDK 和命令行工具。
+用于 .NET Core 应用的 SDK 和命令行工具。
 
 > [!div class="nextstepaction"]
 > [下载 .NET Core SDK](https://www.microsoft.com/net/core)
 
 ### <a name="step-2-visual-studio-code"></a>步骤 2：Visual Studio Code
 
-在任何 OS 上编辑和调试 .NET 应用。
+在任何操作系统上编辑和调试 .NET Core 应用：Windows、Mac 和 Linux。
 
 > [!div class="nextstepaction"]
 > [下载 Visual Studio Code](https://code.visualstudio.com)
