@@ -1,45 +1,45 @@
 ---
-title: Azure .NET API 入门
-description: 结合自己的 Azure 订阅开始了解用于 .NET 的 Azure 库的基本用法。
-keywords: Azure, .NET, SDK, API, 身份验证, 入门
+title: Azure .NET 和 .NET Core API 入门
+description: 结合自己的 Azure 订阅开始了解用于 .NET 和 .NET Core 的 Azure 库的基本用法。
+keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, 身份验证, 入门
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752869"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135775"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a><span data-ttu-id="a0230-104">Azure .NET API 入门</span><span class="sxs-lookup"><span data-stu-id="a0230-104">Get started with the Azure .NET APIs</span></span>
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="2b770-104">Azure .NET 和 .NET Core API 入门</span><span class="sxs-lookup"><span data-stu-id="2b770-104">Get started with the Azure .NET and .NET Core APIs</span></span>
 
-<span data-ttu-id="a0230-105">本教程演示多个[用于 .NET 的 Azure API](/dotnet/api/overview/azure/) 的用法。</span><span class="sxs-lookup"><span data-stu-id="a0230-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="a0230-106">内容包括设置身份验证、创建和使用 Azure 存储帐户、创建和使用 Azure SQL 数据库、部署一些虚拟机，然后从 GitHub 部署一个 Azure 应用服务 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="a0230-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="2b770-105">本教程演示多个[用于 .NET 的 Azure API](/dotnet/api/overview/azure/) 的用法。</span><span class="sxs-lookup"><span data-stu-id="2b770-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="2b770-106">内容包括设置身份验证、创建和使用 Azure 存储帐户、创建和使用 Azure SQL 数据库、部署一些虚拟机，然后从 GitHub 部署一个 Azure 应用服务 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="2b770-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a0230-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a0230-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2b770-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="2b770-107">Prerequisites</span></span>
 
-- <span data-ttu-id="a0230-108">一个 Azure 帐户。</span><span class="sxs-lookup"><span data-stu-id="a0230-108">An Azure account.</span></span> <span data-ttu-id="a0230-109">如果没有帐户，可[获取一个免费试用帐户](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="a0230-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
-- [<span data-ttu-id="a0230-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="a0230-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
+- <span data-ttu-id="2b770-108">一个 Azure 帐户。</span><span class="sxs-lookup"><span data-stu-id="2b770-108">An Azure account.</span></span> <span data-ttu-id="2b770-109">如果没有帐户，可[获取一个免费试用帐户](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="2b770-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+- [<span data-ttu-id="2b770-110">Azure PowerShell</span><span class="sxs-lookup"><span data-stu-id="2b770-110">Azure PowerShell</span></span>](/powershell/azure/install-azurerm-ps)
 
-## <a name="set-up-authentication"></a><span data-ttu-id="a0230-111">设置身份验证</span><span class="sxs-lookup"><span data-stu-id="a0230-111">Set up authentication</span></span>
+## <a name="set-up-authentication"></a><span data-ttu-id="2b770-111">设置身份验证</span><span class="sxs-lookup"><span data-stu-id="2b770-111">Set up authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
 [!include[File-based authentication](includes/file-based-auth.md)]
 
-## <a name="create-a-new-project"></a><span data-ttu-id="a0230-112">创建新项目</span><span class="sxs-lookup"><span data-stu-id="a0230-112">Create a new project</span></span> 
+## <a name="create-a-new-project"></a><span data-ttu-id="2b770-112">创建新项目</span><span class="sxs-lookup"><span data-stu-id="2b770-112">Create a new project</span></span> 
 
-<span data-ttu-id="a0230-113">创建新的控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="a0230-113">Create a new console application project.</span></span>  <span data-ttu-id="a0230-114">为此，请在 Visual Studio 中依次单击“文件”、“新建”、“项目...”。在 Visual C# 模板下选择“控制台应用(.NET Core)”，为项目命名，并单击“确定”。</span><span class="sxs-lookup"><span data-stu-id="a0230-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="2b770-113">创建新的控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="2b770-113">Create a new console application project.</span></span>  <span data-ttu-id="2b770-114">为此，请在 Visual Studio 中依次单击“文件”、“新建”、“项目...”。在 Visual C# 模板下选择“控制台应用(.NET Core)”，为项目命名，并单击“确定”。</span><span class="sxs-lookup"><span data-stu-id="2b770-114">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
 
 ![“新建项目”对话框](media/dotnet-sdk-azure-get-started/new-project.png)
 
-<span data-ttu-id="a0230-116">创建新的控制台应用后，依次单击“工具”、“NuGet 包管理器”、“包管理器控制台”打开包管理器控制台。</span><span class="sxs-lookup"><span data-stu-id="a0230-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="a0230-117">在控制台中，执行以下三个命令来获取所需的包：</span><span class="sxs-lookup"><span data-stu-id="a0230-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="2b770-116">创建新的控制台应用后，依次单击“工具”、“NuGet 包管理器”、“包管理器控制台”打开包管理器控制台。</span><span class="sxs-lookup"><span data-stu-id="2b770-116">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="2b770-117">在控制台中，执行以下三个命令来获取所需的包：</span><span class="sxs-lookup"><span data-stu-id="2b770-117">In the console, get the packages you'll need by executing the following three commands:</span></span>
 
 ```powershell
 # Azure Management Libraries for .NET (Fluent)
@@ -52,9 +52,9 @@ Install-Package WindowsAzure.Storage
 Install-Package System.Data.SqlClient
 ```
 
-## <a name="directives"></a><span data-ttu-id="a0230-118">指令</span><span class="sxs-lookup"><span data-stu-id="a0230-118">Directives</span></span>
+## <a name="directives"></a><span data-ttu-id="2b770-118">指令</span><span class="sxs-lookup"><span data-stu-id="2b770-118">Directives</span></span>
 
-<span data-ttu-id="a0230-119">编辑应用程序的 `Program.cs` 文件。</span><span class="sxs-lookup"><span data-stu-id="a0230-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="a0230-120">将顶部的 `using` 指令替换为以下内容：</span><span class="sxs-lookup"><span data-stu-id="a0230-120">Replace the `using` directives at the top with the following:</span></span>
+<span data-ttu-id="2b770-119">编辑应用程序的 `Program.cs` 文件。</span><span class="sxs-lookup"><span data-stu-id="2b770-119">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="2b770-120">将顶部的 `using` 指令替换为以下内容：</span><span class="sxs-lookup"><span data-stu-id="2b770-120">Replace the `using` directives at the top with the following:</span></span>
 
 ```csharp
 using System;
@@ -69,11 +69,11 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using System.Data.SqlClient;
 ```
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="a0230-121">创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="a0230-121">Create a virtual machine</span></span>
+## <a name="create-a-virtual-machine"></a><span data-ttu-id="2b770-121">创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="2b770-121">Create a virtual machine</span></span>
 
-<span data-ttu-id="a0230-122">此示例部署虚拟机。</span><span class="sxs-lookup"><span data-stu-id="a0230-122">This example deploys a virtual machine.</span></span> 
+<span data-ttu-id="2b770-122">此示例部署虚拟机。</span><span class="sxs-lookup"><span data-stu-id="2b770-122">This example deploys a virtual machine.</span></span> 
 
-<span data-ttu-id="a0230-123">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="a0230-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="a0230-124">请务必为虚拟机提供实际的 `username` 和 `password`。</span><span class="sxs-lookup"><span data-stu-id="a0230-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+<span data-ttu-id="2b770-123">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="2b770-123">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="2b770-124">请务必为虚拟机提供实际的 `username` 和 `password`。</span><span class="sxs-lookup"><span data-stu-id="2b770-124">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -115,17 +115,17 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="a0230-125">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="a0230-125">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="2b770-125">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="2b770-125">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="a0230-126">几分钟后，程序将会完成，并提示按 Enter 键。</span><span class="sxs-lookup"><span data-stu-id="a0230-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="a0230-127">按 Enter 键后，请使用 PowerShell 验证订阅中的虚拟机：</span><span class="sxs-lookup"><span data-stu-id="a0230-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
+<span data-ttu-id="2b770-126">几分钟后，程序将会完成，并提示按 Enter 键。</span><span class="sxs-lookup"><span data-stu-id="2b770-126">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="2b770-127">按 Enter 键后，请使用 PowerShell 验证订阅中的虚拟机：</span><span class="sxs-lookup"><span data-stu-id="2b770-127">After pressing enter, verify the virtual machine in your subscription with PowerShell:</span></span>
 
 ```powershell
 Get-AzureRmVm -ResourceGroupName sampleResourceGroup
 ```
 
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="a0230-128">从 GitHub 存储库部署 Web 应用</span><span class="sxs-lookup"><span data-stu-id="a0230-128">Deploy a web app from a GitHub repo</span></span>
+## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="2b770-128">从 GitHub 存储库部署 Web 应用</span><span class="sxs-lookup"><span data-stu-id="2b770-128">Deploy a web app from a GitHub repo</span></span>
 
-<span data-ttu-id="a0230-129">现在请修改代码，以便从现有的 GitHub 存储库创建并部署新的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="a0230-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="a0230-130">将 `Main`方法替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="a0230-130">Replace the `Main` method with the following code:</span></span>
+<span data-ttu-id="2b770-129">现在请修改代码，以便从现有的 GitHub 存储库创建并部署新的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="2b770-129">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="2b770-130">将 `Main`方法替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="2b770-130">Replace the `Main` method with the following code:</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -162,13 +162,13 @@ static void Main(string[] args)
 }
 ```
 
-<span data-ttu-id="a0230-131">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="a0230-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="a0230-132">通过打开浏览器并导航到控制台中显示的 URL 来验证部署。</span><span class="sxs-lookup"><span data-stu-id="a0230-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
+<span data-ttu-id="2b770-131">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="2b770-131">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="2b770-132">通过打开浏览器并导航到控制台中显示的 URL 来验证部署。</span><span class="sxs-lookup"><span data-stu-id="2b770-132">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
 
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="a0230-133">连接到 SQL 数据库</span><span class="sxs-lookup"><span data-stu-id="a0230-133">Connect to a SQL database</span></span>
+## <a name="connect-to-a-sql-database"></a><span data-ttu-id="2b770-133">连接到 SQL 数据库</span><span class="sxs-lookup"><span data-stu-id="2b770-133">Connect to a SQL database</span></span>
 
-<span data-ttu-id="a0230-134">此示例创建新的 Azure SQL 数据库并执行一些 SQL 操作。</span><span class="sxs-lookup"><span data-stu-id="a0230-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
+<span data-ttu-id="2b770-134">此示例创建新的 Azure SQL 数据库并执行一些 SQL 操作。</span><span class="sxs-lookup"><span data-stu-id="2b770-134">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
 
-<span data-ttu-id="a0230-135">将 `Main` 方法替换为以下内容，并确保为 `dbPassword` 分配强密码：</span><span class="sxs-lookup"><span data-stu-id="a0230-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
+<span data-ttu-id="2b770-135">将 `Main` 方法替换为以下内容，并确保为 `dbPassword` 分配强密码：</span><span class="sxs-lookup"><span data-stu-id="2b770-135">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
 
 ```csharp
  static void Main(string[] args)
@@ -201,11 +201,11 @@ static void Main(string[] args)
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,13 +241,14 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 ```
-<span data-ttu-id="a0230-136">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="a0230-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="a0230-137">控制台输出应会验证服务器是否已创建并按预期工作，但如果需要，你可以使用 SQL Server Management Studio 等工具直接连接到该服务器。</span><span class="sxs-lookup"><span data-stu-id="a0230-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
 
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="a0230-138">将 Blob 写入新存储帐户</span><span class="sxs-lookup"><span data-stu-id="a0230-138">Write a blob into a new storage account</span></span>
+<span data-ttu-id="2b770-136">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="2b770-136">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="2b770-137">控制台输出应会验证服务器是否已创建并按预期工作，但如果需要，你可以使用 SQL Server Management Studio 等工具直接连接到该服务器。</span><span class="sxs-lookup"><span data-stu-id="2b770-137">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
 
-<span data-ttu-id="a0230-139">此示例创建存储帐户并上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="a0230-139">This example will create a storage account and upload a blob.</span></span>  
+## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="2b770-138">将 Blob 写入新存储帐户</span><span class="sxs-lookup"><span data-stu-id="2b770-138">Write a blob into a new storage account</span></span>
 
-<span data-ttu-id="a0230-140">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="a0230-140">Replace the `Main` method with the following.</span></span>
+<span data-ttu-id="2b770-139">此示例创建存储帐户并上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="2b770-139">This example creates a storage account and upload a blob.</span></span>  
+
+<span data-ttu-id="2b770-140">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="2b770-140">Replace the `Main` method with the following.</span></span>
 
 ```csharp
 static void Main(string[] args)
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,30 +300,31 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
-<span data-ttu-id="a0230-141">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="a0230-141">Press **F5** to run the sample.</span></span>
+<span data-ttu-id="2b770-141">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="2b770-141">Press **F5** to run the sample.</span></span>
 
-<span data-ttu-id="a0230-142">几分钟后，程序将会完成。</span><span class="sxs-lookup"><span data-stu-id="a0230-142">After several minutes, the program will finish.</span></span> <span data-ttu-id="a0230-143">通过浏览到控制台中显示的 URL 来验证是否已上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="a0230-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="a0230-144">文本“Hello, Azure!”应会显示</span><span class="sxs-lookup"><span data-stu-id="a0230-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="a0230-145">在浏览器中。</span><span class="sxs-lookup"><span data-stu-id="a0230-145">in your browser.</span></span>
+<span data-ttu-id="2b770-142">几分钟后，程序将会完成。</span><span class="sxs-lookup"><span data-stu-id="2b770-142">After several minutes, the program finishes.</span></span> <span data-ttu-id="2b770-143">通过浏览到控制台中显示的 URL 来验证是否已上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="2b770-143">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="2b770-144">文本“Hello, Azure!”应会显示</span><span class="sxs-lookup"><span data-stu-id="2b770-144">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="2b770-145">在浏览器中。</span><span class="sxs-lookup"><span data-stu-id="2b770-145">in your browser.</span></span>
 
-## <a name="clean-up"></a><span data-ttu-id="a0230-146">清理</span><span class="sxs-lookup"><span data-stu-id="a0230-146">Clean up</span></span>
+## <a name="clean-up"></a><span data-ttu-id="2b770-146">清理</span><span class="sxs-lookup"><span data-stu-id="2b770-146">Clean up</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a0230-147">如果不清理本教程创建的资源，这些资源会继续产生费用。</span><span class="sxs-lookup"><span data-stu-id="a0230-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="a0230-148">请务必执行此步骤。</span><span class="sxs-lookup"><span data-stu-id="a0230-148">Be sure to do this step.</span></span>
+> <span data-ttu-id="2b770-147">如果不清理本教程创建的资源，这些资源会继续产生费用。</span><span class="sxs-lookup"><span data-stu-id="2b770-147">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="2b770-148">请务必执行此步骤。</span><span class="sxs-lookup"><span data-stu-id="2b770-148">Be sure to do this step.</span></span>
 
-<span data-ttu-id="a0230-149">在 PowerShell 中输入以下命令，删除创建的所有资源：</span><span class="sxs-lookup"><span data-stu-id="a0230-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
+<span data-ttu-id="2b770-149">在 PowerShell 中输入以下命令，删除创建的所有资源：</span><span class="sxs-lookup"><span data-stu-id="2b770-149">Delete all the resources you created by entering the following in PowerShell:</span></span>
 
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
-## <a name="explore-more-samples"></a><span data-ttu-id="a0230-150">学习更多示例</span><span class="sxs-lookup"><span data-stu-id="a0230-150">Explore more samples</span></span>
 
-<span data-ttu-id="a0230-151">若要详细了解如何使用用于 .NET 的 Azure 库来管理资源和自动执行任务，请参阅针对[虚拟机](dotnet-sdk-azure-virtual-machine-samples.md)、[Web 应用](dotnet-sdk-azure-web-apps-samples.md)和 [SQL 数据库](dotnet-sdk-azure-sql-database-samples.md)的示例代码。</span><span class="sxs-lookup"><span data-stu-id="a0230-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
+## <a name="explore-more-samples"></a><span data-ttu-id="2b770-150">学习更多示例</span><span class="sxs-lookup"><span data-stu-id="2b770-150">Explore more samples</span></span>
 
-## <a name="reference"></a><span data-ttu-id="a0230-152">引用</span><span class="sxs-lookup"><span data-stu-id="a0230-152">Reference</span></span>
+<span data-ttu-id="2b770-151">若要详细了解如何使用用于 .NET 的 Azure 库来管理资源和自动执行任务，请参阅针对[虚拟机](dotnet-sdk-azure-virtual-machine-samples.md)、[Web 应用](dotnet-sdk-azure-web-apps-samples.md)和 [SQL 数据库](dotnet-sdk-azure-sql-database-samples.md)的示例代码。</span><span class="sxs-lookup"><span data-stu-id="2b770-151">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
 
-<span data-ttu-id="a0230-153">我们为所有包提供了[参考](http://docs.microsoft.com/dotnet/api)文档。</span><span class="sxs-lookup"><span data-stu-id="a0230-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
+## <a name="reference"></a><span data-ttu-id="2b770-152">引用</span><span class="sxs-lookup"><span data-stu-id="2b770-152">Reference</span></span>
+
+<span data-ttu-id="2b770-153">我们为所有包提供了[参考](http://docs.microsoft.com/dotnet/api)文档。</span><span class="sxs-lookup"><span data-stu-id="2b770-153">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
 
 [!include[Contribute and community](includes/contribute.md)]

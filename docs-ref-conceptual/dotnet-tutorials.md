@@ -1,43 +1,43 @@
 ---
-title: 有关 Azure 中的 .NET 应用的教程
-description: 有关使用 Azure 服务生成 Web 和移动 .NET 应用并在其中添加功能的教程。
+title: 有关 Azure 中的 .NET 和 .NET Core 应用的教程
+description: 有关使用 Azure 服务以及 .NET、.NET Core、ASP.NET 和 ASP.NET Core 生成 Web 和移动应用并在其中添加功能的教程。
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: ad5a600f6d84c0bae7f4d0dd3f74910d980a9272
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: 2255824a778a9a1ca9e3a3d26d7e730e345393db
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005864"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135735"
 ---
-# <a name="tutorials-for-building-net-apps-in-azure"></a><span data-ttu-id="78606-103">有关在 Azure 中生成 .NET 应用的教程</span><span class="sxs-lookup"><span data-stu-id="78606-103">Tutorials for building .NET apps in Azure</span></span>
+# <a name="tutorials-for-building-net-and-net-core-apps-in-azure"></a><span data-ttu-id="77443-103">有关在 Azure 中构建 .NET 和 .NET Core 应用的教程</span><span class="sxs-lookup"><span data-stu-id="77443-103">Tutorials for building .NET and .NET Core apps in Azure</span></span>
 
-<span data-ttu-id="78606-104">下表提供了有关生成在 Azure 中运行的 .NET 应用的深入教程的链接。</span><span class="sxs-lookup"><span data-stu-id="78606-104">The following table links to in-depth tutorials for building .NET apps running on Azure.</span></span>
+<span data-ttu-id="77443-104">下表提供了有关生成在 Azure 中运行的 .NET 应用的深入教程的链接。</span><span class="sxs-lookup"><span data-stu-id="77443-104">The following table links to in-depth tutorials for building .NET apps running on Azure.</span></span>
 
-<span data-ttu-id="78606-105">有关示例源代码，请参阅 [Azure 服务示例](https://azure.microsoft.com/resources/samples/?platform=dotnet)列表。</span><span class="sxs-lookup"><span data-stu-id="78606-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
+<span data-ttu-id="77443-105">有关示例源代码，请参阅 [Azure 服务示例](https://azure.microsoft.com/resources/samples/?platform=dotnet)列表。</span><span class="sxs-lookup"><span data-stu-id="77443-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
 
 | | |
 |---|---|
-| <span data-ttu-id="78606-106">**Web 应用**</span><span class="sxs-lookup"><span data-stu-id="78606-106">**Web Apps**</span></span>||
-| <span data-ttu-id="78606-107">[使用 Azure SQL 数据库创建 ASP.NET Web 应用][1]</span><span class="sxs-lookup"><span data-stu-id="78606-107">[Create an ASP.NET web app with Azure SQL Database][1]</span></span> | <span data-ttu-id="78606-108">创建用于在 Azure SQL 数据库中存储数据的简单 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="78606-108">Create a simple web application that stores data in Azure SQL Database.</span></span> | 
-| <span data-ttu-id="78606-109">**API 应用**</span><span class="sxs-lookup"><span data-stu-id="78606-109">**API Apps**</span></span>||
-| <span data-ttu-id="78606-110">[创建和部署 Web API][3]</span><span class="sxs-lookup"><span data-stu-id="78606-110">[Create and deploy a Web API][3]</span></span> | <span data-ttu-id="78606-111">使用 Swagger 创建和部署 .NET Web API。</span><span class="sxs-lookup"><span data-stu-id="78606-111">Create and deploy a .NET Web API with Swagger.</span></span> | 
-| <span data-ttu-id="78606-112">**Azure 容器服务**</span><span class="sxs-lookup"><span data-stu-id="78606-112">**Azure Container Service**</span></span> ||
-| <span data-ttu-id="78606-113">[Kubernetes 和 Windows 容器入门][4]</span><span class="sxs-lookup"><span data-stu-id="78606-113">[Get started with Kubernetes and Windows containers][4]</span></span> | <span data-ttu-id="78606-114">使用 IIS 容器在 Azure 容器服务中创建 Kubernetes 群集。</span><span class="sxs-lookup"><span data-stu-id="78606-114">Create a Kubernetes cluster in Azure Container Service using an IIS container.</span></span>
-| <span data-ttu-id="78606-115">**SQL 数据库**</span><span class="sxs-lookup"><span data-stu-id="78606-115">**SQL Database**</span></span> ||
-| <span data-ttu-id="78606-116">[使用 .NET 连接和查询数据][5]</span><span class="sxs-lookup"><span data-stu-id="78606-116">[Use .NET to connect and query data][5]</span></span> | <span data-ttu-id="78606-117">使用 ADO.NET 连接到 Azure SQL 数据库，并使用 Transact-SQL 语句在数据库中查询、插入、更新和删除数据</span><span class="sxs-lookup"><span data-stu-id="78606-117">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
-| <span data-ttu-id="78606-118">**Azure Database for PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="78606-118">**Azure Database for PostgreSQL**</span></span> ||
-| <span data-ttu-id="78606-119">[使用 .NET 连接和查询数据][6]</span><span class="sxs-lookup"><span data-stu-id="78606-119">[Use .NET to connect and query data][6]</span></span> | <span data-ttu-id="78606-120">使用 SQL 语句在数据库中查询、插入、更新和删除数据。</span><span class="sxs-lookup"><span data-stu-id="78606-120">Use SQL statements to query, insert, update, and delete data in the database.</span></span> | 
-| <span data-ttu-id="78606-121">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="78606-121">**Azure Cosmos DB**</span></span> ||
-| <span data-ttu-id="78606-122">[Azure Cosmos DB SQL API 入门][7]</span><span class="sxs-lookup"><span data-stu-id="78606-122">[Getting started with the Azure Cosmos DB SQL API][7]</span></span> | <span data-ttu-id="78606-123">使用 Azure Cosmos DB SQL API 创建简单的控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="78606-123">Create a simple console application with the Azure Cosmos DB SQL API.</span></span> | 
-| <span data-ttu-id="78606-124">[使用 Azure Cosmos DB SQL API 创建 ASP.NET Web 应用][8]</span><span class="sxs-lookup"><span data-stu-id="78606-124">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][8]</span></span> | <span data-ttu-id="78606-125">使用 Azure Cosmos DB SQL API 创建 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="78606-125">Create a web application with the Azure Cosmos DB SQL API.</span></span> | 
+| <span data-ttu-id="77443-106">**Web 应用**</span><span class="sxs-lookup"><span data-stu-id="77443-106">**Web Apps**</span></span>||
+| <span data-ttu-id="77443-107">[使用 Azure SQL 数据库创建 ASP.NET Web 应用][1]</span><span class="sxs-lookup"><span data-stu-id="77443-107">[Create an ASP.NET web app with Azure SQL Database][1]</span></span> | <span data-ttu-id="77443-108">创建用于在 Azure SQL 数据库中存储数据的简单 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="77443-108">Create a simple web application that stores data in Azure SQL Database.</span></span> |
+| <span data-ttu-id="77443-109">**API 应用**</span><span class="sxs-lookup"><span data-stu-id="77443-109">**API Apps**</span></span>||
+| <span data-ttu-id="77443-110">[创建和部署 Web API][3]</span><span class="sxs-lookup"><span data-stu-id="77443-110">[Create and deploy a Web API][3]</span></span> | <span data-ttu-id="77443-111">使用 Swagger 创建和部署 .NET Web API。</span><span class="sxs-lookup"><span data-stu-id="77443-111">Create and deploy a .NET Web API with Swagger.</span></span> | 
+| <span data-ttu-id="77443-112">**Azure 容器服务**</span><span class="sxs-lookup"><span data-stu-id="77443-112">**Azure Container Service**</span></span> ||
+| <span data-ttu-id="77443-113">[Kubernetes 和 Windows 容器入门][4]</span><span class="sxs-lookup"><span data-stu-id="77443-113">[Get started with Kubernetes and Windows containers][4]</span></span> | <span data-ttu-id="77443-114">使用 IIS 容器在 Azure 容器服务中创建 Kubernetes 群集。</span><span class="sxs-lookup"><span data-stu-id="77443-114">Create a Kubernetes cluster in Azure Container Service using an IIS container.</span></span>
+| <span data-ttu-id="77443-115">**SQL 数据库**</span><span class="sxs-lookup"><span data-stu-id="77443-115">**SQL Database**</span></span> ||
+| <span data-ttu-id="77443-116">[使用 .NET 连接和查询数据][5]</span><span class="sxs-lookup"><span data-stu-id="77443-116">[Use .NET to connect and query data][5]</span></span> | <span data-ttu-id="77443-117">使用 ADO.NET 连接到 Azure SQL 数据库，并使用 Transact-SQL 语句在数据库中查询、插入、更新和删除数据</span><span class="sxs-lookup"><span data-stu-id="77443-117">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
+| <span data-ttu-id="77443-118">**Azure Database for PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="77443-118">**Azure Database for PostgreSQL**</span></span> ||
+| <span data-ttu-id="77443-119">[使用 .NET 连接和查询数据][6]</span><span class="sxs-lookup"><span data-stu-id="77443-119">[Use .NET to connect and query data][6]</span></span> | <span data-ttu-id="77443-120">使用 SQL 语句在数据库中查询、插入、更新和删除数据。</span><span class="sxs-lookup"><span data-stu-id="77443-120">Use SQL statements to query, insert, update, and delete data in the database.</span></span> |
+| <span data-ttu-id="77443-121">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="77443-121">**Azure Cosmos DB**</span></span> ||
+| <span data-ttu-id="77443-122">[Azure Cosmos DB SQL API 入门][7]</span><span class="sxs-lookup"><span data-stu-id="77443-122">[Getting started with the Azure Cosmos DB SQL API][7]</span></span> | <span data-ttu-id="77443-123">使用 Azure Cosmos DB SQL API 创建简单的控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="77443-123">Create a simple console application with the Azure Cosmos DB SQL API.</span></span> |
+| <span data-ttu-id="77443-124">[使用 Azure Cosmos DB SQL API 创建 ASP.NET Web 应用][8]</span><span class="sxs-lookup"><span data-stu-id="77443-124">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][8]</span></span> | <span data-ttu-id="77443-125">使用 Azure Cosmos DB SQL API 创建 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="77443-125">Create a web application with the Azure Cosmos DB SQL API.</span></span> |
 
 [1]: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
 [2]: /azure/cosmos-db/sql-api-dotnet-application
