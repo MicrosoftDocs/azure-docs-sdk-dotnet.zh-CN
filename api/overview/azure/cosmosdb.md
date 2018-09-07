@@ -5,29 +5,29 @@ keywords: Azure, .NET, SDK, API, Cosmos DB
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 11/17/2017
+ms.date: 08/31/2018
 ms.topic: reference
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4407e59cbcc7ceedc0c7964981d29d6e14a4aa95
-ms.sourcegitcommit: 903457bd531e77797a86e6aedcfc94c1fb79fe6d
+ms.openlocfilehash: 4928c1dfdb7a5bb50ca4f5023cbfec71e05e9061
+ms.sourcegitcommit: 299aa7bdbb9cec1b56e42e25550999e53e23de2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37132048"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43839493"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>用于 .NET 的 Azure Cosmos DB 库
 
 ## <a name="overview"></a>概述
 
-[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是分布式的可缩放数据存储，支持多种不同类型的数据库。
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) 是一种全球分布式多模型数据库服务。 它旨在通过一个综合性 SLA 跨任意数量的地理区域以富有弹性的方式独立缩放吞吐量和存储空间。 有了 Azure Cosmos DB，可以通过使用 API 和编程模型存储和访问文档、键值、宽列和图形数据库。 
 
 [Cosmos DB 入门](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)。
 
 ## <a name="client-library"></a>客户端库
 
-使用 Azure Cosmos DB .NET 客户端库在现有 Azure Cosmos DB 数据存储中访问和存储数据。  若要自动创建新的 Azure Cosmos DB 帐户，请使用 Azure 门户、CLI 或 PowerShell。
+使用 Azure Cosmos DB .NET 客户端库在现有 Azure Cosmos DB 数据存储中访问和存储数据。 若要自动创建新的 Azure Cosmos DB 帐户，请使用 Azure 门户、CLI 或 PowerShell。
 
 直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)。
 
@@ -54,7 +54,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString().Result;
+SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
 ```
 
 > [!div class="nextstepaction"]
