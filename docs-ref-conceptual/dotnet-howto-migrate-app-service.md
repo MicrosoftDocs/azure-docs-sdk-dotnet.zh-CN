@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135715"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700949"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>将 .NET Web 应用或服务迁移到 Azure 应用服务 
 
@@ -30,10 +30,10 @@ ms.locfileid: "39135715"
 
 验证对本地资源的访问权限，因为这些资源可能需要进行迁移或更改。 以下是用于减轻对本地资源的访问的选项：
 
-* 使用 [Azure 虚拟网络](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet)创建将应用服务连接到本地资源的 VPN。
-* 使用 [Azure 中继](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it)，在不更改防火墙的情况下，将本地服务安全地公开给云。
+* 使用 [Azure 虚拟网络](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)创建将应用服务连接到本地资源的 VPN。
+* 使用 [Azure 中继](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it)，在不更改防火墙的情况下，将本地服务安全地公开给云。
 * 将依赖项（如 [SQL 数据库](https://go.microsoft.com/fwlink/?linkid=863217)）迁移到 Azure。
-* 在云中使用平台即服务产品/服务以减少依赖项。 例如，不要连接到本地邮件服务器，而应考虑使用 [SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)。 
+* 在云中使用平台即服务产品/服务以减少依赖项。 例如，不要连接到本地邮件服务器，而应考虑使用 [SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email)。 
 
 ### <a name="port-bindings"></a>端口绑定
 
@@ -64,7 +64,7 @@ Azure 应用服务默认支持匿名身份验证，并在需要时进行表单�
 以往要在应用程序中通过 applicationHost.config 配置的所有设置现在可以通过 Azure 门户进行配置。 这适用于 AppPool 位数、启用/禁用 Websocket、托管管道版本、NET Framework 版本 (2.0/4.0)，等等。若要修改[应用程序设置](https://docs.microsoft.com/azure/app-service/web-sites-configure)，请导航到 [Azure 门户](https://portal.azure.com)，打开 Web 应用的边栏选项卡，并选择“应用程序设置”选项卡。
 
 #### <a name="iis5-compatibility-mode"></a>IIS5 兼容模式
-不支持 IIS5 兼容模式。 在 Azure 应用服务中，每个 Web 应用及其下的所有应用程序都在具有一组特定[应用程序池](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx)的同一工作进程中运行。
+不支持 IIS5 兼容模式。 在 Azure 应用服务中，每个 Web 应用及其下的所有应用程序都在具有一组特定[应用程序池](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx)的同一工作进程中运行。
 
 #### <a name="iis7-schema-compliance"></a>IIS7+ 架构符合性  
 Azure 应用服务 IIS 架构中未定义一些元素和属性。 如果遇到问题，请考虑使用 [XDT 转换](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/)。
