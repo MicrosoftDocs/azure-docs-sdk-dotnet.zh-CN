@@ -10,12 +10,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: f7f71e15dcd58473a61cfdf163a10dbc5f4f8d80
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 88ecfc69fbd57becf1adf1163a063c0d2bb086a8
+ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752849"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750585"
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>有关在 Azure 上运行的 .NET 应用中对用户进行身份验证的教程
 
@@ -26,13 +26,17 @@ ms.locfileid: "29752849"
 | | |
 |---|---|
 |**Active Directory**||
-| [使用 Azure AD 进行 Web 应用登录和注销][1] | 使用 ADAL 库在 ASP.NET 中登录和注销用户。
+| [使用 Visual Studio 连接服务将 Azure Active Directory 添加到 Web 应用程序][5] | 在 Visual Studio 中将 Web 应用连接到 Azure AD |
+| [使用 Azure AD 进行 Web 应用登录和注销][1] | 使用 ADAL 库在 ASP.NET 中登录和注销用户。 |
 | [使用 Azure AD 进行桌面应用程序身份验证][2]| 使用 ADAL 将 Azure AD 集成到 Windows 桌面 WPF 应用中。 | 
 | [使用 Azure AD 进行 Web API 身份验证][3] | 通过 Azure AD 使用持有者令牌保护 Web API。 |
 |**Key Vault**||
+| [使用 Visual Studio 连接服务将 Key Vault 添加到 Web 应用程序][6] | 在 Visual Studio 中将 Web 应用连接到 Azure Key Vault |
 | [从 Web 应用程序使用 Azure Key Vault][4] | 访问 Azure Key Vault 中的机密，以便可以在 Web 应用程序中使用该机密。 | 
 
 [1]: /azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet
 [2]: /azure/active-directory/develop/active-directory-devquickstarts-dotnet
 [3]: /azure/active-directory/develop/active-directory-devquickstarts-webapi-dotnet
 [4]: /azure/key-vault/key-vault-use-from-web-application
+[5]: /azure/active-directory/develop/vs-active-directory-add-connected-service
+[6]: /azure/key-vault/vs-key-vault-add-connected-service

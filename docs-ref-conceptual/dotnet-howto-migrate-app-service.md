@@ -5,18 +5,18 @@ keywords: Azure .NET, ASP.NET, WCF, 应用服务, Web 应用, 迁移
 author: camsoper
 manager: wpickett
 ms.author: casoper
-ms.date: 07/16/2018
+ms.date: 08/11/2018
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
-ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
+ms.openlocfilehash: 172ceb6956004dd560175d6662debdb4c898743d
+ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700949"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45567319"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>将 .NET Web 应用或服务迁移到 Azure 应用服务 
 
@@ -117,4 +117,4 @@ AAD 不适用于免费应用。 若要使用 AAD，必须升级应用 SKU。 请
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [将 ASP.NET Web 应用程序迁移到 Azure 应用服务](https://aka.ms/azure-webapp-migrate)
+> [从 Visual Studio 部署应用](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
