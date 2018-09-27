@@ -1,42 +1,34 @@
 ---
 title: 有关使用 Azure 数据库的 .NET 教程
 description: 有关连接和使用 .NET 应用程序中的 Azure 数据库的教程。
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: f03f1cc7e2d973aa270f99f7ca29c9cb4d6fd720
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: 38dcf7e288e4ec46705b31b9d00efc5477f92a85
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005744"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190620"
 ---
-# <a name="tutorials-for-using-net-with-azure-databases"></a><span data-ttu-id="0e47b-103">有关对 Azure 数据库使用 .NET 的教程</span><span class="sxs-lookup"><span data-stu-id="0e47b-103">Tutorials for using .NET with Azure databases</span></span>
+# <a name="tutorials-for-using-net-with-azure-databases"></a><span data-ttu-id="9c738-103">有关对 Azure 数据库使用 .NET 的教程</span><span class="sxs-lookup"><span data-stu-id="9c738-103">Tutorials for using .NET with Azure databases</span></span>
 
-<span data-ttu-id="0e47b-104">下表提供了有关连接和处理 .NET 应用程序的 Azure 数据库中的数据的深入教程的链接。</span><span class="sxs-lookup"><span data-stu-id="0e47b-104">The following table links to in-depth tutorials for connecting to and working with data in Azure databases in your .NET applications.</span></span>
+<span data-ttu-id="9c738-104">下表提供了有关连接和处理 .NET 应用程序的 Azure 数据库中的数据的深入教程的链接。</span><span class="sxs-lookup"><span data-stu-id="9c738-104">The following table links to in-depth tutorials for connecting to and working with data in Azure databases in your .NET applications.</span></span>
 
-<span data-ttu-id="0e47b-105">有关示例源代码，请参阅 [Azure 服务示例](https://azure.microsoft.com/resources/samples/?platform=dotnet)列表。</span><span class="sxs-lookup"><span data-stu-id="0e47b-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
+<span data-ttu-id="9c738-105">有关示例源代码，请参阅 [Azure 服务示例](https://azure.microsoft.com/resources/samples/?platform=dotnet)列表。</span><span class="sxs-lookup"><span data-stu-id="9c738-105">For sample source code, see the list of [Azure service samples](https://azure.microsoft.com/resources/samples/?platform=dotnet).</span></span>
 
 | | |
 |---|---|
-| <span data-ttu-id="0e47b-106">**SQL 数据库**</span><span class="sxs-lookup"><span data-stu-id="0e47b-106">**SQL Database**</span></span> ||
-| <span data-ttu-id="0e47b-107">[使用 .NET 连接和查询数据][1]</span><span class="sxs-lookup"><span data-stu-id="0e47b-107">[Use .NET to connect and query data][1]</span></span> | <span data-ttu-id="0e47b-108">使用 ADO.NET 连接到 Azure SQL 数据库，并使用 Transact-SQL 语句在数据库中查询、插入、更新和删除数据</span><span class="sxs-lookup"><span data-stu-id="0e47b-108">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
-| <span data-ttu-id="0e47b-109">**Azure Database for PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="0e47b-109">**Azure Database for PostgreSQL**</span></span> ||
-| <span data-ttu-id="0e47b-110">[使用 .NET 连接和查询数据][2]</span><span class="sxs-lookup"><span data-stu-id="0e47b-110">[Use .NET to connect and query data][2]</span></span> | <span data-ttu-id="0e47b-111">使用 SQL 语句在数据库中查询、插入、更新和删除数据。</span><span class="sxs-lookup"><span data-stu-id="0e47b-111">Use SQL statements to query, insert, update, and delete data in the database.</span></span> | 
-| <span data-ttu-id="0e47b-112">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="0e47b-112">**Azure Cosmos DB**</span></span> ||
-| <span data-ttu-id="0e47b-113">[Azure Cosmos DB SQL API 入门][4]</span><span class="sxs-lookup"><span data-stu-id="0e47b-113">[Getting started with the Azure Cosmos DB SQL API][4]</span></span> | <span data-ttu-id="0e47b-114">使用 SQL API 创建简单的控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="0e47b-114">Create a simple console application with the SQL API.</span></span> | 
-| <span data-ttu-id="0e47b-115">[使用 Azure Cosmos DB SQL API 创建 ASP.NET Web 应用][3]</span><span class="sxs-lookup"><span data-stu-id="0e47b-115">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][3]</span></span> | <span data-ttu-id="0e47b-116">使用 Azure Cosmos DB SQL API 创建 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="0e47b-116">Create a web application with the Azure Cosmos DB SQL API.</span></span> | 
-| <span data-ttu-id="0e47b-117">**Redis 缓存**</span><span class="sxs-lookup"><span data-stu-id="0e47b-117">**Redis Cache**</span></span> | |
-| <span data-ttu-id="0e47b-118">[如何使用 Azure Redis 缓存][6]</span><span class="sxs-lookup"><span data-stu-id="0e47b-118">[How to use Azure Redis Cache][6]</span></span> | <span data-ttu-id="0e47b-119">开始使用 Azure Redis 缓存。</span><span class="sxs-lookup"><span data-stu-id="0e47b-119">Get started using Azure Redis Cache.</span></span> |
-| <span data-ttu-id="0e47b-120">[使用 Redis 缓存创建 Web 应用][5]</span><span class="sxs-lookup"><span data-stu-id="0e47b-120">[Create a Web App with Redis Cache][5]</span></span> | <span data-ttu-id="0e47b-121">使用 Visual Studio 2017 创建 ASP.NET Web 应用程序并将其部署到 Azure 应用服务中的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="0e47b-121">Create and deploy an ASP.NET web application to a web app in Azure App Service using Visual Studio 2017.</span></span>  | 
-| <span data-ttu-id="0e47b-122">[ASP.NET 会话状态提供程序][7]</span><span class="sxs-lookup"><span data-stu-id="0e47b-122">[ASP.NET Session State Provider][7]</span></span> | <span data-ttu-id="0e47b-123">使用 Azure Redis 缓存维护 ASP.NET 中的会话状态。</span><span class="sxs-lookup"><span data-stu-id="0e47b-123">Use Azure Redis Cache to maintain session state in ASP.NET.</span></span>  | 
-| <span data-ttu-id="0e47b-124">[ASP.NET 输出缓存提供程序][8]</span><span class="sxs-lookup"><span data-stu-id="0e47b-124">[ASP.NET Output Cache Provider][8]</span></span> | <span data-ttu-id="0e47b-125">使用 Azure Redis 缓存进行 ASP.NET 输出缓存。</span><span class="sxs-lookup"><span data-stu-id="0e47b-125">Use Azure Redis Cache for ASP.NET output caching.</span></span>  | 
+| <span data-ttu-id="9c738-106">**SQL 数据库**</span><span class="sxs-lookup"><span data-stu-id="9c738-106">**SQL Database**</span></span> ||
+| <span data-ttu-id="9c738-107">[使用 .NET 连接和查询数据][1]</span><span class="sxs-lookup"><span data-stu-id="9c738-107">[Use .NET to connect and query data][1]</span></span> | <span data-ttu-id="9c738-108">使用 ADO.NET 连接到 Azure SQL 数据库，并使用 Transact-SQL 语句在数据库中查询、插入、更新和删除数据</span><span class="sxs-lookup"><span data-stu-id="9c738-108">Use ADO.NET to connect to an Azure SQL database, and then use Transact-SQL statements to query, insert, update, and delete data in the database</span></span> | 
+| <span data-ttu-id="9c738-109">**Azure Database for PostgreSQL**</span><span class="sxs-lookup"><span data-stu-id="9c738-109">**Azure Database for PostgreSQL**</span></span> ||
+| <span data-ttu-id="9c738-110">[使用 .NET 连接和查询数据][2]</span><span class="sxs-lookup"><span data-stu-id="9c738-110">[Use .NET to connect and query data][2]</span></span> | <span data-ttu-id="9c738-111">使用 SQL 语句在数据库中查询、插入、更新和删除数据。</span><span class="sxs-lookup"><span data-stu-id="9c738-111">Use SQL statements to query, insert, update, and delete data in the database.</span></span> | 
+| <span data-ttu-id="9c738-112">**Azure Cosmos DB**</span><span class="sxs-lookup"><span data-stu-id="9c738-112">**Azure Cosmos DB**</span></span> ||
+| <span data-ttu-id="9c738-113">[Azure Cosmos DB SQL API 入门][4]</span><span class="sxs-lookup"><span data-stu-id="9c738-113">[Getting started with the Azure Cosmos DB SQL API][4]</span></span> | <span data-ttu-id="9c738-114">使用 SQL API 创建简单的控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="9c738-114">Create a simple console application with the SQL API.</span></span> | 
+| <span data-ttu-id="9c738-115">[使用 Azure Cosmos DB SQL API 创建 ASP.NET Web 应用][3]</span><span class="sxs-lookup"><span data-stu-id="9c738-115">[Create an ASP.NET web app with the Azure Cosmos DB SQL API][3]</span></span> | <span data-ttu-id="9c738-116">使用 Azure Cosmos DB SQL API 创建 Web 应用程序。</span><span class="sxs-lookup"><span data-stu-id="9c738-116">Create a web application with the Azure Cosmos DB SQL API.</span></span> | 
+| <span data-ttu-id="9c738-117">**Redis 缓存**</span><span class="sxs-lookup"><span data-stu-id="9c738-117">**Redis Cache**</span></span> | |
+| <span data-ttu-id="9c738-118">[如何使用 Azure Redis 缓存][6]</span><span class="sxs-lookup"><span data-stu-id="9c738-118">[How to use Azure Redis Cache][6]</span></span> | <span data-ttu-id="9c738-119">开始使用 Azure Redis 缓存。</span><span class="sxs-lookup"><span data-stu-id="9c738-119">Get started using Azure Redis Cache.</span></span> |
+| <span data-ttu-id="9c738-120">[使用 Redis 缓存创建 Web 应用][5]</span><span class="sxs-lookup"><span data-stu-id="9c738-120">[Create a Web App with Redis Cache][5]</span></span> | <span data-ttu-id="9c738-121">使用 Visual Studio 2017 创建 ASP.NET Web 应用程序并将其部署到 Azure 应用服务中的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="9c738-121">Create and deploy an ASP.NET web application to a web app in Azure App Service using Visual Studio 2017.</span></span>  | 
+| <span data-ttu-id="9c738-122">[ASP.NET 会话状态提供程序][7]</span><span class="sxs-lookup"><span data-stu-id="9c738-122">[ASP.NET Session State Provider][7]</span></span> | <span data-ttu-id="9c738-123">使用 Azure Redis 缓存维护 ASP.NET 中的会话状态。</span><span class="sxs-lookup"><span data-stu-id="9c738-123">Use Azure Redis Cache to maintain session state in ASP.NET.</span></span>  | 
+| <span data-ttu-id="9c738-124">[ASP.NET 输出缓存提供程序][8]</span><span class="sxs-lookup"><span data-stu-id="9c738-124">[ASP.NET Output Cache Provider][8]</span></span> | <span data-ttu-id="9c738-125">使用 Azure Redis 缓存进行 ASP.NET 输出缓存。</span><span class="sxs-lookup"><span data-stu-id="9c738-125">Use Azure Redis Cache for ASP.NET output caching.</span></span>  | 
  
 
 [1]: /azure/sql-database/sql-database-connect-query-dotnet
