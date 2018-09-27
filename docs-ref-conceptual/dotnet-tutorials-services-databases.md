@@ -1,21 +1,13 @@
 ---
 title: 有关使用 Azure 数据库的 .NET 教程
 description: 有关连接和使用 .NET 应用程序中的 Azure 数据库的教程。
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: f03f1cc7e2d973aa270f99f7ca29c9cb4d6fd720
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: 38dcf7e288e4ec46705b31b9d00efc5477f92a85
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005744"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190620"
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>有关对 Azure 数据库使用 .NET 的教程
 

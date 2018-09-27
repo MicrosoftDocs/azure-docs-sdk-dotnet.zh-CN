@@ -1,22 +1,14 @@
 ---
 title: 将 SQL Server 数据库迁移到 Azure
 description: 了解如何将 SQL Server 数据库从本地 SQL Server 迁移到 Azure。
-keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL 数据库, 迁移
-author: camsoper
-manager: wpickett
-ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: sql-database
-ms.custom: devcenter
-ms.openlocfilehash: d118d39e2168686c851f0daa6cb611f0a0c9d2fc
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: 49b03632b8ebe31439b3c39629fdaf751412fd5a
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29728488"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190510"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>将 SQL Server 数据库迁移到 Azure
 
@@ -66,7 +58,7 @@ Azure 提供两个主要选项用于迁移生产 SQL Server 数据库：
 
 下表根据一组情景描述了不同服务之间的差异。
 
-| 方案 | Azure VM 中的 SQL Server | Azure SQL 数据库 |
+| 场景 | Azure VM 中的 SQL Server | Azure SQL 数据库 |
 |----------|-------------------------|--------------------|
 | 迁移 | 需要对数据库进行少量的更改。 | 如果使用 Azure SQL 中不可用的功能（哪些功能可用由[数据迁移助手](https://www.microsoft.com/download/details.aspx?id=53595)确定），或者存在其他依赖项（例如本地安装的可执行文件），则可能需要对数据库进行更改。|
 | 管理可用性、恢复和升级 | 手动配置可用性和恢复。 可以使用 [VM 规模集](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade)自动升级。 | 由系统自动管理。 |
@@ -76,7 +68,7 @@ Azure 提供两个主要选项用于迁移生产 SQL Server 数据库：
 
 若要了解有关两者之间的差异的详细信息，请阅读“选择云 SQL Server 选项：[Azure SQL 数据库或 Azure VM 上的 SQL Server](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)”。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 * **是否仍可对 Azure VM 中的 SQL Server 或 Azure SQL 数据库使用 SQL Server Management Studio 和 SQL Server Reporting Services (SSRS) 等工具？**
 

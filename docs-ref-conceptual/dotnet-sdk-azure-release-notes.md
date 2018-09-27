@@ -1,22 +1,13 @@
 ---
 title: 用于 .NET 的 Azure 管理库发行说明 | Microsoft Docs
 description: 了解用于 .NET 的 Azure 管理库的新增功能，并留意其中的重大更改。
-keywords: Azure, .NET, API, 参考, 说明, 更新, 弃用
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: dac9dee9c25fc349dedd50d6007f25c7d15b0928
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005904"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190670"
 ---
 # <a name="release-notes"></a>发行说明 
 

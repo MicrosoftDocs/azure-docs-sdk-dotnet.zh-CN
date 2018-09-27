@@ -1,21 +1,13 @@
 ---
 title: 使用 .NET Core 从命令行部署到 Azure
 description: 本文介绍如何使用命令行工具将 ASP.NET Core 应用程序部署到 Azure 应用服务。
-keywords: Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a29f5474dcfedc6f8d044f09ad4d54c5be6a371f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005874"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190490"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>使用 .NET Core 从命令行部署到 Azure
 

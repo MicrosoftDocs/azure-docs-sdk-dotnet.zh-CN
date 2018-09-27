@@ -1,21 +1,15 @@
 ---
 title: 用于 .NET 的 Azure 移动库
 description: 用于 .NET 的 Azure 移动库参考
-keywords: Azure, .NET, SDK, API, 移动
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: app-service
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa73549789369c3aa169d1aee6788129780dac66
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 0019971017922dcbbbbfebea240add30e7f1e8dc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065907"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190851"
 ---
 # <a name="azure-mobile-libraries-for-net"></a>用于 .NET 的 Azure 移动库
 

@@ -1,21 +1,13 @@
 ---
 title: 有关在 Azure 上的 .NET 中使用消息传送和 IoT 的教程 | Microsoft Docs
 description: 使用 .NET 和 Azure 服务在云应用程序之间以及设备与云之间发送消息。
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: a6c50af1678c785c6a3fcd3f4f3689171069b2ee
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 92cb78b34706a453630dbf36913d53400962ff25
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752839"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190770"
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>企业消息传送和物联网 (IoT) 的 .NET 教程
 

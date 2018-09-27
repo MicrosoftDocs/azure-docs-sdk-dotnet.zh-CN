@@ -1,22 +1,13 @@
 ---
 title: 用于 Visual Studio 2015 的 Azure 工具
 description: 获取工具以开始使用 Visual Studio 2015 中的 Azure .NET 库。
-keywords: Azure .NET, SDK, VS2015, Visual Studio 2015
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 5046781a16b5b330b95c4ad36e8a8187126fef4e
-ms.sourcegitcommit: 1c2e1fd031ad012d6888fcde3cd325f7e8e49e0f
+ms.openlocfilehash: b574841d17ba60e8ab52a4c06831f0b1cc8cc8aa
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "29752809"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190400"
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>用于 Visual Studio 2015 的 Azure 工具
 
@@ -40,7 +31,7 @@ ms.locfileid: "29752809"
 
 2. 显示的列表包含多个 Azure 工具，例如“Microsoft Azure 应用服务工具”、“Microsoft Azure 存储连接服务”和“Service Fabric 工具”。
 
-    ![扩展和更新](media\dotnet-sdk-vs2015-install\ext-tools.png)
+    ![扩展和更新](media/dotnet-sdk-vs2015-install/ext-tools.png)
 
 ## <a name="next-steps"></a>后续步骤
 

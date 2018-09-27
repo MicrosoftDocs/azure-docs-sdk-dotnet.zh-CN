@@ -1,22 +1,13 @@
 ---
 title: 使用用于 .NET 的 Azure 库进行身份验证
 description: 在用于 .NET 的 Azure 库中进行身份验证
-keywords: Azure, .NET, SDK, API, 身份验证, active directory, 服务主体
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 019f0047fb141842eb1481ad9b835fa865a9a139
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+ms.openlocfilehash: d0d8db89816a887fa23490a213917a3c554ecdb4
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703040"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190852"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a>使用用于 .NET 的 Azure 库进行身份验证
 

@@ -1,3 +1,14 @@
+---
+ms.service: multiple
+ms.date: 9/20/2018
+ms.topic: include
+ms.openlocfilehash: 5c8cb328802cfb94e944e4241852fb9568e8507f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190530"
+---
 若要使用用于 .NET 的 Azure 管理库，.NET 应用程序需要拥有在 Azure 订阅中读取和创建资源的权限。 创建一个服务主体，并将应用配置为使用该服务主体的凭据运行，以授予此访问权限。 通过服务主体可以创建一个与用户标识关联的非交互式帐户，该帐户仅拥有运行应用所需的特权。
 
 首先登录到 [Azure Cloud Shell](https://shell.azure.com/bash)。 验证当前使用的是要在其中创建服务主体的订阅。 

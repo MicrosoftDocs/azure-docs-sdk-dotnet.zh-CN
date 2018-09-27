@@ -1,21 +1,15 @@
 ---
 title: 适用于 .NET 的 Azure StorSimple 库
 description: 适用于 .NET 的 Azure StorSimple 存储库参考
-keywords: Azure, .NET, SDK, API, StorSimple
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/27/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: storsimple
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 818c48a0f45812841eb0e8c3928b59f6681892cf
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: ecaa1acb0d988f7312645c2e6ed8f3289e51237c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065897"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190360"
 ---
 # <a name="azure-storsimple-libraries-for-net"></a>适用于 .NET 的 Azure StorSimple 库
 

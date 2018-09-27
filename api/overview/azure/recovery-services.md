@@ -1,21 +1,15 @@
 ---
 title: 用于 .NET 的 Azure 恢复服务和备份库
 description: 用于 .NET 的 Azure 恢复服务和备份库参考
-keywords: Azure, .NET, SDK, API, 恢复服务, 备份
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: recovery-services
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 6186411b668d0950328b49bb826e5b05c5ee0304
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: c0381ce9a566b5371faca24307edc7b26174e785
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065427"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190783"
 ---
 # <a name="azure-recovery-services-and-backup-libraries-for-net"></a>用于 .NET 的 Azure 恢复服务和备份库
 

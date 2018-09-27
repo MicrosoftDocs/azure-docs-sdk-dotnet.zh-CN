@@ -1,21 +1,13 @@
 ---
 title: 从 Visual Studio 部署到 Azure
 description: 本教程逐步讲解如何使用 Visual Studio 和 .NET 来生成及部署 Microsoft Azure 应用程序。
-keywords: Azure.NET, SDK, Azure.NET API 参考, Azure.NET 类库
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a4ddaa0dbf1cd71a0de031cc89b299baa381992c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005884"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190420"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>从 Visual Studio 部署到 Azure
 
