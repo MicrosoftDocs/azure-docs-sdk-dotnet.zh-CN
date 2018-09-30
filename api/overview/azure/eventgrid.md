@@ -1,48 +1,43 @@
 ---
 title: 用于 .NET 的 Azure 事件网格库
 description: 用于 .NET 的 Azure 事件网格库参考
-author: rloutlaw
-ms.author: routlaw
-manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-grid
-ms.custom: devcenter
-ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 5b19f8aa8b28b3e4aef528da051b6e7d177f1a2f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750595"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190390"
 ---
-# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="fbe47-103">用于 .NET 的 Azure 事件网格库</span><span class="sxs-lookup"><span data-stu-id="fbe47-103">Azure Event Grid libraries for .NET</span></span>
+# <a name="azure-event-grid-libraries-for-net"></a><span data-ttu-id="3c2e3-103">用于 .NET 的 Azure 事件网格库</span><span class="sxs-lookup"><span data-stu-id="3c2e3-103">Azure Event Grid libraries for .NET</span></span>
 
-<span data-ttu-id="fbe47-104">将简单的基于 HTTP 的事件处理与 Azure 事件网格配合使用，开发事件驱动型应用程序，以便侦听并响应来自 Azure 服务和自定义源的事件。</span><span class="sxs-lookup"><span data-stu-id="fbe47-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
+<span data-ttu-id="3c2e3-104">将简单的基于 HTTP 的事件处理与 Azure 事件网格配合使用，开发事件驱动型应用程序，以便侦听并响应来自 Azure 服务和自定义源的事件。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-104">Build event-driven applications that listen and react to events from Azure services and custom sources using simple HTTP-based event handling with Azure Event Grid.</span></span>
 
-<span data-ttu-id="fbe47-105">[详细了解](/azure/event-grid/overview) Azure 事件网格，通过 [Azure Blob 存储事件教程](/azure/storage/blobs/storage-blob-event-quickstart-powershell)来入门。</span><span class="sxs-lookup"><span data-stu-id="fbe47-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
+<span data-ttu-id="3c2e3-105">[详细了解](/azure/event-grid/overview) Azure 事件网格，通过 [Azure Blob 存储事件教程](/azure/storage/blobs/storage-blob-event-quickstart-powershell)来入门。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart-powershell).</span></span> 
 
-## <a name="client-sdk"></a><span data-ttu-id="fbe47-106">客户端 SDK</span><span class="sxs-lookup"><span data-stu-id="fbe47-106">Client SDK</span></span>
+## <a name="client-sdk"></a><span data-ttu-id="3c2e3-106">客户端 SDK</span><span class="sxs-lookup"><span data-stu-id="3c2e3-106">Client SDK</span></span>
 
-<span data-ttu-id="fbe47-107">使用 Azure 事件网格客户端 SDK 创建事件、进行身份验证以及发布到主题。</span><span class="sxs-lookup"><span data-stu-id="fbe47-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
+<span data-ttu-id="3c2e3-107">使用 Azure 事件网格客户端 SDK 创建事件、进行身份验证以及发布到主题。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-107">Create events, authenticate, and post to topics using the Azure Event Grid Client SDK.</span></span>
 
-<span data-ttu-id="fbe47-108">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)。</span><span class="sxs-lookup"><span data-stu-id="fbe47-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="3c2e3-108">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-108">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="fbe47-109">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="fbe47-109">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="3c2e3-109">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="3c2e3-109">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="fbe47-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="fbe47-110">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="3c2e3-110">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="3c2e3-110">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.EventGrid 
 ```
 
-### <a name="publish-events"></a><span data-ttu-id="fbe47-111">发布事件</span><span class="sxs-lookup"><span data-stu-id="fbe47-111">Publish events</span></span>
+### <a name="publish-events"></a><span data-ttu-id="3c2e3-111">发布事件</span><span class="sxs-lookup"><span data-stu-id="3c2e3-111">Publish events</span></span>
 
-<span data-ttu-id="fbe47-112">以下代码通过 Azure 进行身份验证，然后将自定义类型（在此示例中为 `Contoso.Items.ItemsReceivedEvent`）的 `EventGridEvent` 事件的 `List` 发布到某个主题。</span><span class="sxs-lookup"><span data-stu-id="fbe47-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="fbe47-113">在示例中使用的主题密钥和终结点地址可以从 Azure PowerShell 检索：</span><span class="sxs-lookup"><span data-stu-id="fbe47-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
+<span data-ttu-id="3c2e3-112">以下代码通过 Azure 进行身份验证，然后将自定义类型（在此示例中为 `Contoso.Items.ItemsReceivedEvent`）的 `EventGridEvent` 事件的 `List` 发布到某个主题。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-112">The following code authenticates with Azure and publishes a `List` of  `EventGridEvent` events of a custom type (in this example, `Contoso.Items.ItemsReceivedEvent` ) to a topic.</span></span> <span data-ttu-id="3c2e3-113">在示例中使用的主题密钥和终结点地址可以从 Azure PowerShell 检索：</span><span class="sxs-lookup"><span data-stu-id="3c2e3-113">The topic key and endpoint address used in the sample can be retrieved from Azure PowerShell:</span></span>
 
 ```powershell
 $endpoint = (Get-AzureRmEventGridTopic -ResourceGroupName gridResourceGroup -Name <topic-name>).Endpoint
@@ -83,9 +78,9 @@ static IList<EventGridEvent> GetEventsList()
 }
 ```
 
-### <a name="consume-events"></a><span data-ttu-id="fbe47-114">使用事件</span><span class="sxs-lookup"><span data-stu-id="fbe47-114">Consume events</span></span>
+### <a name="consume-events"></a><span data-ttu-id="3c2e3-114">使用事件</span><span class="sxs-lookup"><span data-stu-id="3c2e3-114">Consume events</span></span>
 
-<span data-ttu-id="fbe47-115">此代码片段使用多种事件，包括一个自定义事件 `Contoso.Items.ItemsReceived`，以及其他 Azure 服务（例如 Blob 存储）触发的事件。</span><span class="sxs-lookup"><span data-stu-id="fbe47-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
+<span data-ttu-id="3c2e3-115">此代码片段使用多种事件，包括一个自定义事件 `Contoso.Items.ItemsReceived`，以及其他 Azure 服务（例如 Blob 存储）触发的事件。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-115">This snippet consumes events, including a custom event `Contoso.Items.ItemsReceived` as well as events triggered from other Azure services, such as Blob Storage.</span></span>
 
 ```csharp
 string response = string.Empty;
@@ -120,33 +115,33 @@ foreach (EventGridEvent receivedEvent in events)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="fbe47-116">了解客户端 API</span><span class="sxs-lookup"><span data-stu-id="fbe47-116">Explore the client APIs</span></span>](/dotnet/api/overview/azure/eventgrid/client)
+> [<span data-ttu-id="3c2e3-116">探索发布 API</span><span class="sxs-lookup"><span data-stu-id="3c2e3-116">Explore the publishing APIs</span></span>](/dotnet/api/overview/azure/eventgrid/publish)
 
-## <a name="management-sdk"></a><span data-ttu-id="fbe47-117">管理 SDK</span><span class="sxs-lookup"><span data-stu-id="fbe47-117">Management SDK</span></span>
+## <a name="management-sdk"></a><span data-ttu-id="3c2e3-117">管理 SDK</span><span class="sxs-lookup"><span data-stu-id="3c2e3-117">Management SDK</span></span>
 
-<span data-ttu-id="fbe47-118">使用管理 SDK 创建、更新或删除事件网格实例、主题和订阅。</span><span class="sxs-lookup"><span data-stu-id="fbe47-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
+<span data-ttu-id="3c2e3-118">使用管理 SDK 创建、更新或删除事件网格实例、主题和订阅。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-118">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
 
-<span data-ttu-id="fbe47-119">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)。</span><span class="sxs-lookup"><span data-stu-id="fbe47-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="3c2e3-119">直接从 Visual Studio [包管理器控制台][PackageManager]或使用 [.NET Core CLI][DotNetCLI] 安装 [NuGet 包](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)。</span><span class="sxs-lookup"><span data-stu-id="3c2e3-119">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="fbe47-120">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="fbe47-120">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="3c2e3-120">Visual Studio 包管理器</span><span class="sxs-lookup"><span data-stu-id="3c2e3-120">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.EventGrid
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="fbe47-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="fbe47-121">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="3c2e3-121">.NET Core CLI</span><span class="sxs-lookup"><span data-stu-id="3c2e3-121">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.EventGrid
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="fbe47-122">了解管理 API</span><span class="sxs-lookup"><span data-stu-id="fbe47-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
+> [<span data-ttu-id="3c2e3-122">了解管理 API</span><span class="sxs-lookup"><span data-stu-id="3c2e3-122">Explore the management APIs</span></span>](/dotnet/api/overview/azure/eventgrid/management)
 
-## <a name="learn-more"></a><span data-ttu-id="fbe47-123">了解详细信息</span><span class="sxs-lookup"><span data-stu-id="fbe47-123">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="3c2e3-123">了解详细信息</span><span class="sxs-lookup"><span data-stu-id="3c2e3-123">Learn more</span></span>
 
-- [<span data-ttu-id="fbe47-124">使用事件网格 SDK 接收事件</span><span class="sxs-lookup"><span data-stu-id="fbe47-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
+- [<span data-ttu-id="3c2e3-124">使用事件网格 SDK 接收事件</span><span class="sxs-lookup"><span data-stu-id="3c2e3-124">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

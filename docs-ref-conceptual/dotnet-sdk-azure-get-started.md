@@ -1,329 +1,78 @@
 ---
-title: Azure .NET 和 .NET Core API 入门
-description: 结合自己的 Azure 订阅开始了解用于 .NET 和 .NET Core 的 Azure 库的基本用法。
-keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, 身份验证, 入门
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Azure 和 .NET 入门
+description: 学习了解 Azure 和 .NET 所需的基础知识。
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703050"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190590"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="3fa5d-104">Azure .NET 和 .NET Core API 入门</span><span class="sxs-lookup"><span data-stu-id="3fa5d-104">Get started with the Azure .NET and .NET Core APIs</span></span>
+# <a name="get-started-with-azure-and-net"></a><span data-ttu-id="c548a-103">Azure 和 .NET 入门</span><span class="sxs-lookup"><span data-stu-id="c548a-103">Get started with Azure and .NET</span></span>
 
-<span data-ttu-id="3fa5d-105">本教程演示多个[用于 .NET 的 Azure API](/dotnet/api/overview/azure/) 的用法。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="3fa5d-106">内容包括设置身份验证、创建和使用 Azure 存储帐户、创建和使用 Azure SQL 数据库、部署一些虚拟机，然后从 GitHub 部署一个 Azure 应用服务 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="c548a-104">本文档概述的重要概念和服务是 .NET 开发人员使用 Azure 服务来完成应用开发入门所应该熟悉的。</span><span class="sxs-lookup"><span data-stu-id="c548a-104">This document provides an overview of key concepts and services .NET developers should be familar with to get started developing apps using Azure services.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3fa5d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="3fa5d-107">Prerequisites</span></span>
+## <a name="key-concepts"></a><span data-ttu-id="c548a-105">关键概念</span><span class="sxs-lookup"><span data-stu-id="c548a-105">Key Concepts</span></span>
 
-- <span data-ttu-id="3fa5d-108">一个 Azure 帐户。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-108">An Azure account.</span></span> <span data-ttu-id="3fa5d-109">如果没有帐户，可[获取一个免费试用帐户](https://azure.microsoft.com/free/)</span><span class="sxs-lookup"><span data-stu-id="3fa5d-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+<span data-ttu-id="c548a-106">**Azure 帐户**：Azure 帐户是用于登录 Azure 服务（例如 [Azure 门户](https://portal.azure.com)或 [Cloud Shell](https://shell.azure.com)）的凭据。</span><span class="sxs-lookup"><span data-stu-id="c548a-106">**Azure account**: Your Azure account is the credential you use to sign into Azure services, such as the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).</span></span> <span data-ttu-id="c548a-107">如果没有 Azure 帐户，可以[免费创建一个](https://azure.microsoft.com/free/dotnet/)。</span><span class="sxs-lookup"><span data-stu-id="c548a-107">If you don't have an Azure account, you can [create one for free](https://azure.microsoft.com/free/dotnet/).</span></span>
 
-## <a name="set-up-authentication"></a><span data-ttu-id="3fa5d-110">设置身份验证</span><span class="sxs-lookup"><span data-stu-id="3fa5d-110">Set up authentication</span></span>
+<span data-ttu-id="c548a-108">**Azure 订阅**：订阅是创建 Azure 资源时使用的计费计划。</span><span class="sxs-lookup"><span data-stu-id="c548a-108">**Azure subscription**: A subscription is the billing plan within which Azure resources are created.</span></span> <span data-ttu-id="c548a-109">订阅可以是个人订阅，也可以是由公司管理的企业订阅。</span><span class="sxs-lookup"><span data-stu-id="c548a-109">Subscriptions can be individual subscriptions or enterprise subscriptions managed by your company.</span></span> <span data-ttu-id="c548a-110">Azure 帐户可以与多个订阅相关联。</span><span class="sxs-lookup"><span data-stu-id="c548a-110">Your Azure account can be associated with multiple subscriptions.</span></span> <span data-ttu-id="c548a-111">在这种情况下，请确保在创建资源时选择正确的订阅。</span><span class="sxs-lookup"><span data-stu-id="c548a-111">In this case, make sure you're selecting the correct subscription when creating resources.</span></span> <span data-ttu-id="c548a-112">有关详细信息，请参阅[了解帐户、订阅和计费](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)。</span><span class="sxs-lookup"><span data-stu-id="c548a-112">For more information, see [Understanding accounts, subscriptions and billing](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).</span></span>
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> <span data-ttu-id="c548a-113">如果有 Visual Studio 订阅，请[激活每月的 Azure 信用额度](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)。</span><span class="sxs-lookup"><span data-stu-id="c548a-113">If you have a Visual Studio subscription, [you have monthly Azure credits waiting to be activated](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).</span></span>
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+<span data-ttu-id="c548a-114">**资源组**：可以通过资源组将 Azure 资源组织到组中进行管理。</span><span class="sxs-lookup"><span data-stu-id="c548a-114">**Resource group**: Resource groups are a way to organize your Azure resources into groups for management.</span></span> <span data-ttu-id="c548a-115">在 Azure 中创建的资源存储在资源组中，这类似于将文件保存在计算机上的文件夹中。</span><span class="sxs-lookup"><span data-stu-id="c548a-115">Resources created in Azure will be stored in a resource group, similar to saving a file in a folder on a computer.</span></span>
 
-## <a name="create-a-new-project"></a><span data-ttu-id="3fa5d-111">创建新项目</span><span class="sxs-lookup"><span data-stu-id="3fa5d-111">Create a new project</span></span> 
+<span data-ttu-id="c548a-116">**承载**：若要在 Azure 中运行代码，需将其承载在支持执行用户提供的代码的服务中。</span><span class="sxs-lookup"><span data-stu-id="c548a-116">**Hosting**: To run code in Azure, it needs to be hosted in a service that supports executing user-provided code.</span></span>
 
-<span data-ttu-id="3fa5d-112">创建新的控制台应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-112">Create a new console application project.</span></span>  <span data-ttu-id="3fa5d-113">为此，请在 Visual Studio 中依次单击“文件”、“新建”、“项目...”。在 Visual C# 模板下选择“控制台应用(.NET Core)”，为项目命名，并单击“确定”。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-113">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="c548a-117">**托管服务**：Azure 提供一些服务，你可以在其中向 Azure 提供数据或信息，然后 Azure 的实现会采取相应的措施。</span><span class="sxs-lookup"><span data-stu-id="c548a-117">**Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action.</span></span> <span data-ttu-id="c548a-118">Azure Blob 存储就是一个示例，你可以在其中提供文件，Azure 会处理其读取、写入和持久保存事项。</span><span class="sxs-lookup"><span data-stu-id="c548a-118">One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.</span></span>
 
-![“新建项目”对话框](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a><span data-ttu-id="c548a-119">选择承载选项</span><span class="sxs-lookup"><span data-stu-id="c548a-119">Choosing a hosting option</span></span>
 
-<span data-ttu-id="3fa5d-115">创建新的控制台应用后，依次单击“工具”、“NuGet 包管理器”、“包管理器控制台”打开包管理器控制台。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-115">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="3fa5d-116">在控制台中，执行以下三个命令来获取所需的包：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-116">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="c548a-120">Azure 中的承载可以分为三个类别。</span><span class="sxs-lookup"><span data-stu-id="c548a-120">Hosting in Azure can be divided into three categories.</span></span>
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* <span data-ttu-id="c548a-121">**基础结构即服务 (IaaS)**：使用 IaaS 可以预配所需的虚拟机以及关联的网络和存储组件。</span><span class="sxs-lookup"><span data-stu-id="c548a-121">**Infrastructure-as-a-Service (IaaS)**: With IaaS, you provision the virtual machines you need along with associated network and storage components.</span></span> <span data-ttu-id="c548a-122">然后将需要的任何软件和应用程序部署到这些 VM 上。</span><span class="sxs-lookup"><span data-stu-id="c548a-122">You then deploy whatever software and applications you want onto those VMs.</span></span> <span data-ttu-id="c548a-123">除了由 Microsoft 管理基础结构，该模型最接近传统的本地环境。</span><span class="sxs-lookup"><span data-stu-id="c548a-123">This model is the closest to a traditional on-premises environment except that Microsoft manages the infrastructure.</span></span> <span data-ttu-id="c548a-124">仍由你管理单独的 VM，包括操作系统、自定义软件和安全更新。</span><span class="sxs-lookup"><span data-stu-id="c548a-124">You still manage the individual VMs, including the operating system, custom software, and security updates.</span></span>
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* <span data-ttu-id="c548a-125">**平台即服务 (PaaS)**：PaaS 提供托管的承载环境，可在其中部署应用程序而无需管理 VM 或网络资源。</span><span class="sxs-lookup"><span data-stu-id="c548a-125">**Platform-as-a-Service (PaaS)**: PaaS provides a managed hosting environment where you deploy your application without needing to manage VMs or networking resources.</span></span> <span data-ttu-id="c548a-126">例如，指定实例计数而不是创建单独的 VM，服务将预配、配置并管理必需的资源。</span><span class="sxs-lookup"><span data-stu-id="c548a-126">For example, instead of creating individual VMs, you specify an instance count, and the service will provision, configure, and manage the necessary resources.</span></span> <span data-ttu-id="c548a-127">Azure App Service 是 PaaS 服务的一个示例。</span><span class="sxs-lookup"><span data-stu-id="c548a-127">Azure App Service is an example of a PaaS service.</span></span>
+  
+* <span data-ttu-id="c548a-128">**功能即服务 (FaaS)**：通常称为无服务器计算。与 PaaS 相比，FaaS 更不需担心承载环境。</span><span class="sxs-lookup"><span data-stu-id="c548a-128">**Functions-as-a-Service (FaaS)**: Commonly referred to as serverless computing, FaaS goes even further than PaaS in abstracting the concerns of the hosting environment.</span></span> <span data-ttu-id="c548a-129">只需部署代码，服务便会自动运行它，无需创建计算实例并向其部署代码。</span><span class="sxs-lookup"><span data-stu-id="c548a-129">Instead of creating compute instances and then deploying code to those instances, you deploy your code and the service automatically runs it.</span></span> <span data-ttu-id="c548a-130">无需管理计算资源。</span><span class="sxs-lookup"><span data-stu-id="c548a-130">You don't need to administer the compute resources.</span></span> <span data-ttu-id="c548a-131">平台会根据处理流量的需要将代码无缝缩放到相应级别，你只需按代理运行情况付费。</span><span class="sxs-lookup"><span data-stu-id="c548a-131">The platform seamlessly scales your code up or down to whatever level necessary to handle the traffic, and you pay only when your code is running.</span></span> <span data-ttu-id="c548a-132">Azure Functions 是 FaaS 服务。</span><span class="sxs-lookup"><span data-stu-id="c548a-132">Azure Functions is a FaaS service.</span></span>
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+<span data-ttu-id="c548a-133">通常情况下，应用程序越倾向于使用 FaaS 和 PaaS 模型，在云中运行的益处越大。</span><span class="sxs-lookup"><span data-stu-id="c548a-133">Generally, the more your application favors FaaS and PaaS models, the more benefits you'll see from running in the cloud.</span></span> <span data-ttu-id="c548a-134">下面概述了 Azure 中的三个常用承载选项，以及何时选择它们。</span><span class="sxs-lookup"><span data-stu-id="c548a-134">Below is a summary of three common hosting choices in Azure and when to choose them.</span></span>
 
-## <a name="directives"></a><span data-ttu-id="3fa5d-117">指令</span><span class="sxs-lookup"><span data-stu-id="3fa5d-117">Directives</span></span>
-
-<span data-ttu-id="3fa5d-118">编辑应用程序的 `Program.cs` 文件。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-118">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="3fa5d-119">将顶部的 `using` 指令替换为以下内容：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-119">Replace the `using` directives at the top with the following:</span></span>
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* <span data-ttu-id="c548a-135">[Azure 应用服务](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is)：若要承载 Web 应用程序或服务，请先考虑应用服务。</span><span class="sxs-lookup"><span data-stu-id="c548a-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): If you're looking to host a web application or service, look at App Service first.</span></span> <span data-ttu-id="c548a-136">有关应用服务和 ASP.NET、WCF 以及 ASP.NET Core 应用的入门，请参阅[在 Azure 中创建 ASP.NET Core Web 应用](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)。</span><span class="sxs-lookup"><span data-stu-id="c548a-136">To get started with App Service and ASP.NET, WCF, and ASP.NET Core apps, see [Create an ASP.NET Core web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).</span></span>
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="3fa5d-120">创建虚拟机</span><span class="sxs-lookup"><span data-stu-id="3fa5d-120">Create a virtual machine</span></span>
+* <span data-ttu-id="c548a-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)：Azure Functions 适用于事件驱动型工作流。</span><span class="sxs-lookup"><span data-stu-id="c548a-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions is great for event-driven workflows.</span></span> <span data-ttu-id="c548a-138">示例包括：响应 Webhook、处理队列或 Blob 存储中的项，以及计时器。</span><span class="sxs-lookup"><span data-stu-id="c548a-138">Examples include responding to webhooks, processing items in queues or blob storage, and timers.</span></span> <span data-ttu-id="c548a-139">有关 Azure Functions 的入门，请参阅[使用 Visual Studio 创建你的第一个函数](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)。</span><span class="sxs-lookup"><span data-stu-id="c548a-139">To get started with Azure Functions, see [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).</span></span>
 
-<span data-ttu-id="3fa5d-121">此示例部署虚拟机。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-121">This example deploys a virtual machine.</span></span> 
+* <span data-ttu-id="c548a-140">[Azure 虚拟机](https://docs.microsoft.com/azure/virtual-machines/)：如果应用服务因为存在特定的依赖项而不符合你的承载现有应用程序的需求，则最好是从虚拟机着手。</span><span class="sxs-lookup"><span data-stu-id="c548a-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): If App Service doesn't meet your needs for hosting an existing application due to specific dependencies, Virtual Machines will be the easiest place to start.</span></span> <span data-ttu-id="c548a-141">有关虚拟机和 ASP.NET 或 WCF 的入门，请参阅 [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro)（将 ASP.NET 应用部署到 Azure 虚拟机）。</span><span class="sxs-lookup"><span data-stu-id="c548a-141">To get started with Virtual Machines and ASP.NET or WCF, see [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro).</span></span>
 
-<span data-ttu-id="3fa5d-122">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-122">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="3fa5d-123">请务必为虚拟机提供实际的 `username` 和 `password`。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-123">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+> [!TIP]
+> <span data-ttu-id="c548a-142">如需 Azure 服务的更完整的列表，请参阅 [Azure 计算选项概述](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)。</span><span class="sxs-lookup"><span data-stu-id="c548a-142">For a more complete list of Azure services, see [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options).</span></span> <span data-ttu-id="c548a-143">有关如何选择服务的详细信息，请参阅 [Azure 计算服务的决策树](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)。</span><span class="sxs-lookup"><span data-stu-id="c548a-143">For more information on choosing a service, see [Decision tree for Azure compute services](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).</span></span>
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="3fa5d-124">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-124">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="3fa5d-125">几分钟后，程序将会完成，并提示按 Enter 键。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-125">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="3fa5d-126">按 Enter 键后，请使用 Cloud Shell 验证订阅中的虚拟机：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-126">After pressing enter, verify the virtual machine in your subscription with the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="3fa5d-127">从 GitHub 存储库部署 Web 应用</span><span class="sxs-lookup"><span data-stu-id="3fa5d-127">Deploy a web app from a GitHub repo</span></span>
-
-<span data-ttu-id="3fa5d-128">现在请修改代码，以便从现有的 GitHub 存储库创建并部署新的 Web 应用。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-128">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="3fa5d-129">将 `Main`方法替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-129">Replace the `Main` method with the following code:</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="3fa5d-130">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-130">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="3fa5d-131">通过打开浏览器并导航到控制台中显示的 URL 来验证部署。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-131">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
-
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="3fa5d-132">连接到 SQL 数据库</span><span class="sxs-lookup"><span data-stu-id="3fa5d-132">Connect to a SQL database</span></span>
-
-<span data-ttu-id="3fa5d-133">此示例创建新的 Azure SQL 数据库并执行一些 SQL 操作。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-133">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
-
-<span data-ttu-id="3fa5d-134">将 `Main` 方法替换为以下内容，并确保为 `dbPassword` 分配强密码：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-134">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="3fa5d-135">如前所述按 **F5** 运行代码。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-135">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="3fa5d-136">控制台输出应会验证服务器是否已创建并按预期工作，但如果需要，你可以使用 SQL Server Management Studio 等工具直接连接到该服务器。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-136">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
-
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="3fa5d-137">将 Blob 写入新存储帐户</span><span class="sxs-lookup"><span data-stu-id="3fa5d-137">Write a blob into a new storage account</span></span>
-
-<span data-ttu-id="3fa5d-138">此示例创建存储帐户并上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-138">This example creates a storage account and upload a blob.</span></span>  
-
-<span data-ttu-id="3fa5d-139">将 `Main` 方法替换为以下内容。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-139">Replace the `Main` method with the following.</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="3fa5d-140">按 **F5** 运行示例。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-140">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="3fa5d-141">几分钟后，程序将会完成。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-141">After several minutes, the program finishes.</span></span> <span data-ttu-id="3fa5d-142">通过浏览到控制台中显示的 URL 来验证是否已上传 Blob。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-142">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="3fa5d-143">文本“Hello, Azure!”应会显示</span><span class="sxs-lookup"><span data-stu-id="3fa5d-143">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="3fa5d-144">在浏览器中。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-144">in your browser.</span></span>
-
-## <a name="clean-up"></a><span data-ttu-id="3fa5d-145">清理</span><span class="sxs-lookup"><span data-stu-id="3fa5d-145">Clean up</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="3fa5d-146">如果不清理本教程创建的资源，这些资源会继续产生费用。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-146">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="3fa5d-147">请务必执行此步骤。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-147">Be sure to do this step.</span></span>
-
-<span data-ttu-id="3fa5d-148">在 Cloud Shell 中输入以下命令来删除创建的所有资源：</span><span class="sxs-lookup"><span data-stu-id="3fa5d-148">Delete all the resources you created by entering the following in the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a><span data-ttu-id="3fa5d-149">学习更多示例</span><span class="sxs-lookup"><span data-stu-id="3fa5d-149">Explore more samples</span></span>
-
-<span data-ttu-id="3fa5d-150">若要详细了解如何使用用于 .NET 的 Azure 库来管理资源和自动执行任务，请参阅针对[虚拟机](dotnet-sdk-azure-virtual-machine-samples.md)、[Web 应用](dotnet-sdk-azure-web-apps-samples.md)和 [SQL 数据库](dotnet-sdk-azure-sql-database-samples.md)的示例代码。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-150">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
-
-## <a name="reference"></a><span data-ttu-id="3fa5d-151">引用</span><span class="sxs-lookup"><span data-stu-id="3fa5d-151">Reference</span></span>
-
-<span data-ttu-id="3fa5d-152">我们为所有包提供了[参考](http://docs.microsoft.com/dotnet/api)文档。</span><span class="sxs-lookup"><span data-stu-id="3fa5d-152">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a><span data-ttu-id="c548a-144">选择数据存储服务</span><span class="sxs-lookup"><span data-stu-id="c548a-144">Choosing a data storage service</span></span>
+
+<span data-ttu-id="c548a-145">Azure 提供多种服务，方便你根据自己的需求存储数据。</span><span class="sxs-lookup"><span data-stu-id="c548a-145">Azure offers several services for storing your data depending on your needs.</span></span> <span data-ttu-id="c548a-146">.NET 开发人员最常用的数据服务包括：</span><span class="sxs-lookup"><span data-stu-id="c548a-146">The most common data services for .NET developers are:</span></span>
+
+* <span data-ttu-id="c548a-147">[Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/)：若要将已经使用 SQL Server 的应用程序迁移到云，可以很自然地从 Azure SQL 数据库着手。</span><span class="sxs-lookup"><span data-stu-id="c548a-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): If you're looking to migrate an application that is already using SQL Server to the cloud, Azure SQL Database is a natural place to start.</span></span> <span data-ttu-id="c548a-148">有关入门，请参阅[教程：使用 SQL 数据库在 Azure 中构建 ASP.NET 应用](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)。</span><span class="sxs-lookup"><span data-stu-id="c548a-148">To get started, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).</span></span>
+
+* <span data-ttu-id="c548a-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/)：Azure Cosmos DB 是专为云设计的现代数据库。</span><span class="sxs-lookup"><span data-stu-id="c548a-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB is a modern database designed for the cloud.</span></span> <span data-ttu-id="c548a-150">启动新的应用程序时，如果该应用程序还没有特定的数据库依赖项，则应考虑使用 Azure Cosmos DB。</span><span class="sxs-lookup"><span data-stu-id="c548a-150">When starting a new application that doesn't yet have a specific database dependency, you should look at Azure Cosmos DB.</span></span> <span data-ttu-id="c548a-151">对于侧重于以下要求的新 Web、移动、游戏和 IoT 应用程序而言，Cosmos DB 是一个不错的选择：自动缩放、可预测的性能、快速响应时间，以及查询无架构数据的能力。</span><span class="sxs-lookup"><span data-stu-id="c548a-151">Cosmos DB is a good choice for new web, mobile, gaming, and IoT applications where automatic scale, predictable performance, fast response times, and the ability to query schema-free data are important.</span></span> <span data-ttu-id="c548a-152">有关入门，请参阅[快速入门：使用 SQL API 和 Azure 门户生成包含 Azure Cosmos DB 的 .NET Web 应用](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)。</span><span class="sxs-lookup"><span data-stu-id="c548a-152">To get started, see [Quickstart: Build a .NET web app with Azure Cosmos DB using the SQL API and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).</span></span>
+
+* <span data-ttu-id="c548a-153">[Azure Blob 存储](https://docs.microsoft.com/azure/storage/)：Azure Blob 存储经过优化，适用于存储和检索大型二进制对象，例如图像、文件和流。</span><span class="sxs-lookup"><span data-stu-id="c548a-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage is optimized for storing and retrieving large binary objects, such as images, files, and streams.</span></span> <span data-ttu-id="c548a-154">使用对象存储可以管理极大量的非结构化数据。</span><span class="sxs-lookup"><span data-stu-id="c548a-154">Object stores enable the management of extremely large amounts of unstructured data.</span></span> <span data-ttu-id="c548a-155">有关入门，请参阅[快速入门：使用 .NET 在对象存储中创建 Blob](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)。</span><span class="sxs-lookup"><span data-stu-id="c548a-155">To get started, see [Quickstart: Use .NET to create a blob in object storage](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="c548a-156">有关详细信息，请参阅[选择适当的数据存储](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。</span><span class="sxs-lookup"><span data-stu-id="c548a-156">For more information, see [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).</span></span>
+
+## <a name="diagnosing-problems-in-the-cloud"></a><span data-ttu-id="c548a-157">在云中诊断问题</span><span class="sxs-lookup"><span data-stu-id="c548a-157">Diagnosing problems in the Cloud</span></span>
+
+<span data-ttu-id="c548a-158">将应用程序部署到 Azure 后，可能会遇到在开发环境中没有问题而在 Azure 中却有问题的情况。</span><span class="sxs-lookup"><span data-stu-id="c548a-158">Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure.</span></span> <span data-ttu-id="c548a-159">诊断问题时，可以从以下两个方面着手：</span><span class="sxs-lookup"><span data-stu-id="c548a-159">Below are two good places to start when diagnosing issues:</span></span>
+
+* <span data-ttu-id="c548a-160">**从 Visual Studio 进行远程调试**：大多数 Azure 计算服务（包括本文档中讨论的服务）可以使用 Visual Studio 进行远程调试，并且可以获取日志。</span><span class="sxs-lookup"><span data-stu-id="c548a-160">**Remote debug from Visual Studio**: Most Azure compute services (including the services discussed in this document) support remote debugging with Visual Studio and acquiring logs.</span></span> <span data-ttu-id="c548a-161">若要通过应用程序探索 Visual Studio 的功能，请在 Visual Studio 的快速启动工具栏（位于右上角）中键入“Cloud Explorer”，以便打开 Cloud Explorer 工具窗口，然后在树目录中找到应用程序。</span><span class="sxs-lookup"><span data-stu-id="c548a-161">To explore Visual Studio's capabilities with your application, open the Cloud Explorer tool window by typing 'Cloud Explorer' into Visual Studio's quick launch toolbar (in the upper-right corner), and then locate your application in the tree.</span></span> <span data-ttu-id="c548a-162">有关详细信息，请参阅[使用 Visual Studio 对 Azure 应用服务中的 Web 应用进行故障排除](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)。</span><span class="sxs-lookup"><span data-stu-id="c548a-162">For details, see [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).</span></span>
+
+* <span data-ttu-id="c548a-163">**Application Insights**：[Application Insights](https://docs.microsoft.com/azure/application-insights/) 是一种完备的应用程序性能监视 (APM) 解决方案，可以从应用程序中自动捕获诊断数据、遥测数据和性能数据。</span><span class="sxs-lookup"><span data-stu-id="c548a-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) is a complete application performance monitoring (APM) solution that captures diagnostic data, telemetry, and performance data from applications automatically.</span></span> <span data-ttu-id="c548a-164">若要开始收集应用的诊断数据，请参阅[开始监视 ASP.NET Web 应用程序](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal)。</span><span class="sxs-lookup"><span data-stu-id="c548a-164">To get started collecting diagnostic data for your app, see [Start monitoring your ASP.NET Web Application](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="c548a-165">后续步骤</span><span class="sxs-lookup"><span data-stu-id="c548a-165">Next steps</span></span>
+
+* [<span data-ttu-id="c548a-166">将第一个 ASP.NET Core Web 应用部署到 Azure</span><span class="sxs-lookup"><span data-stu-id="c548a-166">Deploy your first ASP.NET Core web app to Azure</span></span>](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [<span data-ttu-id="c548a-167">了解在适用于 .NET 的 Azure API 中进行的身份验证</span><span class="sxs-lookup"><span data-stu-id="c548a-167">Learn about authentication in Azure APIs for .NET</span></span>](dotnet-sdk-azure-authenticate.md)
+* <span data-ttu-id="c548a-168">[Diagnose errors in your cloud apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)（诊断云应用中的错误）</span><span class="sxs-lookup"><span data-stu-id="c548a-168">[Diagnose errors in your cloud apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)</span></span>
+* <span data-ttu-id="c548a-169">下载免费电子书：[Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)（面向 .NET 开发人员的 Azure 快速入门指南）</span><span class="sxs-lookup"><span data-stu-id="c548a-169">Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)</span></span>
