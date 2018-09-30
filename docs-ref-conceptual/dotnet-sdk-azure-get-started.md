@@ -1,329 +1,78 @@
 ---
-title: Azure .NET 和 .NET Core API 入门
-description: 结合自己的 Azure 订阅开始了解用于 .NET 和 .NET Core 的 Azure 库的基本用法。
-keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, 身份验证, 入门
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Azure 和 .NET 入门
+description: 学习了解 Azure 和 .NET 所需的基础知识。
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703050"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190590"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Azure .NET 和 .NET Core API 入门
+# <a name="get-started-with-azure-and-net"></a>Azure 和 .NET 入门
 
-本教程演示多个[用于 .NET 的 Azure API](/dotnet/api/overview/azure/) 的用法。  内容包括设置身份验证、创建和使用 Azure 存储帐户、创建和使用 Azure SQL 数据库、部署一些虚拟机，然后从 GitHub 部署一个 Azure 应用服务 Web 应用。
+本文档概述的重要概念和服务是 .NET 开发人员使用 Azure 服务来完成应用开发入门所应该熟悉的。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="key-concepts"></a>关键概念
 
-- 一个 Azure 帐户。 如果没有帐户，可[获取一个免费试用帐户](https://azure.microsoft.com/free/)
+**Azure 帐户**：Azure 帐户是用于登录 Azure 服务（例如 [Azure 门户](https://portal.azure.com)或 [Cloud Shell](https://shell.azure.com)）的凭据。 如果没有 Azure 帐户，可以[免费创建一个](https://azure.microsoft.com/free/dotnet/)。
 
-## <a name="set-up-authentication"></a>设置身份验证
+**Azure 订阅**：订阅是创建 Azure 资源时使用的计费计划。 订阅可以是个人订阅，也可以是由公司管理的企业订阅。 Azure 帐户可以与多个订阅相关联。 在这种情况下，请确保在创建资源时选择正确的订阅。 有关详细信息，请参阅[了解帐户、订阅和计费](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)。
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> 如果有 Visual Studio 订阅，请[激活每月的 Azure 信用额度](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)。
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+**资源组**：可以通过资源组将 Azure 资源组织到组中进行管理。 在 Azure 中创建的资源存储在资源组中，这类似于将文件保存在计算机上的文件夹中。
 
-## <a name="create-a-new-project"></a>创建新项目 
+**承载**：若要在 Azure 中运行代码，需将其承载在支持执行用户提供的代码的服务中。
 
-创建新的控制台应用程序项目。  为此，请在 Visual Studio 中依次单击“文件”、“新建”、“项目...”。在 Visual C# 模板下选择“控制台应用(.NET Core)”，为项目命名，并单击“确定”。
+**托管服务**：Azure 提供一些服务，你可以在其中向 Azure 提供数据或信息，然后 Azure 的实现会采取相应的措施。 Azure Blob 存储就是一个示例，你可以在其中提供文件，Azure 会处理其读取、写入和持久保存事项。
 
-![“新建项目”对话框](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a>选择承载选项
 
-创建新的控制台应用后，依次单击“工具”、“NuGet 包管理器”、“包管理器控制台”打开包管理器控制台。  在控制台中，执行以下三个命令来获取所需的包：
+Azure 中的承载可以分为三个类别。
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* **基础结构即服务 (IaaS)**：使用 IaaS 可以预配所需的虚拟机以及关联的网络和存储组件。 然后将需要的任何软件和应用程序部署到这些 VM 上。 除了由 Microsoft 管理基础结构，该模型最接近传统的本地环境。 仍由你管理单独的 VM，包括操作系统、自定义软件和安全更新。
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* **平台即服务 (PaaS)**：PaaS 提供托管的承载环境，可在其中部署应用程序而无需管理 VM 或网络资源。 例如，指定实例计数而不是创建单独的 VM，服务将预配、配置并管理必需的资源。 Azure App Service 是 PaaS 服务的一个示例。
+  
+* **功能即服务 (FaaS)**：通常称为无服务器计算。与 PaaS 相比，FaaS 更不需担心承载环境。 只需部署代码，服务便会自动运行它，无需创建计算实例并向其部署代码。 无需管理计算资源。 平台会根据处理流量的需要将代码无缝缩放到相应级别，你只需按代理运行情况付费。 Azure Functions 是 FaaS 服务。
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+通常情况下，应用程序越倾向于使用 FaaS 和 PaaS 模型，在云中运行的益处越大。 下面概述了 Azure 中的三个常用承载选项，以及何时选择它们。
 
-## <a name="directives"></a>指令
-
-编辑应用程序的 `Program.cs` 文件。  将顶部的 `using` 指令替换为以下内容：
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* [Azure 应用服务](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is)：若要承载 Web 应用程序或服务，请先考虑应用服务。 有关应用服务和 ASP.NET、WCF 以及 ASP.NET Core 应用的入门，请参阅[在 Azure 中创建 ASP.NET Core Web 应用](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)。
 
-## <a name="create-a-virtual-machine"></a>创建虚拟机
+* [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)：Azure Functions 适用于事件驱动型工作流。 示例包括：响应 Webhook、处理队列或 Blob 存储中的项，以及计时器。 有关 Azure Functions 的入门，请参阅[使用 Visual Studio 创建你的第一个函数](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)。
 
-此示例部署虚拟机。 
+* [Azure 虚拟机](https://docs.microsoft.com/azure/virtual-machines/)：如果应用服务因为存在特定的依赖项而不符合你的承载现有应用程序的需求，则最好是从虚拟机着手。 有关虚拟机和 ASP.NET 或 WCF 的入门，请参阅 [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro)（将 ASP.NET 应用部署到 Azure 虚拟机）。
 
-将 `Main` 方法替换为以下内容。  请务必为虚拟机提供实际的 `username` 和 `password`。
+> [!TIP]
+> 如需 Azure 服务的更完整的列表，请参阅 [Azure 计算选项概述](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)。 有关如何选择服务的详细信息，请参阅 [Azure 计算服务的决策树](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)。
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-按 **F5** 运行示例。
-
-几分钟后，程序将会完成，并提示按 Enter 键。 按 Enter 键后，请使用 Cloud Shell 验证订阅中的虚拟机：
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a>从 GitHub 存储库部署 Web 应用
-
-现在请修改代码，以便从现有的 GitHub 存储库创建并部署新的 Web 应用。 将 `Main`方法替换为以下代码：
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-如前所述按 **F5** 运行代码。  通过打开浏览器并导航到控制台中显示的 URL 来验证部署。
-
-## <a name="connect-to-a-sql-database"></a>连接到 SQL 数据库
-
-此示例创建新的 Azure SQL 数据库并执行一些 SQL 操作。
-
-将 `Main` 方法替换为以下内容，并确保为 `dbPassword` 分配强密码：
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-如前所述按 **F5** 运行代码。  控制台输出应会验证服务器是否已创建并按预期工作，但如果需要，你可以使用 SQL Server Management Studio 等工具直接连接到该服务器。
-
-## <a name="write-a-blob-into-a-new-storage-account"></a>将 Blob 写入新存储帐户
-
-此示例创建存储帐户并上传 Blob。  
-
-将 `Main` 方法替换为以下内容。
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-按 **F5** 运行示例。
-
-几分钟后，程序将会完成。 通过浏览到控制台中显示的 URL 来验证是否已上传 Blob。  文本“Hello, Azure!”应会显示 在浏览器中。
-
-## <a name="clean-up"></a>清理
-
-> [!IMPORTANT]
-> 如果不清理本教程创建的资源，这些资源会继续产生费用。  请务必执行此步骤。
-
-在 Cloud Shell 中输入以下命令来删除创建的所有资源：
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a>学习更多示例
-
-若要详细了解如何使用用于 .NET 的 Azure 库来管理资源和自动执行任务，请参阅针对[虚拟机](dotnet-sdk-azure-virtual-machine-samples.md)、[Web 应用](dotnet-sdk-azure-web-apps-samples.md)和 [SQL 数据库](dotnet-sdk-azure-sql-database-samples.md)的示例代码。
-
-## <a name="reference"></a>引用
-
-我们为所有包提供了[参考](http://docs.microsoft.com/dotnet/api)文档。
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a>选择数据存储服务
+
+Azure 提供多种服务，方便你根据自己的需求存储数据。 .NET 开发人员最常用的数据服务包括：
+
+* [Azure SQL 数据库](https://docs.microsoft.com/azure/sql-database/)：若要将已经使用 SQL Server 的应用程序迁移到云，可以很自然地从 Azure SQL 数据库着手。 有关入门，请参阅[教程：使用 SQL 数据库在 Azure 中构建 ASP.NET 应用](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)。
+
+* [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/)：Azure Cosmos DB 是专为云设计的现代数据库。 启动新的应用程序时，如果该应用程序还没有特定的数据库依赖项，则应考虑使用 Azure Cosmos DB。 对于侧重于以下要求的新 Web、移动、游戏和 IoT 应用程序而言，Cosmos DB 是一个不错的选择：自动缩放、可预测的性能、快速响应时间，以及查询无架构数据的能力。 有关入门，请参阅[快速入门：使用 SQL API 和 Azure 门户生成包含 Azure Cosmos DB 的 .NET Web 应用](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)。
+
+* [Azure Blob 存储](https://docs.microsoft.com/azure/storage/)：Azure Blob 存储经过优化，适用于存储和检索大型二进制对象，例如图像、文件和流。 使用对象存储可以管理极大量的非结构化数据。 有关入门，请参阅[快速入门：使用 .NET 在对象存储中创建 Blob](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)。
+
+> [!TIP]
+> 有关详细信息，请参阅[选择适当的数据存储](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。
+
+## <a name="diagnosing-problems-in-the-cloud"></a>在云中诊断问题
+
+将应用程序部署到 Azure 后，可能会遇到在开发环境中没有问题而在 Azure 中却有问题的情况。 诊断问题时，可以从以下两个方面着手：
+
+* **从 Visual Studio 进行远程调试**：大多数 Azure 计算服务（包括本文档中讨论的服务）可以使用 Visual Studio 进行远程调试，并且可以获取日志。 若要通过应用程序探索 Visual Studio 的功能，请在 Visual Studio 的快速启动工具栏（位于右上角）中键入“Cloud Explorer”，以便打开 Cloud Explorer 工具窗口，然后在树目录中找到应用程序。 有关详细信息，请参阅[使用 Visual Studio 对 Azure 应用服务中的 Web 应用进行故障排除](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)。
+
+* **Application Insights**：[Application Insights](https://docs.microsoft.com/azure/application-insights/) 是一种完备的应用程序性能监视 (APM) 解决方案，可以从应用程序中自动捕获诊断数据、遥测数据和性能数据。 若要开始收集应用的诊断数据，请参阅[开始监视 ASP.NET Web 应用程序](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal)。
+
+## <a name="next-steps"></a>后续步骤
+
+* [将第一个 ASP.NET Core Web 应用部署到 Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [了解在适用于 .NET 的 Azure API 中进行的身份验证](dotnet-sdk-azure-authenticate.md)
+* [Diagnose errors in your cloud apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)（诊断云应用中的错误）
+* 下载免费电子书：[Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)（面向 .NET 开发人员的 Azure 快速入门指南）
