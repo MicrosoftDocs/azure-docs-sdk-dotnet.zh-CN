@@ -2,12 +2,12 @@
 title: Azure 和 .NET 入门
 description: 学习了解 Azure 和 .NET 所需的基础知识。
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190590"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348139"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure 和 .NET 入门
 
@@ -63,7 +63,6 @@ Azure 提供多种服务，方便你根据自己的需求存储数据。 .NET �
 > 有关详细信息，请参阅[选择适当的数据存储](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>在云中诊断问题
-
 将应用程序部署到 Azure 后，可能会遇到在开发环境中没有问题而在 Azure 中却有问题的情况。 诊断问题时，可以从以下两个方面着手：
 
 * **从 Visual Studio 进行远程调试**：大多数 Azure 计算服务（包括本文档中讨论的服务）可以使用 Visual Studio 进行远程调试，并且可以获取日志。 若要通过应用程序探索 Visual Studio 的功能，请在 Visual Studio 的快速启动工具栏（位于右上角）中键入“Cloud Explorer”，以便打开 Cloud Explorer 工具窗口，然后在树目录中找到应用程序。 有关详细信息，请参阅[使用 Visual Studio 对 Azure 应用服务中的 Web 应用进行故障排除](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)。

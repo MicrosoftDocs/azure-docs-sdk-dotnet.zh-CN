@@ -3,13 +3,13 @@ title: 用于 .NET 的 Azure 计费库
 description: 用于 .NET 的 Azure 计费库参考
 ms.date: 10/19/2017
 ms.topic: reference
-ms.service: multiple
-ms.openlocfilehash: 88b90c71d29eacf61e4da2099f8a054d74df4a83
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: billing
+ms.openlocfilehash: 196b9b4ed5f1f5f6794d86a43d26827355800d7b
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190250"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348079"
 ---
 # <a name="azure-billing-libraries-for-net"></a>用于 .NET 的 Azure 计费库
 
