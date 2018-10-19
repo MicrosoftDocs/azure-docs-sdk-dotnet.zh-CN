@@ -3,13 +3,13 @@ title: Azure HDInsight .NET SDK
 description: Azure HDInsight .NET SDK 参考
 ms.date: 9/19/2018
 ms.topic: reference
-ms.service: hd-insight
-ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: hdinsight
+ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190680"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348199"
 ---
 # <a name="azure-hdinsight-net-sdk"></a>Azure HDInsight .NET SDK
 
@@ -122,7 +122,7 @@ managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName
 
 ## <a name="overview"></a>概述
 
-HDInsight .NET SDK 提供用于管理 HDInsight 群集的类和方法。 该 SDK 包含用于创建、删除、更新、列出、缩放、执行脚本操作，以及监视、获取 HDInsight 群集属性等的操作。
+HDInsight .NET SDK 提供用于管理 HDInsight 群集的类和方法。 该 SDK 包含用于创建、删除、更新、列出、调整大小、执行脚本操作，以及监视、获取 HDInsight 群集属性等操作。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -463,9 +463,9 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPatchParameters(new Dictionary<string, string> { { "tag1Name", "tag1Value" }, { "tag2Name", "tag2Value" } }));
 ```
 
-### <a name="scale-cluster"></a>缩放群集
+### <a name="resize-cluster"></a>调整群集大小
 
-可以通过指定新大小来缩放给定群集的工作节点数，如下所示：
+可以通过指定新大小来调整给定群集的工作节点数，如下所示：
 
 ```csharp
 client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)
