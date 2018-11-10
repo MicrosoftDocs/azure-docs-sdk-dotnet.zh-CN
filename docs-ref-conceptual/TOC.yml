@@ -1,94 +1,101 @@
+items:
 - name: 面向 .NET 开发人员的 Azure
   href: index.yml
   items:
-    - name: .NET 快速入门
-      expanded: true
+  - name: .NET 快速入门
+    items:
+    - name: Web 应用
+      href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
+      maintainContext: true
+    - name: 无服务器函数
+      href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
+      maintainContext: true
+    - name: SQL 数据库
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
+      maintainContext: true
+    - name: Cosmos DB
+      href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
+      maintainContext: true
+    - name: Service Fabric
+      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+      maintainContext: true
+    - name: Blob 存储
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
+      maintainContext: true
+    expanded: true
+  - name: Azure 入门
+    href: dotnet-sdk-azure-get-started.md
+  - name: 工具
+    href: dotnet-tools.md
+  - name: .NET 教程
+    href: dotnet-tutorials.md
+    items:
+    - name: 使用 Azure SQL 数据库创建 ASP.NET Web 应用
+      href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
+      maintainContext: true
+    - name: 使用 Cosmos DB 创建 ASP.NET Web 应用
+      href: /azure/documentdb/documentdb-dotnet-application
+      maintainContext: true
+    - name: 创建和部署 Web API
+      href: /azure/app-service-api/app-service-api-dotnet-get-started
+      maintainContext: true
+    - name: Kubernetes 和 Windows 容器入门
+      href: /azure/container-service/container-service-kubernetes-windows-walkthrough
+      maintainContext: true
+    - name: 连接和查询 SQL 数据库
+      href: /azure/sql-database/sql-database-connect-query-dotnet
+      maintainContext: true
+    - name: 连接和查询 PostgreSQL
+      href: /azure/postgresql/connect-csharp
+      maintainContext: true
+    - name: Cosmos DB SQL API 入门
+      href: /azure/cosmos-db/sql-api-get-started
+      maintainContext: true
+  - name: 如何
+    items:
+    - name: 迁移
       items:
-        - name: Web 应用
-          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-          maintainContext: true
-        - name: 无服务器函数
-          href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
-          maintainContext: true
-        - name: SQL 数据库
-          href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-          maintainContext: true
-        - name: Cosmos DB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
-          maintainContext: true
-        - name: Service Fabric
-          href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
-          maintainContext: true
-        - name: Blob 存储
-          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
-          maintainContext: true
-    - name: .NET 入门
-      href: dotnet-sdk-azure-get-started.md
-    - name: 工具
-      href: dotnet-tools.md
-    - name: .NET 教程
-      href: dotnet-tutorials.md
+      - name: 选择正确的 Azure 托管选项
+        href: dotnet-howto-choose-migration.md
+      - name: 将 .NET Web 应用或服务迁移到 Azure 应用服务
+        href: dotnet-howto-migrate-app-service.md
+      - name: 将 ASP.NET 应用迁移到 Azure VM
+        href: dotnet-howto-migrate-to-vm.md
+      - name: 将 SQL Server 数据库迁移到 Azure
+        href: dotnet-howto-migrate-sql.md
+    - name: 身份验证
+      href: dotnet-sdk-azure-authenticate.md
+    - name: 使用 Fluent API
+      href: dotnet-sdk-azure-concepts.md
+    - name: 部署
       items:
-        - name: 使用 Azure SQL 数据库创建 ASP.NET Web 应用
-          href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-          maintainContext: true
-        - name: 使用 Cosmos DB 创建 ASP.NET Web 应用
-          href: /azure/documentdb/documentdb-dotnet-application
-          maintainContext: true
-        - name: 创建和部署 Web API
-          href: /azure/app-service-api/app-service-api-dotnet-get-started
-          maintainContext: true
-        - name: Kubernetes 和 Windows 容器入门
-          href: /azure/container-service/container-service-kubernetes-windows-walkthrough
-          maintainContext: true
-        - name: 连接和查询 SQL 数据库
-          href: /azure/sql-database/sql-database-connect-query-dotnet
-          maintainContext: true
-        - name: 连接和查询 PostgreSQL
-          href: /azure/postgresql/connect-csharp
-          maintainContext: true
-        - name: Cosmos DB SQL API 入门
-          href: /azure/cosmos-db/sql-api-get-started
-          maintainContext: true
-    - name: 如何
-      items:
-        - name: 迁移
-          items:
-            - name: 选择正确的 Azure 托管选项
-              href: dotnet-howto-choose-migration.md
-            - name: 将 .NET Web 应用或服务迁移到 Azure 应用服务
-              href: dotnet-howto-migrate-app-service.md
-            - name: 将 ASP.NET 应用迁移到 Azure VM
-              href: dotnet-howto-migrate-to-vm.md
-            - name: 将 SQL Server 数据库迁移到 Azure
-              href: dotnet-howto-migrate-sql.md
-        - name: 身份验证
-          href: dotnet-sdk-azure-authenticate.md
-        - name: 使用 Fluent API
-          href: dotnet-sdk-azure-concepts.md
-        - name: 部署
-          items:
-            - name: 使用 Visual Studio 进行部署
-              href: dotnet-quickstart-vs.md
-            - name: 使用命令行工具进行部署
-              href: dotnet-quickstart-xplat.md
-        - name: 数据库
-          href: dotnet-tutorials-services-databases.md
-        - name: 存储
-          href: dotnet-tutorials-services-storage.md
-        - name: 容器
-          href: dotnet-tutorials-services-containers.md
-        - name: 消息传送 + IoT
-          href: dotnet-tutorials-services-messaging-iot.md
-        - name: AI + 认知服务
-          href: dotnet-tutorials-services-ai-cognitive.md
-        - name: 数据 + 分析
-          href: dotnet-tutorials-services-analytics.md
-        - name: Web + 移动
-          href: dotnet-tutorials-services-web-mobile.md
-        - name: 安全性 + 标识
-          href: dotnet-tutorials-services-security.md
-        - name: 监视 + 管理
-          href: dotnet-tutorials-services-monitoring.md
-    - name: .NET 代码示例
-      href: dotnet-samples.md
+      - name: 使用 Visual Studio 进行部署
+        href: dotnet-quickstart-vs.md
+      - name: 使用命令行工具进行部署
+        href: dotnet-quickstart-xplat.md
+    - name: 数据库
+      href: dotnet-tutorials-services-databases.md
+    - name: 存储
+      href: dotnet-tutorials-services-storage.md
+    - name: 容器
+      href: dotnet-tutorials-services-containers.md
+    - name: 消息传送 + IoT
+      href: dotnet-tutorials-services-messaging-iot.md
+    - name: AI + 认知服务
+      href: dotnet-tutorials-services-ai-cognitive.md
+    - name: 数据 + 分析
+      href: dotnet-tutorials-services-analytics.md
+    - name: Web + 移动
+      href: dotnet-tutorials-services-web-mobile.md
+    - name: 安全性 + 标识
+      href: dotnet-tutorials-services-security.md
+    - name: 监视 + 管理
+      href: dotnet-tutorials-services-monitoring.md
+  - name: .NET 代码示例
+    href: dotnet-samples.md
+ms.openlocfilehash: b2a0a7da4354b1699aaed766a5377cfaea64dcdf
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276557"
