@@ -2,12 +2,12 @@
 title: Azure 和 .NET 入门
 description: 学习了解 Azure 和 .NET 所需的基础知识。
 ms.date: 09/19/2018
-ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 63587d7d5ccb79eee47185ff1f3ccb9cbd09c0ea
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348139"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276577"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure 和 .NET 入门
 
@@ -61,6 +61,10 @@ Azure 提供多种服务，方便你根据自己的需求存储数据。 .NET �
 
 > [!TIP]
 > 有关详细信息，请参阅[选择适当的数据存储](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)。
+
+## <a name="connecting-to-azure-services"></a>连接到 Azure 服务
+
+如果使用 Visual Studio，可以将对某些 Azure 服务的支持添加到项目。  使用 Visual Studio 中的“连接的服务”对话框，可以方便地将所有所需的引用、连接代码和配置设置添加到项目。  默认情况下会支持一些常用的 Azure 服务，如[存储](/azure/vs-azure-tools-connected-services-storage)、[Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) 身份验证、[Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) 和[认知服务](/azure/cognitive-services/)（如[计算机视觉](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service)）。  更多服务（包括第三方服务）可在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance) 中作为扩展获得。
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>在云中诊断问题
 将应用程序部署到 Azure 后，可能会遇到在开发环境中没有问题而在 Azure 中却有问题的情况。 诊断问题时，可以从以下两个方面着手：
