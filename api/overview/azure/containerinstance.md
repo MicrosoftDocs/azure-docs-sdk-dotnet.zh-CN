@@ -4,12 +4,12 @@ description: 适用于 .NET 的 Azure 容器实例库参考
 ms.date: 06/11/2018
 ms.topic: reference
 ms.service: container-instances
-ms.openlocfilehash: 8642fc654546edde81aeaa520f52b2aff9720e55
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 552746b316f1ba80adce5f55bb22412749fd93bc
+ms.sourcegitcommit: 4f7bc5c5cd333e41446a3ebe5639a211d8ac9b90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348099"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841274"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>适用于 .NET 的 Azure 容器实例库
 
@@ -55,11 +55,13 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 在创建凭据文件并填充`AZURE_AUTH_LOCATION`环境变量后，请使用 [Azure.Authenticate][iazure-authenticate] 方法来初始化 [IAzure][iazure] 客户端对象。 该示例项目首先获取 `AZURE_AUTH_LOCATION` 值，然后调用一个方法，该方法将返回初始化的 `IAzure` 客户端对象：
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
 
 来自示例应用程序的此方法将返回初始化的 [IAzure][iazure] 实例，然后该示例将作为第一个参数传递到示例中的所有其他方法：
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
 
 若要更详细地了解用于 Azure 的 .NET 管理库中提供的身份验证方法，请参阅[用于 .NET 的 Azure 管理库中的身份验证][sdk-auth]。
 
@@ -67,19 +69,22 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 此示例创建包含单个容器的容器组。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
 
 ## <a name="create-container-group---multiple-containers"></a>创建容器组 - 多个容器
 
-此示例创建的容器组包含两个容器：应用程序容器和挎斗容器。
+此示例创建包含两个容器的容器组：应用程序容器和挎斗容器。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
 
 ## <a name="asynchronous-container-create-with-polling"></a>通过轮询进行异步容器创建
 
 此示例使用异步创建方法创建包含单个容器的容器组。 然后，它将在 Azure 中轮询该容器组，并且会输出容器组的状态，直到其状态为“Running”。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
 
 ## <a name="create-task-based-container-group"></a>创建基于任务的容器组
 
@@ -93,25 +98,29 @@ dotnet add package Microsoft.Azure.Management.ContainerInstance.Fluent
 
 `WithStartingCommandLines("/bin/sh", "-c", "echo FOO BAR && tail -f /dev/null")`
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
 
 ## <a name="list-container-groups"></a>列出容器组
 
 此示例列出了资源组中的容器组。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
 
 ## <a name="get-an-existing-container-group"></a>获取现有的容器组
 
 此示例获取驻留在资源组中的特定容器组，然后打印其一些属性及属性值。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
 
 ## <a name="delete-a-container-group"></a>删除容器组
 
 此示例将从资源组中删除容器组。
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
 
 ## <a name="api-reference"></a>API 参考
 

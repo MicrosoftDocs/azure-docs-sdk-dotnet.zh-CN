@@ -4,12 +4,12 @@ description: 用于 .NET 的 Azure Cosmos DB 库参考
 ms.date: 08/31/2018
 ms.topic: reference
 ms.service: cosmos-db
-ms.openlocfilehash: 8ff565f1cd72eec2f574b45d04ceac526b8c5eb0
-ms.sourcegitcommit: 01ec3adba39a6f946015552c28da0a9a6bb57180
+ms.openlocfilehash: 95fcd8468c3d472cfcadeaae3b56ae789c3b1e7a
+ms.sourcegitcommit: 55ee51501678d1575e5159f0ac0e475b5bf9daf3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112015"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54453991"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>用于 .NET 的 Azure Cosmos DB 库
 
@@ -56,7 +56,7 @@ dotnet add package Microsoft.Azure.Cosmos
 
 ### <a name="code-example"></a>代码示例
 
-此示例连接到现有的Azure Cosmos DB SQL API 数据库，从集合中读取文档，并将文档反序列化为 `Item` 对象。 此示例使用 .NET SDK 的 2.x 版本。   
+此示例连接到现有的Azure Cosmos DB SQL API 数据库，从集合中读取文档，并将文档反序列化为 `TodoItem` 对象。 此示例使用 .NET SDK 的 2.x 版本。   
 
 ```csharp
 /* Include this "using" directive...
@@ -65,7 +65,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
+var todoItem = client.ReadDocumentAsync<TodoItem>(documentUri);
 ```
 
 此示例连接到现有 Azure Cosmos DB SQL API 数据库、创建新数据库和容器、从容器中读取某个项以及将其反序列化为 `TodoItem` 对象。 此示例使用 .NET SDK 的 3.x 版本。   
